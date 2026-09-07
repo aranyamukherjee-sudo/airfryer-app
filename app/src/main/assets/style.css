@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Lora";
+  src: url("fonts/Lora-Variable.ttf");
+  font-weight: 400 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("fonts/Lora-Italic-Variable.ttf");
+  font-weight: 400 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", "Georgia", serif;
+  line-height: 1.5;
+  color: #2B2320;
+  background: #FBF8F3;
+  padding: 16px 18px 40px 18px;
+}
+
+figure {
+  margin: 0 -18px 16px -18px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  display: none;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #B5471B;
+  margin: 4px 0 4px 0;
+  line-height: 1.25;
+}
+
+.method-line em {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.85em;
+  color: #8A7B6C;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.section-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #7A2E12;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 20px 0 8px 0;
+  border-bottom: 2px solid #E8D9C4;
+  padding-bottom: 4px;
+}
+
+ul {
+  margin: 0 0 8px 0;
+  padding-left: 1.1em;
+}
+
+li {
+  margin: 4px 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.step-num {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #B5471B;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.step-text {
+  flex: 1 1 auto;
+  font-size: 0.98em;
+}
+
+p { margin: 0.4em 0; }

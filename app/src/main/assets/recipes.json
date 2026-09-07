@@ -1,0 +1,1998 @@
+{
+ "sections": [
+  {
+   "name": "Snacks, Starters, Breakfast & Sides",
+   "recipes": [
+    {
+     "title": "Crispy Air-Fried French Fries",
+     "nonveg": false,
+     "image": "images/file0.jpg",
+     "file": "recipes/ch0001.html"
+    },
+    {
+     "title": "Crunchy Vegetable Spring Rolls",
+     "nonveg": false,
+     "image": "images/file2.jpg",
+     "file": "recipes/ch0002.html"
+    },
+    {
+     "title": "Masala Peanuts",
+     "nonveg": false,
+     "image": "images/file3.jpg",
+     "file": "recipes/ch0003.html"
+    },
+    {
+     "title": "Stuffed Mushrooms",
+     "nonveg": false,
+     "image": "images/file4.jpg",
+     "file": "recipes/ch0004.html"
+    },
+    {
+     "title": "Bread Pizza Bites",
+     "nonveg": false,
+     "image": "images/file5.jpg",
+     "file": "recipes/ch0005.html"
+    },
+    {
+     "title": "Crispy Corn Cheese Balls",
+     "nonveg": false,
+     "image": "images/file6.jpg",
+     "file": "recipes/ch0006.html"
+    },
+    {
+     "title": "Chilli Garlic Potato Wedges",
+     "nonveg": false,
+     "image": "images/file7.jpg",
+     "file": "recipes/ch0007.html"
+    },
+    {
+     "title": "Crispy Onion Rings",
+     "nonveg": false,
+     "image": "images/file8.jpg",
+     "file": "recipes/ch0008.html"
+    },
+    {
+     "title": "Air Fryer Mozzarella Sticks",
+     "nonveg": false,
+     "image": "images/file9.jpg",
+     "file": "recipes/ch0009.html"
+    },
+    {
+     "title": "Crispy Cauliflower Bites",
+     "nonveg": false,
+     "image": "images/file10.jpg",
+     "file": "recipes/ch0010.html"
+    },
+    {
+     "title": "Popcorn Paneer",
+     "nonveg": false,
+     "image": "images/file282.jpg",
+     "file": "recipes/ch0011.html"
+    },
+    {
+     "title": "Peri Peri Paneer",
+     "nonveg": false,
+     "image": "images/file287.jpg",
+     "file": "recipes/ch0012.html"
+    },
+    {
+     "title": "Popcorn Mushroom",
+     "nonveg": false,
+     "image": "images/file288.jpg",
+     "file": "recipes/ch0013.html"
+    },
+    {
+     "title": "Popcorn Cauliflower (Gobi Popcorn)",
+     "nonveg": false,
+     "image": "images/file304.jpg",
+     "file": "recipes/ch0014.html"
+    },
+    {
+     "title": "Popcorn Tofu",
+     "nonveg": false,
+     "image": "images/file307.jpg",
+     "file": "recipes/ch0015.html"
+    },
+    {
+     "title": "Cheese Corn Nuggets",
+     "nonveg": false,
+     "image": "images/file305.jpg",
+     "file": "recipes/ch0016.html"
+    },
+    {
+     "title": "Roasted Makhana (Fox Nuts)",
+     "nonveg": false,
+     "image": "images/file11.jpg",
+     "file": "recipes/ch0017.html"
+    },
+    {
+     "title": "Crispy Banana Chips",
+     "nonveg": false,
+     "image": "images/file12.jpg",
+     "file": "recipes/ch0018.html"
+    },
+    {
+     "title": "Air Fryer Masala Omelette Muffins",
+     "nonveg": false,
+     "image": "images/file13.jpg",
+     "file": "recipes/ch0019.html"
+    },
+    {
+     "title": "Crispy Air Fryer Hash Browns",
+     "nonveg": false,
+     "image": "images/file14.jpg",
+     "file": "recipes/ch0020.html"
+    },
+    {
+     "title": "Stuffed French Toast Sticks",
+     "nonveg": false,
+     "image": "images/file15.jpg",
+     "file": "recipes/ch0021.html"
+    },
+    {
+     "title": "Paneer Bhurji Toast",
+     "nonveg": false,
+     "image": "images/file16.jpg",
+     "file": "recipes/ch0022.html"
+    },
+    {
+     "title": "Kachumber Salad (Cucumber-Tomato Salad)",
+     "nonveg": false,
+     "image": "images/file185.jpg",
+     "file": "recipes/ch0023.html"
+    },
+    {
+     "title": "Boondi Raita",
+     "nonveg": false,
+     "image": "images/file184.jpg",
+     "file": "recipes/ch0024.html"
+    },
+    {
+     "title": "Quick Pickled Onions",
+     "nonveg": false,
+     "image": "images/file196.jpg",
+     "file": "recipes/ch0025.html"
+    },
+    {
+     "title": "Mint-Coriander Chutney",
+     "nonveg": false,
+     "image": "images/file201.jpg",
+     "file": "recipes/ch0026.html"
+    },
+    {
+     "title": "Crispy Paneer Bites (Airfryer Croutons)",
+     "nonveg": false,
+     "image": "images/file213.jpg",
+     "file": "recipes/ch0027.html"
+    }
+   ]
+  },
+  {
+   "name": "Mains",
+   "recipes": [
+    {
+     "title": "Stuffed Bell Peppers",
+     "nonveg": false,
+     "image": "images/file17.jpg",
+     "file": "recipes/ch0028.html"
+    },
+    {
+     "title": "Baked Vegetable Pulao (one-pot)",
+     "nonveg": false,
+     "image": "images/file18.jpg",
+     "file": "recipes/ch0029.html"
+    },
+    {
+     "title": "Rajma-Stuffed Baked Potatoes",
+     "nonveg": false,
+     "image": "images/file19.jpg",
+     "file": "recipes/ch0030.html"
+    },
+    {
+     "title": "Vegetable Au Gratin",
+     "nonveg": false,
+     "image": "images/file20.jpg",
+     "file": "recipes/ch0031.html"
+    },
+    {
+     "title": "Crispy Sweet Potato Fries",
+     "nonveg": false,
+     "image": "images/file21.jpg",
+     "file": "recipes/ch0032.html"
+    },
+    {
+     "title": "Garlic Parmesan Brussels Sprouts",
+     "nonveg": false,
+     "image": "images/file22.jpg",
+     "file": "recipes/ch0033.html"
+    },
+    {
+     "title": "Crispy Panko Asparagus",
+     "nonveg": false,
+     "image": "images/file23.jpg",
+     "file": "recipes/ch0034.html"
+    },
+    {
+     "title": "Air Fryer Baked Potatoes",
+     "nonveg": false,
+     "image": "images/file24.jpg",
+     "file": "recipes/ch0035.html"
+    },
+    {
+     "title": "Paneer Steaks with Herb Butter",
+     "nonveg": false,
+     "image": "images/file25.jpg",
+     "file": "recipes/ch0036.html"
+    }
+   ]
+  },
+  {
+   "name": "Baking & Sweets",
+   "recipes": [
+    {
+     "title": "Eggless Chocolate Mug-Style Cake",
+     "nonveg": false,
+     "image": "images/file26.jpg",
+     "file": "recipes/ch0037.html"
+    },
+    {
+     "title": "Classic Vanilla Cake",
+     "nonveg": false,
+     "image": "images/file314.jpg",
+     "file": "recipes/ch0038.html"
+    },
+    {
+     "title": "Classic Sponge Cake",
+     "nonveg": false,
+     "image": "images/file316.jpg",
+     "file": "recipes/ch0039.html"
+    },
+    {
+     "title": "Marble Cake (Vanilla-Chocolate Swirl)",
+     "nonveg": false,
+     "image": "images/file309.jpg",
+     "file": "recipes/ch0040.html"
+    },
+    {
+     "title": "Butter Cookies",
+     "nonveg": false,
+     "image": "images/file27.jpg",
+     "file": "recipes/ch0041.html"
+    },
+    {
+     "title": "Banana Bread",
+     "nonveg": false,
+     "image": "images/file28.jpg",
+     "file": "recipes/ch0042.html"
+    },
+    {
+     "title": "Cinnamon Apple Crisps",
+     "nonveg": false,
+     "image": "images/file29.jpg",
+     "file": "recipes/ch0043.html"
+    },
+    {
+     "title": "Air Fryer Doughnuts",
+     "nonveg": false,
+     "image": "images/file30.jpg",
+     "file": "recipes/ch0044.html"
+    },
+    {
+     "title": "Mini Cheesecakes",
+     "nonveg": false,
+     "image": "images/file31.jpg",
+     "file": "recipes/ch0045.html"
+    },
+    {
+     "title": "Whole Wheat Pizza",
+     "nonveg": false,
+     "image": "images/file32.jpg",
+     "file": "recipes/ch0046.html"
+    },
+    {
+     "title": "Granola Bars",
+     "nonveg": false,
+     "image": "images/file33.jpg",
+     "file": "recipes/ch0047.html"
+    },
+    {
+     "title": "Air Fryer Chocolate Chip Cookies",
+     "nonveg": false,
+     "image": "images/file34.jpg",
+     "file": "recipes/ch0048.html"
+    },
+    {
+     "title": "Quick Cinnamon Rolls",
+     "nonveg": false,
+     "image": "images/file35.jpg",
+     "file": "recipes/ch0049.html"
+    },
+    {
+     "title": "Paneer Kalakand (Airfryer-Set Milk Fudge)",
+     "nonveg": false,
+     "image": "images/file36.jpg",
+     "file": "recipes/ch0050.html"
+    },
+    {
+     "title": "Air Fryer Gulab Jamun",
+     "nonveg": false,
+     "image": "images/file37.jpg",
+     "file": "recipes/ch0051.html"
+    },
+    {
+     "title": "Coconut Ladoo (No-Cook Finish)",
+     "nonveg": false,
+     "image": "images/file38.jpg",
+     "file": "recipes/ch0052.html"
+    },
+    {
+     "title": "Rasgulla (Spongy Cottage Cheese Balls in Syrup)",
+     "nonveg": false,
+     "image": "images/file39.jpg",
+     "file": "recipes/ch0053.html"
+    },
+    {
+     "title": "Air Fryer Chocolate Lava Cakes",
+     "nonveg": false,
+     "image": "images/file40.jpg",
+     "file": "recipes/ch0054.html"
+    },
+    {
+     "title": "Besan Ladoo",
+     "nonveg": false,
+     "image": "images/file41.jpg",
+     "file": "recipes/ch0055.html"
+    },
+    {
+     "title": "Rasmalai (Paneer Dumplings in Saffron Milk)",
+     "nonveg": false,
+     "image": "images/file42.jpg",
+     "file": "recipes/ch0056.html"
+    },
+    {
+     "title": "Semiya (Vermicelli) Kheer",
+     "nonveg": false,
+     "image": "images/file50.jpg",
+     "file": "recipes/ch0057.html"
+    },
+    {
+     "title": "Sooji Halwa (Rava Kesari)",
+     "nonveg": false,
+     "image": "images/file51.jpg",
+     "file": "recipes/ch0058.html"
+    },
+    {
+     "title": "Custard (Vanilla or Fruit)",
+     "nonveg": false,
+     "image": "images/file53.jpg",
+     "file": "recipes/ch0059.html"
+    },
+    {
+     "title": "Kara Prasad (Air Fryer / Chef Magic Adaptation)",
+     "nonveg": false,
+     "image": "images/file54.jpg",
+     "file": "recipes/ch0060.html"
+    },
+    {
+     "title": "Payesh (Bengali Rice Pudding)",
+     "nonveg": false,
+     "image": "images/file221.jpg",
+     "file": "recipes/ch0061.html"
+    }
+   ]
+  },
+  {
+   "name": "Chef Magic & Combo Recipes",
+   "recipes": [
+    {
+     "title": "Dal Tadka",
+     "nonveg": false,
+     "image": "images/file43.jpg",
+     "file": "recipes/ch0062.html"
+    },
+    {
+     "title": "Steamed Vegetable Momos",
+     "nonveg": false,
+     "image": "images/file45.jpg",
+     "file": "recipes/ch0063.html"
+    },
+    {
+     "title": "Tomato Soup",
+     "nonveg": false,
+     "image": "images/file46.jpg",
+     "file": "recipes/ch0064.html"
+    },
+    {
+     "title": "Paneer Butter Masala",
+     "nonveg": false,
+     "image": "images/file47.jpg",
+     "file": "recipes/ch0065.html"
+    },
+    {
+     "title": "Vegetable Khichdi",
+     "nonveg": false,
+     "image": "images/file48.jpg",
+     "file": "recipes/ch0066.html"
+    },
+    {
+     "title": "Fresh Mango Smoothie",
+     "nonveg": false,
+     "image": "images/file49.jpg",
+     "file": "recipes/ch0067.html"
+    },
+    {
+     "title": "Vegetable Poha",
+     "nonveg": false,
+     "image": "images/file52.jpg",
+     "file": "recipes/ch0068.html"
+    },
+    {
+     "title": "Stuffed Kachori",
+     "nonveg": false,
+     "image": "images/file55.jpg",
+     "file": "recipes/ch0069.html"
+    },
+    {
+     "title": "Soft Dinner Rolls",
+     "nonveg": false,
+     "image": "images/file57.jpg",
+     "file": "recipes/ch0070.html"
+    },
+    {
+     "title": "Paneer Tikka (marinated & grilled)",
+     "nonveg": false,
+     "image": "images/file58.jpg",
+     "file": "recipes/ch0071.html"
+    },
+    {
+     "title": "Aloo Tikki (Potato Cutlets)",
+     "nonveg": false,
+     "image": "images/file59.jpg",
+     "file": "recipes/ch0072.html"
+    },
+    {
+     "title": "Bhindi Fry (Crispy Okra)",
+     "nonveg": false,
+     "image": "images/file60.jpg",
+     "file": "recipes/ch0073.html"
+    },
+    {
+     "title": "Roasted Masala Papad",
+     "nonveg": false,
+     "image": "images/file61.jpg",
+     "file": "recipes/ch0074.html"
+    },
+    {
+     "title": "Vegetable Pakoras",
+     "nonveg": false,
+     "image": "images/file62.jpg",
+     "file": "recipes/ch0075.html"
+    },
+    {
+     "title": "Paneer 65",
+     "nonveg": false,
+     "image": "images/file63.jpg",
+     "file": "recipes/ch0076.html"
+    }
+   ]
+  },
+  {
+   "name": "Everyday & Healthy Cooking",
+   "recipes": [
+    {
+     "title": "Everyday Toor Dal (Simple Daily Dal)",
+     "nonveg": false,
+     "image": "images/file64.jpg",
+     "file": "recipes/ch0077.html"
+    },
+    {
+     "title": "Simple Mixed Vegetable Sabzi",
+     "nonveg": false,
+     "image": "images/file65.jpg",
+     "file": "recipes/ch0078.html"
+    },
+    {
+     "title": "Curd Rice (Thayir Sadam)",
+     "nonveg": false,
+     "image": "images/file66.jpg",
+     "file": "recipes/ch0079.html"
+    },
+    {
+     "title": "Vegetable Quinoa Pulao",
+     "nonveg": false,
+     "image": "images/file67.jpg",
+     "file": "recipes/ch0080.html"
+    },
+    {
+     "title": "Ragi (Finger Millet) Vegetable Chilla",
+     "nonveg": false,
+     "image": "images/file68.jpg",
+     "file": "recipes/ch0081.html"
+    },
+    {
+     "title": "Sprouted Moong Salad",
+     "nonveg": false,
+     "image": "images/file69.jpg",
+     "file": "recipes/ch0082.html"
+    },
+    {
+     "title": "Homemade Buttermilk (Masala Chaas)",
+     "nonveg": false,
+     "image": "images/file70.jpg",
+     "file": "recipes/ch0083.html"
+    },
+    {
+     "title": "Vegetable Oats Khichdi",
+     "nonveg": false,
+     "image": "images/file71.jpg",
+     "file": "recipes/ch0084.html"
+    },
+    {
+     "title": "Baked Vegetable & Egg Muffins (High-Protein)",
+     "nonveg": false,
+     "image": "images/file72.jpg",
+     "file": "recipes/ch0085.html"
+    }
+   ]
+  },
+  {
+   "name": "Everyday Indian Curries & Dals",
+   "recipes": [
+    {
+     "title": "Jeera Rice (Cumin Rice)",
+     "nonveg": false,
+     "image": "images/file73.jpg",
+     "file": "recipes/ch0086.html"
+    },
+    {
+     "title": "Aloo Jeera (Dry Potato Sabzi)",
+     "nonveg": false,
+     "image": "images/file74.jpg",
+     "file": "recipes/ch0087.html"
+    },
+    {
+     "title": "Moong Dal Tadka (Everyday Yellow Dal)",
+     "nonveg": false,
+     "image": "images/file222.jpg",
+     "file": "recipes/ch0088.html"
+    },
+    {
+     "title": "Patta Gobi Sabzi (Simple Cabbage Stir-Fry)",
+     "nonveg": false,
+     "image": "images/file75.jpg",
+     "file": "recipes/ch0089.html"
+    },
+    {
+     "title": "Plain Steamed Basmati Rice",
+     "nonveg": false,
+     "image": "images/file76.jpg",
+     "file": "recipes/ch0090.html"
+    },
+    {
+     "title": "Homemade Curd (Dahi)",
+     "nonveg": false,
+     "image": "images/file77.jpg",
+     "file": "recipes/ch0091.html"
+    },
+    {
+     "title": "Instant Lemon Pickle (Quick Nimbu Achaar)",
+     "nonveg": false,
+     "image": "images/file78.jpg",
+     "file": "recipes/ch0092.html"
+    },
+    {
+     "title": "Kadhi (Yogurt & Gram Flour Curry)",
+     "nonveg": false,
+     "image": "images/file113.jpg",
+     "file": "recipes/ch0093.html"
+    },
+    {
+     "title": "Palak Dal (Spinach Dal)",
+     "nonveg": false,
+     "image": "images/file79.jpg",
+     "file": "recipes/ch0094.html"
+    },
+    {
+     "title": "Gajar Matar Sabzi (Carrot & Peas Stir-Fry)",
+     "nonveg": false,
+     "image": "images/file114.jpg",
+     "file": "recipes/ch0095.html"
+    },
+    {
+     "title": "Aloo Paratha (Stuffed Potato Flatbread)",
+     "nonveg": false,
+     "image": "images/file80.jpg",
+     "file": "recipes/ch0096.html"
+    },
+    {
+     "title": "Moong Dal Cheela (Savoury Lentil Pancake)",
+     "nonveg": false,
+     "image": "images/file81.jpg",
+     "file": "recipes/ch0097.html"
+    },
+    {
+     "title": "Pyaz Tamatar ki Sabzi (Onion-Tomato Sabzi)",
+     "nonveg": false,
+     "image": "images/file82.jpg",
+     "file": "recipes/ch0098.html"
+    },
+    {
+     "title": "Dahi Bhindi (Okra in Yogurt Gravy)",
+     "nonveg": false,
+     "image": "images/file83.jpg",
+     "file": "recipes/ch0099.html"
+    },
+    {
+     "title": "Punjabi Chole (Chickpea Curry)",
+     "nonveg": false,
+     "image": "images/file104.jpg",
+     "file": "recipes/ch0100.html"
+    },
+    {
+     "title": "Rajma Masala (Kidney Bean Curry)",
+     "nonveg": false,
+     "image": "images/file93.jpg",
+     "file": "recipes/ch0101.html"
+    },
+    {
+     "title": "Palak Paneer",
+     "nonveg": false,
+     "image": "images/file92.jpg",
+     "file": "recipes/ch0102.html"
+    },
+    {
+     "title": "Baingan Bharta (Smoky Roasted Eggplant Mash)",
+     "nonveg": false,
+     "image": "images/file94.jpg",
+     "file": "recipes/ch0103.html"
+    },
+    {
+     "title": "Gujarati Dhokla",
+     "nonveg": false,
+     "image": "images/file95.jpg",
+     "file": "recipes/ch0104.html"
+    },
+    {
+     "title": "Sambar",
+     "nonveg": false,
+     "image": "images/file96.jpg",
+     "file": "recipes/ch0105.html"
+    },
+    {
+     "title": "Rasam",
+     "nonveg": false,
+     "image": "images/file97.jpg",
+     "file": "recipes/ch0106.html"
+    },
+    {
+     "title": "Vegetable Upma",
+     "nonveg": false,
+     "image": "images/file98.jpg",
+     "file": "recipes/ch0107.html"
+    },
+    {
+     "title": "Kadai Paneer",
+     "nonveg": false,
+     "image": "images/file99.jpg",
+     "file": "recipes/ch0108.html"
+    },
+    {
+     "title": "Pav Bhaji",
+     "nonveg": false,
+     "image": "images/file115.jpg",
+     "file": "recipes/ch0109.html"
+    },
+    {
+     "title": "Malai Kofta",
+     "nonveg": false,
+     "image": "images/file100.jpg",
+     "file": "recipes/ch0110.html"
+    },
+    {
+     "title": "Vegetable Biryani",
+     "nonveg": false,
+     "image": "images/file101.jpg",
+     "file": "recipes/ch0111.html"
+    }
+   ]
+  },
+  {
+   "name": "Bengali & Regional Classics",
+   "recipes": [
+    {
+     "title": "Karela Fry (Bitter Gourd Fry)",
+     "nonveg": false,
+     "image": "images/file84.jpg",
+     "file": "recipes/ch0112.html"
+    },
+    {
+     "title": "Shukto (Bengali Mixed Vegetable Stew)",
+     "nonveg": false,
+     "image": "images/file85.jpg",
+     "file": "recipes/ch0113.html"
+    },
+    {
+     "title": "Aloo Posto (Potatoes in Poppy Seed Paste)",
+     "nonveg": false,
+     "image": "images/file86.jpg",
+     "file": "recipes/ch0114.html"
+    },
+    {
+     "title": "Jhinge Aloo Bata Sorshe Diye (Ridge Gourd & Potato in Mustard Paste)",
+     "nonveg": false,
+     "image": "images/file87.jpg",
+     "file": "recipes/ch0115.html"
+    },
+    {
+     "title": "Begun Bhaja (Crispy Fried Eggplant Slices)",
+     "nonveg": false,
+     "image": "images/file88.jpg",
+     "file": "recipes/ch0116.html"
+    },
+    {
+     "title": "Cholar Dal (Bengal Gram Dal with Coconut)",
+     "nonveg": false,
+     "image": "images/file89.jpg",
+     "file": "recipes/ch0117.html"
+    },
+    {
+     "title": "Chorchori (Mixed Vegetable Dry Curry)",
+     "nonveg": false,
+     "image": "images/file90.jpg",
+     "file": "recipes/ch0118.html"
+    },
+    {
+     "title": "Aloo Bhate (Bengali-Style Mashed Potato)",
+     "nonveg": false,
+     "image": "images/file91.jpg",
+     "file": "recipes/ch0119.html"
+    },
+    {
+     "title": "Chhanar Dalna (Bengali Paneer & Potato Curry)",
+     "nonveg": false,
+     "image": "images/file102.jpg",
+     "file": "recipes/ch0120.html"
+    },
+    {
+     "title": "Lauki Aloo Curry (Bottle Gourd & Potato Curry)",
+     "nonveg": false,
+     "image": "images/file111.jpg",
+     "file": "recipes/ch0121.html"
+    },
+    {
+     "title": "Aloo Arbi Gravy (Potato & Colocasia Curry)",
+     "nonveg": false,
+     "image": "images/file128.jpg",
+     "file": "recipes/ch0122.html"
+    },
+    {
+     "title": "Sheem er Paturi (Flat Beans Steamed in Mustard)",
+     "nonveg": false,
+     "image": "images/file103.jpg",
+     "file": "recipes/ch0123.html"
+    }
+   ]
+  },
+  {
+   "name": "Paneer & Soya Chaap Specialties",
+   "recipes": [
+    {
+     "title": "Tandoori Soya Chaap",
+     "nonveg": false,
+     "image": "images/file120.jpg",
+     "file": "recipes/ch0124.html"
+    },
+    {
+     "title": "Achari Soya Chaap (Pickle-Spiced)",
+     "nonveg": false,
+     "image": "images/file223.jpg",
+     "file": "recipes/ch0125.html"
+    },
+    {
+     "title": "Malai Soya Chaap (Creamy)",
+     "nonveg": false,
+     "image": "images/file105.jpg",
+     "file": "recipes/ch0126.html"
+    },
+    {
+     "title": "Soya Chaap Tikka Masala",
+     "nonveg": false,
+     "image": "images/file226.jpg",
+     "file": "recipes/ch0127.html"
+    },
+    {
+     "title": "Soya Chunks (Nutrela) Curry",
+     "nonveg": false,
+     "image": "images/file118.jpg",
+     "file": "recipes/ch0128.html"
+    },
+    {
+     "title": "Soya Keema (Minced Soya Curry)",
+     "nonveg": false,
+     "image": "images/file116.jpg",
+     "file": "recipes/ch0129.html"
+    },
+    {
+     "title": "Amritsari Chole Kulche (Chole Only)",
+     "nonveg": false,
+     "image": "images/file229.jpg",
+     "file": "recipes/ch0130.html"
+    },
+    {
+     "title": "Matar Paneer",
+     "nonveg": false,
+     "image": "images/file122.jpg",
+     "file": "recipes/ch0131.html"
+    },
+    {
+     "title": "Vegetable Manchurian (Dry)",
+     "nonveg": false,
+     "image": "images/file131.jpg",
+     "file": "recipes/ch0132.html"
+    },
+    {
+     "title": "Paneer Do Pyaza",
+     "nonveg": false,
+     "image": "images/file167.jpg",
+     "file": "recipes/ch0133.html"
+    },
+    {
+     "title": "Paneer Pasanda",
+     "nonveg": false,
+     "image": "images/file175.jpg",
+     "file": "recipes/ch0134.html"
+    },
+    {
+     "title": "Paneer Lababdar",
+     "nonveg": false,
+     "image": "images/file219.jpg",
+     "file": "recipes/ch0135.html"
+    },
+    {
+     "title": "Paneer Jalfrezi",
+     "nonveg": false,
+     "image": "images/file177.jpg",
+     "file": "recipes/ch0136.html"
+    },
+    {
+     "title": "Paneer Korma",
+     "nonveg": false,
+     "image": "images/file168.jpg",
+     "file": "recipes/ch0137.html"
+    },
+    {
+     "title": "Achari Paneer (Pickle-Spiced)",
+     "nonveg": false,
+     "image": "images/file194.jpg",
+     "file": "recipes/ch0138.html"
+    },
+    {
+     "title": "Hariyali Paneer Tikka (Green Herb Marinade)",
+     "nonveg": false,
+     "image": "images/file174.jpg",
+     "file": "recipes/ch0139.html"
+    },
+    {
+     "title": "Amritsari Paneer Tikka",
+     "nonveg": false,
+     "image": "images/file182.jpg",
+     "file": "recipes/ch0140.html"
+    },
+    {
+     "title": "Paneer Manchurian (Gravy)",
+     "nonveg": false,
+     "image": "images/file171.jpg",
+     "file": "recipes/ch0141.html"
+    },
+    {
+     "title": "Paneer Bhurji (Dry, Standalone)",
+     "nonveg": false,
+     "image": "images/file173.jpg",
+     "file": "recipes/ch0142.html"
+    },
+    {
+     "title": "Paneer Cutlets",
+     "nonveg": false,
+     "image": "images/file180.jpg",
+     "file": "recipes/ch0143.html"
+    },
+    {
+     "title": "Paneer Momos",
+     "nonveg": false,
+     "image": "images/file216.jpg",
+     "file": "recipes/ch0144.html"
+    },
+    {
+     "title": "Dahi Paneer (Yogurt Paneer Curry)",
+     "nonveg": false,
+     "image": "images/file178.jpg",
+     "file": "recipes/ch0145.html"
+    },
+    {
+     "title": "Paneer Angara (Smoky Charred Paneer Curry)",
+     "nonveg": false,
+     "image": "images/file176.jpg",
+     "file": "recipes/ch0146.html"
+    }
+   ]
+  },
+  {
+   "name": "Pan-India Regional Classics",
+   "recipes": [
+    {
+     "title": "Misal Pav",
+     "nonveg": false,
+     "image": "images/file106.jpg",
+     "file": "recipes/ch0147.html"
+    },
+    {
+     "title": "Sabudana Khichdi",
+     "nonveg": false,
+     "image": "images/file125.jpg",
+     "file": "recipes/ch0148.html"
+    },
+    {
+     "title": "Kothimbir Vadi",
+     "nonveg": false,
+     "image": "images/file121.jpg",
+     "file": "recipes/ch0149.html"
+    },
+    {
+     "title": "Dal Baati (Baati Only)",
+     "nonveg": false,
+     "image": "images/file224.jpg",
+     "file": "recipes/ch0150.html"
+    },
+    {
+     "title": "Gatte ki Sabzi",
+     "nonveg": false,
+     "image": "images/file227.jpg",
+     "file": "recipes/ch0151.html"
+    },
+    {
+     "title": "Dum Aloo (Kashmiri Style)",
+     "nonveg": false,
+     "image": "images/file126.jpg",
+     "file": "recipes/ch0152.html"
+    },
+    {
+     "title": "Sarson ka Saag",
+     "nonveg": false,
+     "image": "images/file124.jpg",
+     "file": "recipes/ch0153.html"
+    },
+    {
+     "title": "Shahi Paneer",
+     "nonveg": false,
+     "image": "images/file123.jpg",
+     "file": "recipes/ch0154.html"
+    },
+    {
+     "title": "Mirchi ka Salan (Hyderabadi)",
+     "nonveg": false,
+     "image": "images/file117.jpg",
+     "file": "recipes/ch0155.html"
+    },
+    {
+     "title": "Kerala Avial",
+     "nonveg": false,
+     "image": "images/file127.jpg",
+     "file": "recipes/ch0156.html"
+    },
+    {
+     "title": "Odia Dalma",
+     "nonveg": false,
+     "image": "images/file228.jpg",
+     "file": "recipes/ch0157.html"
+    },
+    {
+     "title": "Khandvi",
+     "nonveg": false,
+     "image": "images/file220.jpg",
+     "file": "recipes/ch0158.html"
+    },
+    {
+     "title": "Chilli Paneer (Dry)",
+     "nonveg": false,
+     "image": "images/file218.jpg",
+     "file": "recipes/ch0159.html"
+    },
+    {
+     "title": "Gobi Manchurian (Dry)",
+     "nonveg": false,
+     "image": "images/file211.jpg",
+     "file": "recipes/ch0160.html"
+    },
+    {
+     "title": "Vegetable Manchurian Gravy",
+     "nonveg": false,
+     "image": "images/file217.jpg",
+     "file": "recipes/ch0161.html"
+    },
+    {
+     "title": "Chilli Mushroom (Dry)",
+     "nonveg": false,
+     "image": "images/file215.jpg",
+     "file": "recipes/ch0162.html"
+    },
+    {
+     "title": "Chilli Gobi (Dry)",
+     "nonveg": false,
+     "image": "images/file214.jpg",
+     "file": "recipes/ch0163.html"
+    },
+    {
+     "title": "Vegetable Hakka Noodles",
+     "nonveg": false,
+     "image": "images/file210.jpg",
+     "file": "recipes/ch0164.html"
+    },
+    {
+     "title": "Vegetable Manchow Soup",
+     "nonveg": false,
+     "image": "images/file208.jpg",
+     "file": "recipes/ch0165.html"
+    },
+    {
+     "title": "Schezwan Fried Rice",
+     "nonveg": false,
+     "image": "images/file206.jpg",
+     "file": "recipes/ch0166.html"
+    },
+    {
+     "title": "American Chopsuey",
+     "nonveg": false,
+     "image": "images/file204.jpg",
+     "file": "recipes/ch0167.html"
+    },
+    {
+     "title": "Honey Chilli Potato",
+     "nonveg": false,
+     "image": "images/file207.jpg",
+     "file": "recipes/ch0168.html"
+    },
+    {
+     "title": "Dragon Paneer (Dry)",
+     "nonveg": false,
+     "image": "images/file212.jpg",
+     "file": "recipes/ch0169.html"
+    },
+    {
+     "title": "Honey Chilli Cauliflower",
+     "nonveg": false,
+     "image": "images/file203.jpg",
+     "file": "recipes/ch0170.html"
+    }
+   ]
+  },
+  {
+   "name": "Continental Cuisine",
+   "recipes": [
+    {
+     "title": "Bruschetta with Airfryer-Toasted Bread",
+     "nonveg": false,
+     "image": "images/file205.jpg",
+     "file": "recipes/ch0171.html"
+    },
+    {
+     "title": "Mushroom Risotto",
+     "nonveg": false,
+     "image": "images/file202.jpg",
+     "file": "recipes/ch0172.html"
+    },
+    {
+     "title": "Pasta Aglio e Olio",
+     "nonveg": false,
+     "image": "images/file198.jpg",
+     "file": "recipes/ch0173.html"
+    },
+    {
+     "title": "Penne Arrabbiata (Spicy Tomato Pasta)",
+     "nonveg": false,
+     "image": "images/file209.jpg",
+     "file": "recipes/ch0174.html"
+    },
+    {
+     "title": "Minestrone Soup",
+     "nonveg": false,
+     "image": "images/file199.jpg",
+     "file": "recipes/ch0175.html"
+    },
+    {
+     "title": "Ratatouille",
+     "nonveg": false,
+     "image": "images/file195.jpg",
+     "file": "recipes/ch0176.html"
+    },
+    {
+     "title": "Crustless Vegetable Quiche",
+     "nonveg": false,
+     "image": "images/file200.jpg",
+     "file": "recipes/ch0177.html"
+    },
+    {
+     "title": "Greek Salad",
+     "nonveg": false,
+     "image": "images/file191.jpg",
+     "file": "recipes/ch0178.html"
+    },
+    {
+     "title": "Hummus",
+     "nonveg": false,
+     "image": "images/file190.jpg",
+     "file": "recipes/ch0179.html"
+    },
+    {
+     "title": "Crispy Falafel",
+     "nonveg": false,
+     "image": "images/file193.jpg",
+     "file": "recipes/ch0180.html"
+    },
+    {
+     "title": "Tzatziki",
+     "nonveg": false,
+     "image": "images/file197.jpg",
+     "file": "recipes/ch0181.html"
+    },
+    {
+     "title": "Patatas Bravas",
+     "nonveg": false,
+     "image": "images/file192.jpg",
+     "file": "recipes/ch0182.html"
+    },
+    {
+     "title": "Spanish Tortilla (Potato Omelette)",
+     "nonveg": false,
+     "image": "images/file188.jpg",
+     "file": "recipes/ch0183.html"
+    },
+    {
+     "title": "Baked Mac and Cheese",
+     "nonveg": false,
+     "image": "images/file187.jpg",
+     "file": "recipes/ch0184.html"
+    },
+    {
+     "title": "Soft Pretzels",
+     "nonveg": false,
+     "image": "images/file186.jpg",
+     "file": "recipes/ch0185.html"
+    },
+    {
+     "title": "Paneer Souvlaki Skewers (Greek-Style)",
+     "nonveg": false,
+     "image": "images/file183.jpg",
+     "file": "recipes/ch0186.html"
+    },
+    {
+     "title": "Veg Burger (Crispy Vegetable Patty Burger)",
+     "nonveg": false,
+     "image": "images/file189.jpg",
+     "file": "recipes/ch0187.html"
+    }
+   ]
+  },
+  {
+   "name": "Korean Cuisine",
+   "recipes": [
+    {
+     "title": "Japchae (Glass Noodle Stir-Fry)",
+     "nonveg": false,
+     "image": "images/file294.jpg",
+     "file": "recipes/ch0188.html"
+    },
+    {
+     "title": "Korean Fried Tofu (Dubu Jorim)",
+     "nonveg": false,
+     "image": "images/file296.jpg",
+     "file": "recipes/ch0189.html"
+    },
+    {
+     "title": "Kimchi Pancake (Kimchi Jeon)",
+     "nonveg": false,
+     "image": "images/file292.jpg",
+     "file": "recipes/ch0190.html"
+    },
+    {
+     "title": "Korean Corn Cheese",
+     "nonveg": false,
+     "image": "images/file291.jpg",
+     "file": "recipes/ch0191.html"
+    },
+    {
+     "title": "Air-Fried Korean Cauliflower",
+     "nonveg": false,
+     "image": "images/file289.jpg",
+     "file": "recipes/ch0192.html"
+    },
+    {
+     "title": "Kimchi Fried Rice",
+     "nonveg": false,
+     "image": "images/file298.jpg",
+     "file": "recipes/ch0193.html"
+    },
+    {
+     "title": "Tteokbokki (Spicy Rice Cakes)",
+     "nonveg": false,
+     "image": "images/file299.jpg",
+     "file": "recipes/ch0194.html"
+    },
+    {
+     "title": "Bibimbap Bowl",
+     "nonveg": false,
+     "image": "images/file297.jpg",
+     "file": "recipes/ch0195.html"
+    },
+    {
+     "title": "Gochujang Sauce",
+     "nonveg": false,
+     "image": "images/file293.jpg",
+     "file": "recipes/ch0196.html"
+    },
+    {
+     "title": "Ssamjang",
+     "nonveg": false,
+     "image": "images/file286.jpg",
+     "file": "recipes/ch0197.html"
+    },
+    {
+     "title": "Korean BBQ Sauce (Bulgogi Marinade)",
+     "nonveg": false,
+     "image": "images/file284.jpg",
+     "file": "recipes/ch0198.html"
+    }
+   ]
+  },
+  {
+   "name": "Breakfast & Snacks",
+   "recipes": [
+    {
+     "title": "Air Fryer Perfect Boiled Eggs",
+     "nonveg": false,
+     "image": "images/file169.jpg",
+     "file": "recipes/ch0199.html"
+    },
+    {
+     "title": "Masala Egg Omelette",
+     "nonveg": false,
+     "image": "images/file170.jpg",
+     "file": "recipes/ch0200.html"
+    },
+    {
+     "title": "Air Fryer Scotch Eggs",
+     "nonveg": false,
+     "image": "images/file181.jpg",
+     "file": "recipes/ch0201.html"
+    },
+    {
+     "title": "Deviled Eggs",
+     "nonveg": false,
+     "image": "images/file179.jpg",
+     "file": "recipes/ch0202.html"
+    },
+    {
+     "title": "Bread Omelette Sandwich",
+     "nonveg": false,
+     "image": "images/file230.jpg",
+     "file": "recipes/ch0203.html"
+    },
+    {
+     "title": "Poached Eggs (Chef Magic Method)",
+     "nonveg": false,
+     "image": "images/file231.jpg",
+     "file": "recipes/ch0204.html"
+    },
+    {
+     "title": "Egg Salad (Sandwich Filling)",
+     "nonveg": false,
+     "image": "images/file232.jpg",
+     "file": "recipes/ch0205.html"
+    }
+   ]
+  },
+  {
+   "name": "Mains & Curries",
+   "recipes": [
+    {
+     "title": "Egg Bhurji (Spiced Scrambled Eggs)",
+     "nonveg": false,
+     "image": "images/file172.jpg",
+     "file": "recipes/ch0206.html"
+    },
+    {
+     "title": "Anda Curry (North Indian Egg Curry)",
+     "nonveg": false,
+     "image": "images/file166.jpg",
+     "file": "recipes/ch0207.html"
+    },
+    {
+     "title": "Egg Fried Rice",
+     "nonveg": false,
+     "image": "images/file165.jpg",
+     "file": "recipes/ch0208.html"
+    },
+    {
+     "title": "Dhaba-Style Egg Curry (Simple Everyday)",
+     "nonveg": false,
+     "image": "images/file233.jpg",
+     "file": "recipes/ch0209.html"
+    },
+    {
+     "title": "Shakshuka (Baked Eggs in Tomato-Pepper Sauce)",
+     "nonveg": false,
+     "image": "images/file234.jpg",
+     "file": "recipes/ch0210.html"
+    },
+    {
+     "title": "Egg Bhurji Kathi Roll",
+     "nonveg": false,
+     "image": "images/file235.jpg",
+     "file": "recipes/ch0211.html"
+    },
+    {
+     "title": "Egg Drop Soup",
+     "nonveg": false,
+     "image": "images/file236.jpg",
+     "file": "recipes/ch0212.html"
+    },
+    {
+     "title": "Egg Hakka Noodles",
+     "nonveg": false,
+     "image": "images/file237.jpg",
+     "file": "recipes/ch0213.html"
+    },
+    {
+     "title": "Egg Kurma (South Indian Coconut Egg Curry)",
+     "nonveg": false,
+     "image": "images/file238.jpg",
+     "file": "recipes/ch0214.html"
+    }
+   ]
+  },
+  {
+   "name": "Mains — Lamb, Mutton & More",
+   "recipes": [
+    {
+     "title": "Whole Roast Chicken",
+     "nonveg": true,
+     "image": "images/file149.jpg",
+     "file": "recipes/ch0215.html"
+    },
+    {
+     "title": "Garlic Butter Grilled Fish",
+     "nonveg": true,
+     "image": "images/file164.jpg",
+     "file": "recipes/ch0216.html"
+    },
+    {
+     "title": "Mutton Seekh Kebab",
+     "nonveg": true,
+     "image": "images/file151.jpg",
+     "file": "recipes/ch0217.html"
+    },
+    {
+     "title": "Soy-Glazed Air Fryer Salmon",
+     "nonveg": true,
+     "image": "images/file162.jpg",
+     "file": "recipes/ch0218.html"
+    },
+    {
+     "title": "Lamb Chops with Herb Crust",
+     "nonveg": true,
+     "image": "images/file146.jpg",
+     "file": "recipes/ch0219.html"
+    },
+    {
+     "title": "Air Fryer Steak",
+     "nonveg": true,
+     "image": "images/file157.jpg",
+     "file": "recipes/ch0220.html"
+    },
+    {
+     "title": "Kosha Mangsho (Bengali Slow-Cooked Mutton Curry)",
+     "nonveg": true,
+     "image": "images/file108.jpg",
+     "file": "recipes/ch0221.html"
+    },
+    {
+     "title": "Kashmiri Rogan Josh",
+     "nonveg": true,
+     "image": "images/file154.jpg",
+     "file": "recipes/ch0222.html"
+    }
+   ]
+  },
+  {
+   "name": "Prawns & Seafood",
+   "recipes": [
+    {
+     "title": "Crispy Garlic Butter Air Fryer Prawns",
+     "nonveg": true,
+     "image": "images/file156.jpg",
+     "file": "recipes/ch0223.html"
+    },
+    {
+     "title": "Tandoori Prawn Skewers",
+     "nonveg": true,
+     "image": "images/file160.jpg",
+     "file": "recipes/ch0224.html"
+    },
+    {
+     "title": "Prawn Malai Curry (Creamy Coconut Prawn Curry)",
+     "nonveg": true,
+     "image": "images/file159.jpg",
+     "file": "recipes/ch0225.html"
+    },
+    {
+     "title": "Chilli Garlic Prawns",
+     "nonveg": true,
+     "image": "images/file161.jpg",
+     "file": "recipes/ch0226.html"
+    },
+    {
+     "title": "Kerala-Style Prawn Curry",
+     "nonveg": true,
+     "image": "images/file163.jpg",
+     "file": "recipes/ch0227.html"
+    },
+    {
+     "title": "Crispy Prawn Pakoras",
+     "nonveg": true,
+     "image": "images/file148.jpg",
+     "file": "recipes/ch0228.html"
+    }
+   ]
+  },
+  {
+   "name": "Chicken Specialties & Party Snacks",
+   "recipes": [
+    {
+     "title": "Chicken Tikka (marinated & grilled)",
+     "nonveg": true,
+     "image": "images/file107.jpg",
+     "file": "recipes/ch0229.html"
+    },
+    {
+     "title": "Momo to Fried Momo (Steam then Crisp)",
+     "nonveg": true,
+     "image": "images/file153.jpg",
+     "file": "recipes/ch0230.html"
+    },
+    {
+     "title": "Chicken 65",
+     "nonveg": true,
+     "image": "images/file152.jpg",
+     "file": "recipes/ch0231.html"
+    },
+    {
+     "title": "Chicken Cutlets (Crispy Airfryer Croquettes)",
+     "nonveg": true,
+     "image": "images/file239.jpg",
+     "file": "recipes/ch0232.html"
+    },
+    {
+     "title": "Peri Peri Chicken",
+     "nonveg": true,
+     "image": "images/file240.jpg",
+     "file": "recipes/ch0233.html"
+    },
+    {
+     "title": "Reshmi Chicken Kebab (Malai Tikka)",
+     "nonveg": true,
+     "image": "images/file241.jpg",
+     "file": "recipes/ch0234.html"
+    },
+    {
+     "title": "Chicken Momos",
+     "nonveg": true,
+     "image": "images/file242.jpg",
+     "file": "recipes/ch0235.html"
+    },
+    {
+     "title": "Chicken Popcorn (Crispy Airfryer Bites)",
+     "nonveg": true,
+     "image": "images/file243.jpg",
+     "file": "recipes/ch0236.html"
+    },
+    {
+     "title": "Classic Chicken Nuggets",
+     "nonveg": true,
+     "image": "images/file303.jpg",
+     "file": "recipes/ch0237.html"
+    },
+    {
+     "title": "Crispy Chicken Bites (Chilli-Garlic)",
+     "nonveg": true,
+     "image": "images/file306.jpg",
+     "file": "recipes/ch0238.html"
+    },
+    {
+     "title": "Air Fryer Chicken Wings",
+     "nonveg": true,
+     "image": "images/file145.jpg",
+     "file": "recipes/ch0239.html"
+    },
+    {
+     "title": "Stuffed Chicken Cheese Balls",
+     "nonveg": true,
+     "image": "images/file147.jpg",
+     "file": "recipes/ch0240.html"
+    },
+    {
+     "title": "Jalapeño Poppers",
+     "nonveg": true,
+     "image": "images/file150.jpg",
+     "file": "recipes/ch0241.html"
+    }
+   ]
+  },
+  {
+   "name": "More Chicken — Airfryer + Chef Magic",
+   "recipes": [
+    {
+     "title": "Chicken Tikka Masala",
+     "nonveg": true,
+     "image": "images/file110.jpg",
+     "file": "recipes/ch0242.html"
+    },
+    {
+     "title": "Chicken Biryani (Dum-Style)",
+     "nonveg": true,
+     "image": "images/file244.jpg",
+     "file": "recipes/ch0243.html"
+    },
+    {
+     "title": "Chicken Korma",
+     "nonveg": true,
+     "image": "images/file245.jpg",
+     "file": "recipes/ch0244.html"
+    },
+    {
+     "title": "Ghar ka Chicken Curry (Simple Home-Style)",
+     "nonveg": true,
+     "image": "images/file246.jpg",
+     "file": "recipes/ch0245.html"
+    },
+    {
+     "title": "Kadai Chicken",
+     "nonveg": true,
+     "image": "images/file247.jpg",
+     "file": "recipes/ch0246.html"
+    },
+    {
+     "title": "Chicken Saag (Chicken with Spinach)",
+     "nonveg": true,
+     "image": "images/file248.jpg",
+     "file": "recipes/ch0247.html"
+    },
+    {
+     "title": "Chicken Keema (Minced Chicken Curry)",
+     "nonveg": true,
+     "image": "images/file249.jpg",
+     "file": "recipes/ch0248.html"
+    },
+    {
+     "title": "Chicken Do Pyaza",
+     "nonveg": true,
+     "image": "images/file250.jpg",
+     "file": "recipes/ch0249.html"
+    },
+    {
+     "title": "Amritsari Fried Chicken (Punjabi-Style)",
+     "nonveg": true,
+     "image": "images/file251.jpg",
+     "file": "recipes/ch0250.html"
+    },
+    {
+     "title": "Chicken Karahi (Punjabi Wok-Style)",
+     "nonveg": true,
+     "image": "images/file252.jpg",
+     "file": "recipes/ch0251.html"
+    },
+    {
+     "title": "Punjabi Dhaba-Style Murgh Curry (Bone-In)",
+     "nonveg": true,
+     "image": "images/file253.jpg",
+     "file": "recipes/ch0252.html"
+    },
+    {
+     "title": "Chicken Changezi",
+     "nonveg": true,
+     "image": "images/file254.jpg",
+     "file": "recipes/ch0253.html"
+    },
+    {
+     "title": "Kukkad Rassa (Kolhapuri Chicken Curry)",
+     "nonveg": true,
+     "image": "images/file255.jpg",
+     "file": "recipes/ch0254.html"
+    },
+    {
+     "title": "Tandoori Grilled Chicken",
+     "nonveg": true,
+     "image": "images/file264.jpg",
+     "file": "recipes/ch0255.html"
+    },
+    {
+     "title": "Butter Chicken (Murgh Makhani)",
+     "nonveg": true,
+     "image": "images/file109.jpg",
+     "file": "recipes/ch0256.html"
+    },
+    {
+     "title": "Chettinad Chicken",
+     "nonveg": true,
+     "image": "images/file129.jpg",
+     "file": "recipes/ch0257.html"
+    }
+   ]
+  },
+  {
+   "name": "Fish — Airfryer + Chef Magic Combo",
+   "recipes": [
+    {
+     "title": "Goan Fish Curry (Air Fryer-Seared)",
+     "nonveg": true,
+     "image": "images/file136.jpg",
+     "file": "recipes/ch0258.html"
+    },
+    {
+     "title": "Rui Macher Jhol (Light Bengali Rohu Curry)",
+     "nonveg": true,
+     "image": "images/file256.jpg",
+     "file": "recipes/ch0259.html"
+    },
+    {
+     "title": "Sorshe Rui (Rohu in Mustard Gravy)",
+     "nonveg": true,
+     "image": "images/file257.jpg",
+     "file": "recipes/ch0260.html"
+    },
+    {
+     "title": "Rui Maach Bhaja (Crispy Airfried Rohu Fry)",
+     "nonveg": true,
+     "image": "images/file258.jpg",
+     "file": "recipes/ch0261.html"
+    },
+    {
+     "title": "Catla Macher Kalia (Rich Bengali Catla Curry)",
+     "nonveg": true,
+     "image": "images/file259.jpg",
+     "file": "recipes/ch0262.html"
+    },
+    {
+     "title": "Catla Fish Fry (Spiced Airfryer Catla)",
+     "nonveg": true,
+     "image": "images/file260.jpg",
+     "file": "recipes/ch0263.html"
+    },
+    {
+     "title": "Bhapa Ilish (Steamed Hilsa in Mustard)",
+     "nonveg": true,
+     "image": "images/file158.jpg",
+     "file": "recipes/ch0264.html"
+    },
+    {
+     "title": "Kerala-Style Fish Curry",
+     "nonveg": true,
+     "image": "images/file155.jpg",
+     "file": "recipes/ch0265.html"
+    },
+    {
+     "title": "Popcorn Shrimp",
+     "nonveg": true,
+     "image": "images/file302.jpg",
+     "file": "recipes/ch0266.html"
+    },
+    {
+     "title": "Popcorn Fish Bites",
+     "nonveg": true,
+     "image": "images/file300.jpg",
+     "file": "recipes/ch0267.html"
+    },
+    {
+     "title": "Fish Fingers (Fish Sticks)",
+     "nonveg": true,
+     "image": "images/file301.jpg",
+     "file": "recipes/ch0268.html"
+    }
+   ]
+  },
+  {
+   "name": "Indo-Chinese Favourites",
+   "recipes": [
+    {
+     "title": "Chicken Manchurian (Dry)",
+     "nonveg": true,
+     "image": "images/file119.jpg",
+     "file": "recipes/ch0269.html"
+    },
+    {
+     "title": "Chilli Chicken (Dry)",
+     "nonveg": true,
+     "image": "images/file132.jpg",
+     "file": "recipes/ch0270.html"
+    },
+    {
+     "title": "Chicken Hakka Noodles",
+     "nonveg": true,
+     "image": "images/file133.jpg",
+     "file": "recipes/ch0271.html"
+    },
+    {
+     "title": "Chicken Manchow Soup",
+     "nonveg": true,
+     "image": "images/file137.jpg",
+     "file": "recipes/ch0272.html"
+    },
+    {
+     "title": "Honey Chilli Chicken",
+     "nonveg": true,
+     "image": "images/file134.jpg",
+     "file": "recipes/ch0273.html"
+    },
+    {
+     "title": "Dragon Chicken",
+     "nonveg": true,
+     "image": "images/file138.jpg",
+     "file": "recipes/ch0274.html"
+    },
+    {
+     "title": "Chicken Fried Rice",
+     "nonveg": true,
+     "image": "images/file261.jpg",
+     "file": "recipes/ch0275.html"
+    },
+    {
+     "title": "Chicken Noodle Soup (Everyday)",
+     "nonveg": true,
+     "image": "images/file262.jpg",
+     "file": "recipes/ch0276.html"
+    }
+   ]
+  },
+  {
+   "name": "Continental Cuisine",
+   "recipes": [
+    {
+     "title": "Chicken Parmesan",
+     "nonveg": true,
+     "image": "images/file140.jpg",
+     "file": "recipes/ch0277.html"
+    },
+    {
+     "title": "Chicken Alfredo Pasta",
+     "nonveg": true,
+     "image": "images/file135.jpg",
+     "file": "recipes/ch0278.html"
+    },
+    {
+     "title": "French Onion Soup",
+     "nonveg": true,
+     "image": "images/file141.jpg",
+     "file": "recipes/ch0279.html"
+    },
+    {
+     "title": "Chicken Souvlaki Skewers",
+     "nonveg": true,
+     "image": "images/file139.jpg",
+     "file": "recipes/ch0280.html"
+    },
+    {
+     "title": "One-Pot Chicken Paella",
+     "nonveg": true,
+     "image": "images/file130.jpg",
+     "file": "recipes/ch0281.html"
+    },
+    {
+     "title": "Crispy Airfryer Fish and Chips",
+     "nonveg": true,
+     "image": "images/file142.jpg",
+     "file": "recipes/ch0282.html"
+    },
+    {
+     "title": "Shepherd’s Pie",
+     "nonveg": true,
+     "image": "images/file144.jpg",
+     "file": "recipes/ch0283.html"
+    },
+    {
+     "title": "Chicken Burger (Crispy Chicken Patty Burger)",
+     "nonveg": true,
+     "image": "images/file143.jpg",
+     "file": "recipes/ch0284.html"
+    }
+   ]
+  },
+  {
+   "name": "Korean Cuisine",
+   "recipes": [
+    {
+     "title": "Korean Fried Chicken (Yangnyeom Chicken)",
+     "nonveg": true,
+     "image": "images/file285.jpg",
+     "file": "recipes/ch0285.html"
+    },
+    {
+     "title": "Korean Gochujang Chicken Wings",
+     "nonveg": true,
+     "image": "images/file290.jpg",
+     "file": "recipes/ch0286.html"
+    },
+    {
+     "title": "Korean Chicken Bulgogi",
+     "nonveg": true,
+     "image": "images/file295.jpg",
+     "file": "recipes/ch0287.html"
+    },
+    {
+     "title": "Korean Corn Dogs",
+     "nonveg": true,
+     "image": "images/file283.jpg",
+     "file": "recipes/ch0288.html"
+    },
+    {
+     "title": "Chicken Shawarma (Airfryer)",
+     "nonveg": true,
+     "image": "images/file263.jpg",
+     "file": "recipes/ch0289.html"
+    }
+   ]
+  },
+  {
+   "name": "Homemade Basics & Dairy",
+   "recipes": [
+    {
+     "title": "Homemade Paneer (Fresh Cottage Cheese)",
+     "nonveg": false,
+     "image": "images/file269.jpg",
+     "file": "recipes/ch0290.html"
+    },
+    {
+     "title": "Homemade Ghee (Clarified Butter)",
+     "nonveg": false,
+     "image": "images/file279.jpg",
+     "file": "recipes/ch0291.html"
+    },
+    {
+     "title": "Homemade White Butter (Makkhan)",
+     "nonveg": false,
+     "image": "images/file272.jpg",
+     "file": "recipes/ch0292.html"
+    },
+    {
+     "title": "Hung Curd (Chakka Dahi)",
+     "nonveg": false,
+     "image": "images/file276.jpg",
+     "file": "recipes/ch0293.html"
+    },
+    {
+     "title": "Homemade Khoya (Mawa)",
+     "nonveg": false,
+     "image": "images/file281.jpg",
+     "file": "recipes/ch0294.html"
+    },
+    {
+     "title": "Homemade Mozzarella (Stretchy Fresh Cheese)",
+     "nonveg": false,
+     "image": "images/file273.jpg",
+     "file": "recipes/ch0295.html"
+    },
+    {
+     "title": "Homemade Cream Cheese",
+     "nonveg": false,
+     "image": "images/file265.jpg",
+     "file": "recipes/ch0296.html"
+    },
+    {
+     "title": "Classic Eggless Mayonnaise",
+     "nonveg": false,
+     "image": "images/file274.jpg",
+     "file": "recipes/ch0297.html"
+    },
+    {
+     "title": "Garlic Mayo (Aioli-Style)",
+     "nonveg": false,
+     "image": "images/file275.jpg",
+     "file": "recipes/ch0298.html"
+    },
+    {
+     "title": "Homemade Tomato Ketchup",
+     "nonveg": false,
+     "image": "images/file271.jpg",
+     "file": "recipes/ch0299.html"
+    },
+    {
+     "title": "White Sauce (Béchamel)",
+     "nonveg": false,
+     "image": "images/file268.jpg",
+     "file": "recipes/ch0300.html"
+    },
+    {
+     "title": "Pizza & Pasta Sauce (Marinara)",
+     "nonveg": false,
+     "image": "images/file266.jpg",
+     "file": "recipes/ch0301.html"
+    },
+    {
+     "title": "Peri Peri Sauce",
+     "nonveg": false,
+     "image": "images/file280.jpg",
+     "file": "recipes/ch0302.html"
+    },
+    {
+     "title": "Schezwan Sauce",
+     "nonveg": false,
+     "image": "images/file270.jpg",
+     "file": "recipes/ch0303.html"
+    },
+    {
+     "title": "BBQ Sauce",
+     "nonveg": false,
+     "image": "images/file278.jpg",
+     "file": "recipes/ch0304.html"
+    },
+    {
+     "title": "Cheese Sauce (for Mac & Cheese, Nachos)",
+     "nonveg": false,
+     "image": "images/file277.jpg",
+     "file": "recipes/ch0305.html"
+    },
+    {
+     "title": "Sweet Tamarind Chutney (Meethi Chutney)",
+     "nonveg": false,
+     "image": "images/file267.jpg",
+     "file": "recipes/ch0306.html"
+    },
+    {
+     "title": "Chapati / Roti Dough",
+     "nonveg": false,
+     "image": "images/file44.jpg",
+     "file": "recipes/ch0307.html"
+    },
+    {
+     "title": "Whole Wheat Pizza, Dough to Bake",
+     "nonveg": false,
+     "image": "images/file56.jpg",
+     "file": "recipes/ch0308.html"
+    },
+    {
+     "title": "Naan Dough",
+     "nonveg": false,
+     "image": "images/file313.jpg",
+     "file": "recipes/ch0309.html"
+    },
+    {
+     "title": "Basic White Bread Dough",
+     "nonveg": false,
+     "image": "images/file312.jpg",
+     "file": "recipes/ch0310.html"
+    },
+    {
+     "title": "Fresh Pasta Dough",
+     "nonveg": false,
+     "image": "images/file308.jpg",
+     "file": "recipes/ch0311.html"
+    },
+    {
+     "title": "Shortcrust Pastry (Pie Crust)",
+     "nonveg": false,
+     "image": "images/file315.jpg",
+     "file": "recipes/ch0312.html"
+    },
+    {
+     "title": "Quick Puff Pastry (Rough Puff)",
+     "nonveg": false,
+     "image": "images/file311.jpg",
+     "file": "recipes/ch0313.html"
+    },
+    {
+     "title": "Pizza Dough",
+     "nonveg": false,
+     "image": "images/file310.jpg",
+     "file": "recipes/ch0314.html"
+    }
+   ]
+  }
+ ]
+}
