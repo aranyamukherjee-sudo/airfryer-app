@@ -10,14 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/primary"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:elevation="0dp">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:title="@string/app_name"
-            app:titleTextColor="@color/white" />
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/ToolbarTitleModern" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -25,8 +27,12 @@
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:background="@color/surface"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/search_pill_bg"
+        android:elevation="1dp"
         app:queryHint="@string/search_hint"
         app:iconifiedByDefault="false" />
 
@@ -34,10 +40,13 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         app:tabIndicatorColor="@color/primary"
+        app:tabIndicatorHeight="3dp"
         app:tabSelectedTextColor="@color/primary"
         app:tabTextColor="@color/text_secondary"
-        android:background="@color/surface">
+        app:tabTextAppearance="@style/TabTextModern"
+        android:background="@color/background">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabAll"
@@ -48,6 +57,11 @@
             android:text="@string/favorites_title" />
 
     </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
 
     <TextView
         android:id="@+id/emptyText"
@@ -66,6 +80,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:clipToPadding="false"
+        android:paddingTop="4dp"
         android:paddingBottom="16dp" />
 
 </LinearLayout>

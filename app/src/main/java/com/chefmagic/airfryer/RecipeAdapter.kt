@@ -58,17 +58,18 @@ class RecipeAdapter(
     class RecipeVH(view: View) : RecyclerView.ViewHolder(view) {
         private val image: ImageView = view.findViewById(R.id.recipeImage)
         private val title: TextView = view.findViewById(R.id.recipeTitle)
-        private val badge: TextView = view.findViewById(R.id.dietBadge)
+        private val section: TextView = view.findViewById(R.id.recipeSection)
+        private val badge: View = view.findViewById(R.id.dietBadge)
 
         fun bind(recipe: Recipe, onClick: (Recipe) -> Unit) {
             title.text = recipe.title
-            badge.text = if (recipe.nonveg) "●" else "●"
-            badge.setTextColor(
-                if (recipe.nonveg)
-                    android.graphics.Color.parseColor("#B5471B")
-                else
-                    android.graphics.Color.parseColor("#3E8E41")
-            )
+            section.text = recipe.section
+
+            val dotColor = if (recipe.nonveg)
+                android.graphics.Color.parseColor("#B5471B")
+            else
+                android.graphics.Color.parseColor("#3E8E41")
+            badge.backgroundTintList = android.content.res.ColorStateList.valueOf(dotColor)
 
             if (recipe.image != null) {
                 image.scaleType = android.widget.ImageView.ScaleType.CENTER_CROP
