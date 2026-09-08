@@ -1020,5 +1020,35 @@
  "chaunk": [
   "tadka",
   "tempering"
+ ],
+ "dhingri": [
+  "khumb",
+  "khumbi",
+  "mushroom",
+  "mushrooms"
+ ],
+ "khumb": [
+  "dhingri",
+  "khumbi",
+  "mushroom",
+  "mushrooms"
+ ],
+ "khumbi": [
+  "dhingri",
+  "khumb",
+  "mushroom",
+  "mushrooms"
+ ],
+ "mushroom": [
+  "dhingri",
+  "khumb",
+  "khumbi",
+  "mushrooms"
+ ],
+ "mushrooms": [
+  "dhingri",
+  "khumb",
+  "khumbi",
+  "mushroom"
  ]
 }

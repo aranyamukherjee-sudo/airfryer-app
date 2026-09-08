@@ -70,12 +70,21 @@ class RecipeAdapter(
                     android.graphics.Color.parseColor("#3E8E41")
             )
 
-            recipe.image?.let { path ->
-                val uri = Uri.parse("file:///android_asset/$path")
+            if (recipe.image != null) {
+                image.scaleType = android.widget.ImageView.ScaleType.CENTER_CROP
+                image.setPadding(0, 0, 0, 0)
+                image.setBackgroundColor(android.graphics.Color.parseColor("#E8D9C4"))
+                val uri = Uri.parse("file:///android_asset/${recipe.image}")
                 Glide.with(itemView.context)
                     .load(uri)
                     .centerCrop()
                     .into(image)
+            } else {
+                val pad = (12 * itemView.resources.displayMetrics.density).toInt()
+                image.scaleType = android.widget.ImageView.ScaleType.CENTER_INSIDE
+                image.setPadding(pad, pad, pad, pad)
+                image.setBackgroundColor(android.graphics.Color.parseColor("#E8D9C4"))
+                image.setImageResource(R.drawable.ic_placeholder)
             }
 
             itemView.setOnClickListener { onClick(recipe) }
