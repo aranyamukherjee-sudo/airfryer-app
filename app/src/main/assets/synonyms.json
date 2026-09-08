@@ -1,0 +1,1024 @@
+{
+ "pyaz": [
+  "pyaaz",
+  "onion",
+  "onions"
+ ],
+ "pyaaz": [
+  "pyaz",
+  "onion",
+  "onions"
+ ],
+ "onion": [
+  "pyaz",
+  "pyaaz",
+  "onions"
+ ],
+ "onions": [
+  "pyaz",
+  "pyaaz",
+  "onion"
+ ],
+ "tamatar": [
+  "tamater",
+  "tomato",
+  "tomatoes"
+ ],
+ "tamater": [
+  "tamatar",
+  "tomato",
+  "tomatoes"
+ ],
+ "tomato": [
+  "tamatar",
+  "tamater",
+  "tomatoes"
+ ],
+ "tomatoes": [
+  "tamatar",
+  "tamater",
+  "tomato"
+ ],
+ "adrak": [
+  "ginger"
+ ],
+ "ginger": [
+  "adrak"
+ ],
+ "lehsun": [
+  "lahsun",
+  "garlic"
+ ],
+ "lahsun": [
+  "lehsun",
+  "garlic"
+ ],
+ "garlic": [
+  "lehsun",
+  "lahsun"
+ ],
+ "dahi": [
+  "curd",
+  "yogurt",
+  "yoghurt"
+ ],
+ "curd": [
+  "dahi",
+  "yogurt",
+  "yoghurt"
+ ],
+ "yogurt": [
+  "dahi",
+  "curd",
+  "yoghurt"
+ ],
+ "yoghurt": [
+  "dahi",
+  "curd",
+  "yogurt"
+ ],
+ "hari mirch": [
+  "green chilli",
+  "green chili",
+  "green chillies",
+  "green chilies"
+ ],
+ "green chilli": [
+  "hari mirch",
+  "green chili",
+  "green chillies",
+  "green chilies"
+ ],
+ "green chili": [
+  "hari mirch",
+  "green chilli",
+  "green chillies",
+  "green chilies"
+ ],
+ "green chillies": [
+  "hari mirch",
+  "green chilli",
+  "green chili",
+  "green chilies"
+ ],
+ "green chilies": [
+  "hari mirch",
+  "green chilli",
+  "green chili",
+  "green chillies"
+ ],
+ "lal mirch": [
+  "red chilli",
+  "red chili",
+  "red chilli powder",
+  "chilli powder",
+  "chili powder"
+ ],
+ "red chilli": [
+  "lal mirch",
+  "red chili",
+  "red chilli powder",
+  "chilli powder",
+  "chili powder"
+ ],
+ "red chili": [
+  "lal mirch",
+  "red chilli",
+  "red chilli powder",
+  "chilli powder",
+  "chili powder"
+ ],
+ "red chilli powder": [
+  "lal mirch",
+  "red chilli",
+  "red chili",
+  "chilli powder",
+  "chili powder"
+ ],
+ "chilli powder": [
+  "lal mirch",
+  "red chilli",
+  "red chili",
+  "red chilli powder",
+  "chili powder"
+ ],
+ "chili powder": [
+  "lal mirch",
+  "red chilli",
+  "red chili",
+  "red chilli powder",
+  "chilli powder"
+ ],
+ "dhania": [
+  "coriander",
+  "cilantro",
+  "dhaniya"
+ ],
+ "coriander": [
+  "dhania",
+  "cilantro",
+  "dhaniya"
+ ],
+ "cilantro": [
+  "dhania",
+  "coriander",
+  "dhaniya"
+ ],
+ "dhaniya": [
+  "dhania",
+  "coriander",
+  "cilantro"
+ ],
+ "jeera": [
+  "cumin",
+  "zeera"
+ ],
+ "cumin": [
+  "jeera",
+  "zeera"
+ ],
+ "zeera": [
+  "jeera",
+  "cumin"
+ ],
+ "haldi": [
+  "turmeric"
+ ],
+ "turmeric": [
+  "haldi"
+ ],
+ "atta": [
+  "wheat flour",
+  "whole wheat flour"
+ ],
+ "wheat flour": [
+  "atta",
+  "whole wheat flour"
+ ],
+ "whole wheat flour": [
+  "atta",
+  "wheat flour"
+ ],
+ "maida": [
+  "refined flour",
+  "all-purpose flour",
+  "all purpose flour",
+  "plain flour"
+ ],
+ "refined flour": [
+  "maida",
+  "all-purpose flour",
+  "all purpose flour",
+  "plain flour"
+ ],
+ "all-purpose flour": [
+  "maida",
+  "refined flour",
+  "all purpose flour",
+  "plain flour"
+ ],
+ "all purpose flour": [
+  "maida",
+  "refined flour",
+  "all-purpose flour",
+  "plain flour"
+ ],
+ "plain flour": [
+  "maida",
+  "refined flour",
+  "all-purpose flour",
+  "all purpose flour"
+ ],
+ "chawal": [
+  "rice"
+ ],
+ "rice": [
+  "chawal"
+ ],
+ "dal": [
+  "daal",
+  "lentils",
+  "lentil"
+ ],
+ "daal": [
+  "dal",
+  "lentils",
+  "lentil"
+ ],
+ "lentils": [
+  "dal",
+  "daal",
+  "lentil"
+ ],
+ "lentil": [
+  "dal",
+  "daal",
+  "lentils"
+ ],
+ "doodh": [
+  "milk"
+ ],
+ "milk": [
+  "doodh"
+ ],
+ "ghee": [
+  "clarified butter"
+ ],
+ "clarified butter": [
+  "ghee"
+ ],
+ "makhan": [
+  "butter"
+ ],
+ "butter": [
+  "makhan"
+ ],
+ "paneer": [
+  "cottage cheese",
+  "indian cottage cheese"
+ ],
+ "cottage cheese": [
+  "paneer",
+  "indian cottage cheese"
+ ],
+ "indian cottage cheese": [
+  "paneer",
+  "cottage cheese"
+ ],
+ "murgh": [
+  "murga",
+  "chicken"
+ ],
+ "murga": [
+  "murgh",
+  "chicken"
+ ],
+ "chicken": [
+  "murgh",
+  "murga"
+ ],
+ "gosht": [
+  "mutton",
+  "goat meat"
+ ],
+ "mutton": [
+  "gosht",
+  "goat meat"
+ ],
+ "goat meat": [
+  "gosht",
+  "mutton"
+ ],
+ "machli": [
+  "machhli",
+  "fish"
+ ],
+ "machhli": [
+  "machli",
+  "fish"
+ ],
+ "fish": [
+  "machli",
+  "machhli"
+ ],
+ "anda": [
+  "ande",
+  "egg",
+  "eggs"
+ ],
+ "ande": [
+  "anda",
+  "egg",
+  "eggs"
+ ],
+ "egg": [
+  "anda",
+  "ande",
+  "eggs"
+ ],
+ "eggs": [
+  "anda",
+  "ande",
+  "egg"
+ ],
+ "cheeni": [
+  "shakkar",
+  "sugar"
+ ],
+ "shakkar": [
+  "cheeni",
+  "sugar"
+ ],
+ "sugar": [
+  "cheeni",
+  "shakkar"
+ ],
+ "namak": [
+  "salt"
+ ],
+ "salt": [
+  "namak"
+ ],
+ "mirch": [
+  "chilli",
+  "chili",
+  "pepper"
+ ],
+ "chilli": [
+  "mirch",
+  "chili",
+  "pepper"
+ ],
+ "chili": [
+  "mirch",
+  "chilli",
+  "pepper"
+ ],
+ "pepper": [
+  "mirch",
+  "chilli",
+  "chili"
+ ],
+ "tel": [
+  "oil"
+ ],
+ "oil": [
+  "tel"
+ ],
+ "imli": [
+  "tamarind"
+ ],
+ "tamarind": [
+  "imli"
+ ],
+ "kaju": [
+  "cashew",
+  "cashews",
+  "cashewnut"
+ ],
+ "cashew": [
+  "kaju",
+  "cashews",
+  "cashewnut"
+ ],
+ "cashews": [
+  "kaju",
+  "cashew",
+  "cashewnut"
+ ],
+ "cashewnut": [
+  "kaju",
+  "cashew",
+  "cashews"
+ ],
+ "badam": [
+  "almond",
+  "almonds"
+ ],
+ "almond": [
+  "badam",
+  "almonds"
+ ],
+ "almonds": [
+  "badam",
+  "almond"
+ ],
+ "kishmish": [
+  "raisin",
+  "raisins"
+ ],
+ "raisin": [
+  "kishmish",
+  "raisins"
+ ],
+ "raisins": [
+  "kishmish",
+  "raisin"
+ ],
+ "elaichi": [
+  "cardamom"
+ ],
+ "cardamom": [
+  "elaichi"
+ ],
+ "dalchini": [
+  "cinnamon"
+ ],
+ "cinnamon": [
+  "dalchini"
+ ],
+ "laung": [
+  "clove",
+  "cloves"
+ ],
+ "clove": [
+  "laung",
+  "cloves"
+ ],
+ "cloves": [
+  "laung",
+  "clove"
+ ],
+ "tejpatta": [
+  "tej patta",
+  "bay leaf",
+  "bay leaves"
+ ],
+ "tej patta": [
+  "tejpatta",
+  "bay leaf",
+  "bay leaves"
+ ],
+ "bay leaf": [
+  "tejpatta",
+  "tej patta",
+  "bay leaves"
+ ],
+ "bay leaves": [
+  "tejpatta",
+  "tej patta",
+  "bay leaf"
+ ],
+ "ajwain": [
+  "carom seeds",
+  "carom seed"
+ ],
+ "carom seeds": [
+  "ajwain",
+  "carom seed"
+ ],
+ "carom seed": [
+  "ajwain",
+  "carom seeds"
+ ],
+ "methi": [
+  "fenugreek"
+ ],
+ "fenugreek": [
+  "methi"
+ ],
+ "sarson": [
+  "mustard"
+ ],
+ "mustard": [
+  "sarson"
+ ],
+ "besan": [
+  "gram flour",
+  "chickpea flour"
+ ],
+ "gram flour": [
+  "besan",
+  "chickpea flour"
+ ],
+ "chickpea flour": [
+  "besan",
+  "gram flour"
+ ],
+ "sooji": [
+  "suji",
+  "rava",
+  "semolina"
+ ],
+ "suji": [
+  "sooji",
+  "rava",
+  "semolina"
+ ],
+ "rava": [
+  "sooji",
+  "suji",
+  "semolina"
+ ],
+ "semolina": [
+  "sooji",
+  "suji",
+  "rava"
+ ],
+ "khoya": [
+  "khoa",
+  "mawa",
+  "milk solids"
+ ],
+ "khoa": [
+  "khoya",
+  "mawa",
+  "milk solids"
+ ],
+ "mawa": [
+  "khoya",
+  "khoa",
+  "milk solids"
+ ],
+ "milk solids": [
+  "khoya",
+  "khoa",
+  "mawa"
+ ],
+ "malai": [
+  "cream"
+ ],
+ "cream": [
+  "malai"
+ ],
+ "sabzi": [
+  "sabji",
+  "vegetable",
+  "vegetables",
+  "veggies"
+ ],
+ "sabji": [
+  "sabzi",
+  "vegetable",
+  "vegetables",
+  "veggies"
+ ],
+ "vegetable": [
+  "sabzi",
+  "sabji",
+  "vegetables",
+  "veggies"
+ ],
+ "vegetables": [
+  "sabzi",
+  "sabji",
+  "vegetable",
+  "veggies"
+ ],
+ "veggies": [
+  "sabzi",
+  "sabji",
+  "vegetable",
+  "vegetables"
+ ],
+ "aloo": [
+  "alu",
+  "potato",
+  "potatoes"
+ ],
+ "alu": [
+  "aloo",
+  "potato",
+  "potatoes"
+ ],
+ "potato": [
+  "aloo",
+  "alu",
+  "potatoes"
+ ],
+ "potatoes": [
+  "aloo",
+  "alu",
+  "potato"
+ ],
+ "gobi": [
+  "gobhi",
+  "cauliflower"
+ ],
+ "gobhi": [
+  "gobi",
+  "cauliflower"
+ ],
+ "cauliflower": [
+  "gobi",
+  "gobhi"
+ ],
+ "matar": [
+  "peas",
+  "green peas"
+ ],
+ "peas": [
+  "matar",
+  "green peas"
+ ],
+ "green peas": [
+  "matar",
+  "peas"
+ ],
+ "palak": [
+  "spinach"
+ ],
+ "spinach": [
+  "palak"
+ ],
+ "bhindi": [
+  "okra",
+  "lady finger",
+  "ladyfinger"
+ ],
+ "okra": [
+  "bhindi",
+  "lady finger",
+  "ladyfinger"
+ ],
+ "lady finger": [
+  "bhindi",
+  "okra",
+  "ladyfinger"
+ ],
+ "ladyfinger": [
+  "bhindi",
+  "okra",
+  "lady finger"
+ ],
+ "baingan": [
+  "brinjal",
+  "eggplant",
+  "aubergine"
+ ],
+ "brinjal": [
+  "baingan",
+  "eggplant",
+  "aubergine"
+ ],
+ "eggplant": [
+  "baingan",
+  "brinjal",
+  "aubergine"
+ ],
+ "aubergine": [
+  "baingan",
+  "brinjal",
+  "eggplant"
+ ],
+ "gajar": [
+  "carrot",
+  "carrots"
+ ],
+ "carrot": [
+  "gajar",
+  "carrots"
+ ],
+ "carrots": [
+  "gajar",
+  "carrot"
+ ],
+ "shimla mirch": [
+  "capsicum",
+  "bell pepper",
+  "bell peppers"
+ ],
+ "capsicum": [
+  "shimla mirch",
+  "bell pepper",
+  "bell peppers"
+ ],
+ "bell pepper": [
+  "shimla mirch",
+  "capsicum",
+  "bell peppers"
+ ],
+ "bell peppers": [
+  "shimla mirch",
+  "capsicum",
+  "bell pepper"
+ ],
+ "kaddu": [
+  "pumpkin"
+ ],
+ "pumpkin": [
+  "kaddu"
+ ],
+ "lauki": [
+  "doodhi",
+  "bottle gourd"
+ ],
+ "doodhi": [
+  "lauki",
+  "bottle gourd"
+ ],
+ "bottle gourd": [
+  "lauki",
+  "doodhi"
+ ],
+ "karela": [
+  "bitter gourd"
+ ],
+ "bitter gourd": [
+  "karela"
+ ],
+ "nimbu": [
+  "lemon",
+  "lime"
+ ],
+ "lemon": [
+  "nimbu",
+  "lime"
+ ],
+ "lime": [
+  "nimbu",
+  "lemon"
+ ],
+ "khajoor": [
+  "dates"
+ ],
+ "dates": [
+  "khajoor"
+ ],
+ "nariyal": [
+  "coconut"
+ ],
+ "coconut": [
+  "nariyal"
+ ],
+ "til": [
+  "sesame",
+  "sesame seeds"
+ ],
+ "sesame": [
+  "til",
+  "sesame seeds"
+ ],
+ "sesame seeds": [
+  "til",
+  "sesame"
+ ],
+ "kali mirch": [
+  "black pepper",
+  "peppercorn",
+  "peppercorns"
+ ],
+ "black pepper": [
+  "kali mirch",
+  "peppercorn",
+  "peppercorns"
+ ],
+ "peppercorn": [
+  "kali mirch",
+  "black pepper",
+  "peppercorns"
+ ],
+ "peppercorns": [
+  "kali mirch",
+  "black pepper",
+  "peppercorn"
+ ],
+ "hing": [
+  "asafoetida",
+  "asafetida"
+ ],
+ "asafoetida": [
+  "hing",
+  "asafetida"
+ ],
+ "asafetida": [
+  "hing",
+  "asafoetida"
+ ],
+ "saunf": [
+  "fennel",
+  "fennel seeds"
+ ],
+ "fennel": [
+  "saunf",
+  "fennel seeds"
+ ],
+ "fennel seeds": [
+  "saunf",
+  "fennel"
+ ],
+ "amchur": [
+  "amchoor",
+  "dry mango powder",
+  "mango powder"
+ ],
+ "amchoor": [
+  "amchur",
+  "dry mango powder",
+  "mango powder"
+ ],
+ "dry mango powder": [
+  "amchur",
+  "amchoor",
+  "mango powder"
+ ],
+ "mango powder": [
+  "amchur",
+  "amchoor",
+  "dry mango powder"
+ ],
+ "kasuri methi": [
+  "dried fenugreek leaves"
+ ],
+ "dried fenugreek leaves": [
+  "kasuri methi"
+ ],
+ "chana": [
+  "chickpea",
+  "chickpeas",
+  "garbanzo"
+ ],
+ "chickpea": [
+  "chana",
+  "chickpeas",
+  "garbanzo"
+ ],
+ "chickpeas": [
+  "chana",
+  "chickpea",
+  "garbanzo"
+ ],
+ "garbanzo": [
+  "chana",
+  "chickpea",
+  "chickpeas"
+ ],
+ "rajma": [
+  "kidney beans",
+  "kidney bean"
+ ],
+ "kidney beans": [
+  "rajma",
+  "kidney bean"
+ ],
+ "kidney bean": [
+  "rajma",
+  "kidney beans"
+ ],
+ "moong": [
+  "mung bean",
+  "mung beans"
+ ],
+ "mung bean": [
+  "moong",
+  "mung beans"
+ ],
+ "mung beans": [
+  "moong",
+  "mung bean"
+ ],
+ "urad": [
+  "black gram"
+ ],
+ "black gram": [
+  "urad"
+ ],
+ "gud": [
+  "gur",
+  "jaggery"
+ ],
+ "gur": [
+  "gud",
+  "jaggery"
+ ],
+ "jaggery": [
+  "gud",
+  "gur"
+ ],
+ "chai": [
+  "tea"
+ ],
+ "tea": [
+  "chai"
+ ],
+ "subzi mandi": [
+  "vegetable market"
+ ],
+ "vegetable market": [
+  "subzi mandi"
+ ],
+ "roti": [
+  "chapati",
+  "flatbread"
+ ],
+ "chapati": [
+  "roti",
+  "flatbread"
+ ],
+ "flatbread": [
+  "roti",
+  "chapati"
+ ],
+ "sabudana": [
+  "tapioca pearls",
+  "sago"
+ ],
+ "tapioca pearls": [
+  "sabudana",
+  "sago"
+ ],
+ "sago": [
+  "sabudana",
+  "tapioca pearls"
+ ],
+ "arhar": [
+  "toor",
+  "pigeon pea",
+  "pigeon peas"
+ ],
+ "toor": [
+  "arhar",
+  "pigeon pea",
+  "pigeon peas"
+ ],
+ "pigeon pea": [
+  "arhar",
+  "toor",
+  "pigeon peas"
+ ],
+ "pigeon peas": [
+  "arhar",
+  "toor",
+  "pigeon pea"
+ ],
+ "kadhi": [
+  "kadi",
+  "yogurt curry"
+ ],
+ "kadi": [
+  "kadhi",
+  "yogurt curry"
+ ],
+ "yogurt curry": [
+  "kadhi",
+  "kadi"
+ ],
+ "papad": [
+  "papadum",
+  "poppadum"
+ ],
+ "papadum": [
+  "papad",
+  "poppadum"
+ ],
+ "poppadum": [
+  "papad",
+  "papadum"
+ ],
+ "achar": [
+  "pickle"
+ ],
+ "pickle": [
+  "achar"
+ ],
+ "chutney": [
+  "chatni"
+ ],
+ "chatni": [
+  "chutney"
+ ],
+ "masala": [
+  "spice mix",
+  "spice blend"
+ ],
+ "spice mix": [
+  "masala",
+  "spice blend"
+ ],
+ "spice blend": [
+  "masala",
+  "spice mix"
+ ],
+ "tadka": [
+  "tempering",
+  "chaunk"
+ ],
+ "tempering": [
+  "tadka",
+  "chaunk"
+ ],
+ "chaunk": [
+  "tadka",
+  "tempering"
+ ]
+}
