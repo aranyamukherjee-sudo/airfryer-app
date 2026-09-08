@@ -33,7 +33,8 @@ object RecipeRepository {
                         nonveg = rObj.optBoolean("nonveg", false),
                         image = if (rObj.isNull("image")) null else rObj.getString("image"),
                         file = rObj.getString("file"),
-                        section = name
+                        section = name,
+                        search = rObj.optString("search", "")
                     )
                 )
             }

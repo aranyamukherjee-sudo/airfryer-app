@@ -130,14 +130,16 @@ class MainActivity : AppCompatActivity() {
             val favFiles = FavoritesManager.favoriteFiles(this)
             val favRecipes = sections.flatMap { it.recipes }
                 .filter { it.file in favFiles }
-                .filter { query.isEmpty() || it.title.lowercase().contains(query) }
+                .filter { query.isEmpty() || it.title.lowercase().contains(query) || it.search.contains(query) }
                 .sortedBy { it.title }
             favRecipes.forEach { items.add(ListItem.RecipeRow(it)) }
         } else {
             for (section in sections) {
-                val matching = section.recipes.filter {
-                    query.isEmpty() || it.title.lowercase().contains(query)
-                }
+                val matching = section.recipes
+                    .filter {
+                        query.isEmpty() || it.title.lowercase().contains(query) || it.search.contains(query)
+                    }
+                    .sortedBy { if (query.isEmpty() || it.title.lowercase().contains(query)) 0 else 1 }
                 if (matching.isNotEmpty()) {
                     items.add(ListItem.Header(section.name))
                     matching.forEach { items.add(ListItem.RecipeRow(it)) }

@@ -5,7 +5,8 @@ data class Recipe(
     val nonveg: Boolean,
     val image: String?,
     val file: String,
-    val section: String
+    val section: String,
+    val search: String
 )
 
 data class Section(
