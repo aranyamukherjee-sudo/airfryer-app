@@ -31,6 +31,10 @@
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -39,8 +43,8 @@ html, body {
 body {
   font-family: "Lora", "Georgia", serif;
   line-height: 1.55;
-  color: #2B2320;
-  background: #FBF8F3;
+  color: #2E2A26;
+  background: #FAF6EF;
   padding: 0 18px 40px 18px;
 }
 
@@ -61,13 +65,12 @@ figcaption {
   display: none;
 }
 
-/* soft fade so the title area below doesn't feel like a hard cut */
 figure::after {
   content: "";
   display: block;
   height: 28px;
   margin-top: -28px;
-  background: linear-gradient(to bottom, rgba(251,248,243,0) 0%, #FBF8F3 100%);
+  background: linear-gradient(to bottom, rgba(250,246,239,0) 0%, #FAF6EF 100%);
   position: relative;
 }
 
@@ -76,32 +79,28 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.6em;
-  color: #7A2E12;
+  color: #6B3A24;
   margin: 4px 0 6px 0;
   line-height: 1.22;
   letter-spacing: -0.01em;
 }
 
 .method-line {
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
 }
 
 .method-line em {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.82em;
-  color: #A9663D;
+  font-size: 0.8em;
+  color: #7A6A52;
   display: block;
-  background: #F3E5D3;
-  padding: 8px 14px;
-  border-radius: 14px;
   line-height: 1.4;
 }
 
-/* diet tags rendered as a single pill badge */
 .diet-tags {
-  margin: 0 0 18px 0;
+  margin: 0 0 14px 0;
 }
 
 .diet-tags em {
@@ -109,8 +108,8 @@ h3 {
   font-size: 0.78em;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  background: #EAF1E4;
-  color: #3E6B2D;
+  background: #EEF0E6;
+  color: #5C6B47;
   padding: 6px 14px;
   border-radius: 14px;
   display: block;
@@ -119,19 +118,74 @@ h3 {
   overflow-wrap: break-word;
 }
 
+/* ---------- Info chips ---------- */
+.chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px 0;
+}
+
+.chip {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #6B3A24;
+  background: #F1EADC;
+  padding: 7px 13px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ---------- Tabs (anchor-scroll, no JS needed) ---------- */
+.tabs-row {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 24px 0;
+  border-bottom: 2px solid #EAE0CF;
+  padding-bottom: 0;
+}
+
+.tab-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #8B7F6E;
+  text-decoration: none;
+  padding: 8px 4px 10px 4px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+}
+
+.tab-link:first-child {
+  color: #A85A3A;
+  border-bottom-color: #A85A3A;
+}
+
 /* ---------- Section headers ---------- */
 .section-label {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 0.92em;
-  color: #7A2E12;
+  color: #6B3A24;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 26px 0 10px 0;
   padding-bottom: 8px;
-  border-bottom: 2px solid #E8D9C4;
-  display: flex;
-  align-items: center;
+  border-bottom: 2px solid #EAE0CF;
+}
+
+#ingredients-section .section-label {
+  margin-top: 4px;
+  scroll-margin-top: 16px;
+}
+
+#steps-section .section-label {
+  scroll-margin-top: 16px;
+}
+
+#tip-section {
+  scroll-margin-top: 16px;
 }
 
 /* ---------- Ingredients ---------- */
@@ -145,7 +199,7 @@ li {
   margin: 0;
   padding: 9px 0 9px 26px;
   position: relative;
-  border-bottom: 1px solid #F0E5D6;
+  border-bottom: 1px solid #F0E9DA;
   font-size: 0.97em;
 }
 
@@ -161,7 +215,7 @@ li::before {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #C98A4B;
+  background: #A85A3A;
 }
 
 /* ---------- Method steps ---------- */
@@ -183,7 +237,7 @@ li::before {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #B5471B;
+  background: #5C6B47;
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 0.78em;
@@ -192,7 +246,7 @@ li::before {
   align-items: center;
   justify-content: center;
   margin-top: 1px;
-  box-shadow: 0 2px 5px rgba(181, 71, 27, 0.35);
+  box-shadow: 0 2px 5px rgba(92, 107, 71, 0.3);
 }
 
 .step-text {
@@ -205,8 +259,8 @@ li::before {
 blockquote {
   margin: 22px 0 6px 0;
   padding: 14px 16px 14px 44px;
-  background: #FDF3E4;
-  border-left: 4px solid #E0A106;
+  background: #F6EFDD;
+  border-left: 4px solid #C9962F;
   border-radius: 10px;
   position: relative;
 }
@@ -223,12 +277,12 @@ blockquote p.tip {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 0.88em;
-  color: #6B5A2E;
+  color: #5C5240;
   line-height: 1.5;
 }
 
 blockquote p.tip strong {
-  color: #B5471B;
+  color: #A85A3A;
   font-weight: 700;
 }
 

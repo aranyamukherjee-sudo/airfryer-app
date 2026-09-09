@@ -66,15 +66,15 @@ class RecipeAdapter(
             section.text = recipe.section
 
             val dotColor = if (recipe.nonveg)
-                android.graphics.Color.parseColor("#B5471B")
+                itemView.context.getColor(R.color.nonveg_dot)
             else
-                android.graphics.Color.parseColor("#3E8E41")
+                itemView.context.getColor(R.color.veg_dot)
             badge.backgroundTintList = android.content.res.ColorStateList.valueOf(dotColor)
 
             if (recipe.image != null) {
                 image.scaleType = android.widget.ImageView.ScaleType.CENTER_CROP
                 image.setPadding(0, 0, 0, 0)
-                image.setBackgroundColor(android.graphics.Color.parseColor("#E8D9C4"))
+                image.setBackgroundColor(android.graphics.Color.parseColor("#EAE0CF"))
                 val uri = Uri.parse("file:///android_asset/${recipe.image}")
                 Glide.with(itemView.context)
                     .load(uri)
@@ -84,7 +84,7 @@ class RecipeAdapter(
                 val pad = (12 * itemView.resources.displayMetrics.density).toInt()
                 image.scaleType = android.widget.ImageView.ScaleType.CENTER_INSIDE
                 image.setPadding(pad, pad, pad, pad)
-                image.setBackgroundColor(android.graphics.Color.parseColor("#E8D9C4"))
+                image.setBackgroundColor(android.graphics.Color.parseColor("#EAE0CF"))
                 image.setImageResource(R.drawable.ic_placeholder)
             }
 
