@@ -10,7 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class RecipeAdapter(
-    private val onClick: (Recipe) -> Unit
+    private val onClick: (Recipe) -> Unit,
+    private val onLongClick: (Recipe) -> Unit = {}
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val items = mutableListOf<ListItem>()
@@ -42,7 +43,7 @@ class RecipeAdapter(
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (val item = items[position]) {
             is ListItem.Header -> (holder as HeaderVH).bind(item.name)
-            is ListItem.RecipeRow -> (holder as RecipeVH).bind(item.recipe, onClick)
+            is ListItem.RecipeRow -> (holder as RecipeVH).bind(item.recipe, onClick, onLongClick)
         }
     }
 
@@ -61,7 +62,7 @@ class RecipeAdapter(
         private val section: TextView = view.findViewById(R.id.recipeSection)
         private val badge: View = view.findViewById(R.id.dietBadge)
 
-        fun bind(recipe: Recipe, onClick: (Recipe) -> Unit) {
+        fun bind(recipe: Recipe, onClick: (Recipe) -> Unit, onLongClick: (Recipe) -> Unit) {
             title.text = recipe.title
             section.text = recipe.section
 
@@ -89,6 +90,7 @@ class RecipeAdapter(
             }
 
             itemView.setOnClickListener { onClick(recipe) }
+            itemView.setOnLongClickListener { onLongClick(recipe); true }
         }
     }
 }

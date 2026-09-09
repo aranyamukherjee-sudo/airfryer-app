@@ -27,6 +27,18 @@ object RecipeRepository {
             val recipes = mutableListOf<Recipe>()
             for (j in 0 until recipesArray.length()) {
                 val rObj = recipesArray.getJSONObject(j)
+
+                val steps = mutableListOf<Step>()
+                val stepsArray = rObj.optJSONArray("steps")
+                if (stepsArray != null) {
+                    for (k in 0 until stepsArray.length()) {
+                        val stepObj = stepsArray.getJSONObject(k)
+                        val duration = if (stepObj.isNull("duration_seconds")) null
+                            else stepObj.optInt("duration_seconds")
+                        steps.add(Step(text = stepObj.getString("text"), durationSeconds = duration))
+                    }
+                }
+
                 recipes.add(
                     Recipe(
                         title = rObj.getString("title"),
@@ -34,7 +46,8 @@ object RecipeRepository {
                         image = if (rObj.isNull("image")) null else rObj.getString("image"),
                         file = rObj.getString("file"),
                         section = name,
-                        search = rObj.optString("search", "")
+                        search = rObj.optString("search", ""),
+                        steps = steps
                     )
                 )
             }

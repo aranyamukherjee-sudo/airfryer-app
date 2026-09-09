@@ -42,6 +42,14 @@ class RecipeDetailActivity : AppCompatActivity() {
         webView.settings.allowFileAccess = true
 
         webView.loadUrl("file:///android_asset/$recipeFile")
+
+        findViewById<com.google.android.material.button.MaterialButton>(R.id.startCookingButton)
+            .setOnClickListener {
+                val i = Intent(this, CookingModeActivity::class.java)
+                i.putExtra(CookingModeActivity.EXTRA_TITLE, recipeTitle)
+                i.putExtra(CookingModeActivity.EXTRA_FILE, recipeFile)
+                startActivity(i)
+            }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

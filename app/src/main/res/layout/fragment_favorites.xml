@@ -18,6 +18,34 @@
         android:textStyle="bold"
         android:textColor="@color/primary_dark" />
 
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/collectionsChipRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            app:singleSelection="true"
+            app:chipSpacingHorizontal="8dp" />
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingBottom="4dp"
+        android:text="Long-press a recipe to add it to a collection"
+        android:textSize="11.5sp"
+        android:textColor="@color/text_secondary" />
+
     <TextView
         android:id="@+id/favoritesEmptyText"
         android:layout_width="match_parent"

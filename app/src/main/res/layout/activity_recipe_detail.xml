@@ -30,4 +30,17 @@
         android:layout_weight="1"
         android:background="@color/background" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startCookingButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="14dp"
+        android:text="Start Cooking →"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="16dp"
+        android:textColor="@color/white"
+        android:elevation="6dp" />
+
 </LinearLayout>

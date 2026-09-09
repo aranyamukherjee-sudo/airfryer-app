@@ -1,12 +1,18 @@
 package com.chefmagic.airfryer
 
+data class Step(
+    val text: String,
+    val durationSeconds: Int?
+)
+
 data class Recipe(
     val title: String,
     val nonveg: Boolean,
     val image: String?,
     val file: String,
     val section: String,
-    val search: String
+    val search: String,
+    val steps: List<Step> = emptyList()
 )
 
 data class Section(
