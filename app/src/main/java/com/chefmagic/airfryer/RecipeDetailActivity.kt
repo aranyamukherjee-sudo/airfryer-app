@@ -1,5 +1,6 @@
 package com.chefmagic.airfryer
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -17,17 +18,18 @@ class RecipeDetailActivity : AppCompatActivity() {
     private lateinit var webView: WebView
     private lateinit var toolbar: Toolbar
     private var recipeFile: String = ""
+    private var recipeTitle: String = ""
     private var favoriteMenuItem: MenuItem? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe_detail)
 
-        val title = intent.getStringExtra(EXTRA_TITLE) ?: getString(R.string.app_name)
+        recipeTitle = intent.getStringExtra(EXTRA_TITLE) ?: getString(R.string.app_name)
         recipeFile = intent.getStringExtra(EXTRA_FILE) ?: return
 
         toolbar = findViewById(R.id.detailToolbar)
-        toolbar.title = title
+        toolbar.title = recipeTitle
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener { finish() }
 
@@ -55,7 +57,21 @@ class RecipeDetailActivity : AppCompatActivity() {
             updateFavoriteIcon()
             return true
         }
+        if (item.itemId == R.id.action_share) {
+            shareRecipe()
+            return true
+        }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun shareRecipe() {
+        val shareText = "Check out \"$recipeTitle\" on ${getString(R.string.app_name)} 🍽"
+        val intent = Intent(Intent.ACTION_SEND).apply {
+            type = "text/plain"
+            putExtra(Intent.EXTRA_SUBJECT, recipeTitle)
+            putExtra(Intent.EXTRA_TEXT, shareText)
+        }
+        startActivity(Intent.createChooser(intent, "Share recipe"))
     }
 
     private fun updateFavoriteIcon() {
