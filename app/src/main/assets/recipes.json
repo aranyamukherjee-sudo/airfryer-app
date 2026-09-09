@@ -30,7 +30,12 @@
        "text": "Serve hot with ketchup or a dip of choice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2580,
+     "high_protein": false
     },
     {
      "title": "Crunchy Vegetable Spring Rolls",
@@ -59,7 +64,12 @@
        "text": "Air-fry at 180°C for 11 minutes, turning once, until golden and crisp.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Masala Peanuts",
@@ -88,7 +98,12 @@
        "text": "Toss in curry leaves for the last 2 minutes.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Stuffed Mushrooms",
@@ -117,7 +132,12 @@
        "text": "Bake at 180°C for 11 minutes until tops are golden and mushrooms are tender.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Bread Pizza Bites",
@@ -146,7 +166,12 @@
        "text": "Bake at 180°C for 7 minutes until cheese melts and edges are crisp.",
        "duration_seconds": 420
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 660,
+     "high_protein": false
     },
     {
      "title": "Crispy Corn Cheese Balls",
@@ -175,7 +200,12 @@
        "text": "Air-fry at 190°C for 11 minutes, shaking halfway, until golden and crisp.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Chilli Garlic Potato Wedges",
@@ -204,7 +234,12 @@
        "text": "Serve with a garlic dip or ketchup.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1380,
+     "high_protein": false
     },
     {
      "title": "Crispy Onion Rings",
@@ -233,7 +268,12 @@
        "text": "Air-fry at 190°C for 11 minutes, flipping halfway, until golden and crisp.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Air Fryer Mozzarella Sticks",
@@ -262,7 +302,12 @@
        "text": "Air-fry at 190°C for 7 minutes until golden, watching closely so cheese doesn’t burst out.",
        "duration_seconds": 420
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2460,
+     "high_protein": true
     },
     {
      "title": "Crispy Cauliflower Bites",
@@ -291,7 +336,12 @@
        "text": "Air-fry at 200°C for 16 minutes, shaking halfway, until golden; toss in hot sauce and butter before serving.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": false
     },
     {
      "title": "Popcorn Paneer",
@@ -324,7 +374,12 @@
        "text": "Air-fry at 190°C for 10–12 minutes, shaking halfway, until golden and crisp.",
        "duration_seconds": 720
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1560,
+     "high_protein": true
     },
     {
      "title": "Peri Peri Paneer",
@@ -353,7 +408,12 @@
        "text": "Grill at 200°C for 12 minutes, turning or shaking halfway, until charred at the edges.",
        "duration_seconds": 720
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Popcorn Mushroom",
@@ -386,7 +446,12 @@
        "text": "Air-fry at 190°C for 10–12 minutes, shaking halfway, until golden and crisp.",
        "duration_seconds": 720
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1560,
+     "high_protein": false
     },
     {
      "title": "Popcorn Cauliflower (Gobi Popcorn)",
@@ -415,7 +480,12 @@
        "text": "Air-fry at 190°C for 12–14 minutes, shaking halfway, until golden and crisp.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": false
     },
     {
      "title": "Popcorn Tofu",
@@ -448,7 +518,12 @@
        "text": "Air-fry at 190°C for 12–14 minutes, shaking halfway, until golden and crisp.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1680,
+     "high_protein": true
     },
     {
      "title": "Cheese Corn Nuggets",
@@ -481,7 +556,12 @@
        "text": "Air-fry at 190°C for 10–12 minutes, turning halfway, until golden and crisp.",
        "duration_seconds": 720
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": false
     },
     {
      "title": "Roasted Makhana (Fox Nuts)",
@@ -510,7 +590,12 @@
        "text": "Cool completely before storing in an airtight container.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": false
     },
     {
      "title": "Crispy Banana Chips",
@@ -539,7 +624,12 @@
        "text": "Air-fry at 170°C for 16 minutes, shaking every 5 minutes, until crisp and lightly golden.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1800,
+     "high_protein": false
     },
     {
      "title": "Air Fryer Masala Omelette Muffins",
@@ -568,7 +658,12 @@
        "text": "Cool slightly before removing from cups.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": true
     },
     {
      "title": "Crispy Air Fryer Hash Browns",
@@ -597,7 +692,12 @@
        "text": "Air-fry at 200°C for 16 minutes, flipping halfway, until golden and crisp.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": false
     },
     {
      "title": "Stuffed French Toast Sticks",
@@ -626,7 +726,12 @@
        "text": "Bake at 170°C for 9 minutes, flipping halfway, until golden.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Paneer Bhurji Toast",
@@ -655,7 +760,12 @@
        "text": "Bake at 180°C for 9 minutes until the edges of the bread are crisp and the topping is warmed through.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Kachumber Salad (Cucumber-Tomato Salad)",
@@ -676,7 +786,10 @@
        "text": "Garnish with coriander and serve fresh alongside any curry, biryani or grilled dish.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 0,
+     "high_protein": false
     },
     {
      "title": "Boondi Raita",
@@ -697,7 +810,10 @@
        "text": "Sprinkle with roasted cumin powder, chilli powder and coriander before serving chilled.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 300,
+     "high_protein": true
     },
     {
      "title": "Quick Pickled Onions",
@@ -718,7 +834,10 @@
        "text": "Serve alongside kebabs, tikka, biryani or grilled fish.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Mint-Coriander Chutney",
@@ -739,7 +858,12 @@
        "text": "Serve alongside any air-fried snack, tikka or kebab.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": true
     },
     {
      "title": "Crispy Paneer Bites (Airfryer Croutons)",
@@ -768,7 +892,12 @@
        "text": "Scatter warm over salads, soups or rice bowls in place of croutons.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": true
     }
    ]
   },
@@ -802,7 +931,12 @@
        "text": "Bake at 180°C for 16 minutes until peppers soften and cheese melts.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": false
     },
     {
      "title": "Baked Vegetable Pulao (one-pot)",
@@ -831,7 +965,12 @@
        "text": "Bake at 180°C for 28 minutes; rest covered for 5 minutes before fluffing.",
        "duration_seconds": 1680
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1920,
+     "high_protein": false
     },
     {
      "title": "Rajma-Stuffed Baked Potatoes",
@@ -860,7 +999,12 @@
        "text": "Return to the basket for 4 minutes to melt the cheese; garnish and serve.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Vegetable Au Gratin",
@@ -889,7 +1033,12 @@
        "text": "Bake at 180°C for 19 minutes until bubbling and golden on top.",
        "duration_seconds": 1140
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1380,
+     "high_protein": false
     },
     {
      "title": "Crispy Sweet Potato Fries",
@@ -914,7 +1063,12 @@
        "text": "Air-fry at 200°C for 17 minutes, shaking every 5 minutes, until crisp at the edges.",
        "duration_seconds": 1020
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1260,
+     "high_protein": false
     },
     {
      "title": "Garlic Parmesan Brussels Sprouts",
@@ -943,7 +1097,12 @@
        "text": "Toss with Parmesan while hot and serve immediately.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": false
     },
     {
      "title": "Crispy Panko Asparagus",
@@ -968,7 +1127,12 @@
        "text": "Bake at 190°C for 9 minutes until golden and crisp, turning once.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Air Fryer Baked Potatoes",
@@ -997,7 +1161,12 @@
        "text": "Split open and top with butter, sour cream and chives.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2520,
+     "high_protein": false
     },
     {
      "title": "Paneer Steaks with Herb Butter",
@@ -1030,7 +1199,12 @@
        "text": "Top each steak with a spoon of herb butter while hot and serve immediately.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": true
     }
    ]
   },
@@ -1064,7 +1238,12 @@
        "text": "Bake at 160°C for 21 minutes; check with a toothpick before removing.",
        "duration_seconds": 1260
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1500,
+     "high_protein": true
     },
     {
      "title": "Classic Vanilla Cake",
@@ -1101,7 +1280,12 @@
        "text": "Cool in the pan for 10 minutes before turning out onto a rack to cool completely.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2340,
+     "high_protein": true
     },
     {
      "title": "Classic Sponge Cake",
@@ -1138,7 +1322,12 @@
        "text": "Cool in the pan for 5 minutes before turning out onto a rack to cool completely.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2220,
+     "high_protein": true
     },
     {
      "title": "Marble Cake (Vanilla-Chocolate Swirl)",
@@ -1179,7 +1368,12 @@
        "text": "Cool in the pan for 10 minutes before turning out onto a rack to cool completely.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2400,
+     "high_protein": true
     },
     {
      "title": "Butter Cookies",
@@ -1208,7 +1402,12 @@
        "text": "Bake at 160°C for 11 minutes until edges turn golden. Cool before serving.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Banana Bread",
@@ -1241,7 +1440,12 @@
        "text": "Cool for 10 minutes before slicing.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 3120,
+     "high_protein": true
     },
     {
      "title": "Cinnamon Apple Crisps",
@@ -1270,7 +1474,12 @@
        "text": "Cool completely — they crisp up further as they cool.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1560,
+     "high_protein": true
     },
     {
      "title": "Air Fryer Doughnuts",
@@ -1299,7 +1508,12 @@
        "text": "Bake at 170°C for 9 minutes until golden; brush with butter and roll in cinnamon-sugar while warm.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Mini Cheesecakes",
@@ -1328,7 +1542,12 @@
        "text": "Bake at 150°C for 16 minutes until just set with a slight wobble in the centre. Chill before serving.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Whole Wheat Pizza",
@@ -1357,7 +1576,12 @@
        "text": "Bake at 190°C for 11 minutes until the cheese melts and the base is crisp.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Granola Bars",
@@ -1386,7 +1610,12 @@
        "text": "Cool completely in the pan before slicing into bars — this helps them hold together.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": false
     },
     {
      "title": "Air Fryer Chocolate Chip Cookies",
@@ -1415,7 +1644,12 @@
        "text": "Bake at 160°C for 9 minutes until edges are golden but centres look slightly underdone; cool on the tray before moving.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Quick Cinnamon Rolls",
@@ -1440,7 +1674,12 @@
        "text": "Cool for 2 minutes, then top with the included icing before serving.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": true
     },
     {
      "title": "Paneer Kalakand (Airfryer-Set Milk Fudge)",
@@ -1473,7 +1712,13 @@
        "text": "Sprinkle with pistachios, cool completely, then chill for 1 hour before cutting into squares.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2160,
+     "high_protein": true
     },
     {
      "title": "Air Fryer Gulab Jamun",
@@ -1510,7 +1755,13 @@
        "text": "Drop the hot fried balls straight into the warm syrup and soak for at least 30 minutes before serving.",
        "duration_seconds": 1800
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3840,
+     "high_protein": true
     },
     {
      "title": "Coconut Ladoo (No-Cook Finish)",
@@ -1539,7 +1790,12 @@
        "text": "Cool completely before storing in an airtight container.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": false
     },
     {
      "title": "Rasgulla (Spongy Cottage Cheese Balls in Syrup)",
@@ -1572,7 +1828,12 @@
        "text": "Cool in the syrup for at least 1 hour before serving chilled.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3300,
+     "high_protein": true
     },
     {
      "title": "Air Fryer Chocolate Lava Cakes",
@@ -1609,7 +1870,12 @@
        "text": "Rest 1 minute, then invert onto plates and serve immediately while the centre is molten.",
        "duration_seconds": 60
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1860,
+     "high_protein": true
     },
     {
      "title": "Besan Ladoo",
@@ -1642,7 +1908,12 @@
        "text": "Cool completely before storing in an airtight container.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1680,
+     "high_protein": false
     },
     {
      "title": "Rasmalai (Paneer Dumplings in Saffron Milk)",
@@ -1675,7 +1946,12 @@
        "text": "Squeeze the cooled discs gently to remove excess syrup, then soak them in the warm saffron milk for at least 1 hour. Garnish with pistachios and almonds before serving chilled.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 4020,
+     "high_protein": true
     },
     {
      "title": "Semiya (Vermicelli) Kheer",
@@ -1700,7 +1976,12 @@
        "text": "Stir in cardamom powder and serve warm or chilled.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 120,
+     "high_protein": false
     },
     {
      "title": "Sooji Halwa (Rava Kesari)",
@@ -1725,7 +2006,12 @@
        "text": "Stir in cardamom and saffron; serve warm.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 240,
+     "high_protein": false
     },
     {
      "title": "Custard (Vanilla or Fruit)",
@@ -1750,7 +2036,12 @@
        "text": "Cool slightly, pour over chopped fruit and chill before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": false
     },
     {
      "title": "Kara Prasad (Air Fryer / Chef Magic Adaptation)",
@@ -1783,7 +2074,12 @@
        "text": "Mix in cardamom and nuts if using. Rest for 2–3 minutes before serving warm.",
        "duration_seconds": 180
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1680,
+     "high_protein": false
     },
     {
      "title": "Payesh (Bengali Rice Pudding)",
@@ -1808,7 +2104,12 @@
        "text": "Garnish with pistachios and serve warm or chilled.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1260,
+     "high_protein": true
     }
    ]
   },
@@ -1838,7 +2139,12 @@
        "text": "Add the tomato and sauté until soft, then stir the cooked dal back in and simmer 4 minutes. Garnish with coriander.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 240,
+     "high_protein": true
     },
     {
      "title": "Steamed Vegetable Momos",
@@ -1863,7 +2169,12 @@
        "text": "Select Steam (100°C steam, paddle off) and cook for 14 minutes until wrappers turn glossy.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": false
     },
     {
      "title": "Tomato Soup",
@@ -1888,7 +2199,12 @@
        "text": "Stir in butter if using and serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": false
     },
     {
      "title": "Paneer Butter Masala",
@@ -1913,7 +2229,12 @@
        "text": "Add paneer cubes and cream; sauté gently 4 minutes until warmed through.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 540,
+     "high_protein": true
     },
     {
      "title": "Vegetable Khichdi",
@@ -1938,7 +2259,12 @@
        "text": "Stir well and serve hot with a dollop of ghee.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 120,
+     "high_protein": true
     },
     {
      "title": "Fresh Mango Smoothie",
@@ -1959,7 +2285,12 @@
        "text": "Pour into glasses and serve immediately.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": true
     },
     {
      "title": "Vegetable Poha",
@@ -1984,7 +2315,12 @@
        "text": "Finish with lemon juice and coriander before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 240,
+     "high_protein": false
     },
     {
      "title": "Stuffed Kachori",
@@ -2013,7 +2349,13 @@
        "text": "Spray lightly with oil and air-fry in the Airfryer at 190°C for 16 minutes, turning once, until golden and flaky.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2100,
+     "high_protein": true
     },
     {
      "title": "Soft Dinner Rolls",
@@ -2042,7 +2384,13 @@
        "text": "Bake in the Airfryer at 180°C for 14 minutes until golden; brush with butter while warm.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 4380,
+     "high_protein": true
     },
     {
      "title": "Paneer Tikka (marinated & grilled)",
@@ -2075,7 +2423,13 @@
        "text": "Serve with mint chutney and lemon wedges.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Aloo Tikki (Potato Cutlets)",
@@ -2100,7 +2454,13 @@
        "text": "Option B – Chef Magic: add oil to the jar, select Sauté (Speed 2–4, ~130–160°C), and cook the patties, turning occasionally, for 11 minutes until golden on both sides.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1860,
+     "high_protein": false
     },
     {
      "title": "Bhindi Fry (Crispy Okra)",
@@ -2121,7 +2481,13 @@
        "text": "Option B – Chef Magic: add oil to the jar, select Sauté (Speed 2–4, ~130–160°C), add okra and all spices, and cook, stirring occasionally, for 14 minutes until crisp and no longer sticky.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1920,
+     "high_protein": false
     },
     {
      "title": "Roasted Masala Papad",
@@ -2146,7 +2512,13 @@
        "text": "Top with chopped onion, tomato, chaat masala, coriander and lemon juice just before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 600,
+     "high_protein": false
     },
     {
      "title": "Vegetable Pakoras",
@@ -2175,7 +2547,13 @@
        "text": "Option B – Chef Magic: add 4 tbsp oil to the jar, select Sauté (Speed 2–4, ~130–160°C), and drop spoonfuls of batter into the hot jar, turning occasionally, for 11 minutes until golden and crisp on all sides.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Paneer 65",
@@ -2200,7 +2578,13 @@
        "text": "Option B – Chef Magic: add oil to the jar, select Sauté (Speed 2–4, ~130–160°C), add curry leaves and green chilli briefly, then add marinated paneer and cook, stirring gently, for 10 minutes until crisp outside.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3360,
+     "high_protein": true
     }
    ]
   },
@@ -2226,7 +2610,12 @@
        "text": "Stir well and garnish with coriander before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 120,
+     "high_protein": true
     },
     {
      "title": "Simple Mixed Vegetable Sabzi",
@@ -2247,7 +2636,12 @@
        "text": "Continue on Sauté (Speed 2–4, ~130–160°C) for 14 minutes, stirring occasionally, until vegetables are tender.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": false
     },
     {
      "title": "Curd Rice (Thayir Sadam)",
@@ -2272,7 +2666,12 @@
        "text": "Chill before serving; garnish with ginger or pomegranate if using.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": true
     },
     {
      "title": "Vegetable Quinoa Pulao",
@@ -2297,7 +2696,12 @@
        "text": "Fluff with a fork before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 240,
+     "high_protein": false
     },
     {
      "title": "Ragi (Finger Millet) Vegetable Chilla",
@@ -2326,7 +2730,12 @@
        "text": "Repeat with the remaining batter.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": false
     },
     {
      "title": "Sprouted Moong Salad",
@@ -2347,7 +2756,12 @@
        "text": "Garnish with coriander and serve fresh.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 240,
+     "high_protein": true
     },
     {
      "title": "Homemade Buttermilk (Masala Chaas)",
@@ -2368,7 +2782,12 @@
        "text": "Pour into glasses over ice and serve immediately.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": true
     },
     {
      "title": "Vegetable Oats Khichdi",
@@ -2389,7 +2808,12 @@
        "text": "Add oats, water and salt; select Boil (Speed 1–2, 100°C) and cook, stirring occasionally, until thickened and porridge-like.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 120,
+     "high_protein": false
     },
     {
      "title": "Baked Vegetable & Egg Muffins (High-Protein)",
@@ -2418,7 +2842,12 @@
        "text": "Cool slightly before removing; refrigerate leftovers for up to 3 days.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1020,
+     "high_protein": true
     },
     {
      "title": "Crispy Air-Fried Oyster Mushrooms",
@@ -2451,7 +2880,13 @@
        "text": "Serve immediately with chilli mayo or tomato ketchup — oyster mushrooms turn chewy fast once they cool.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": false
     },
     {
      "title": "Chilli Oyster Mushroom (Dry)",
@@ -2488,7 +2923,13 @@
        "text": "Toss in the fried mushrooms just before serving; garnish with spring onion greens.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": false
     },
     {
      "title": "Oyster Mushroom Tikka",
@@ -2525,7 +2966,13 @@
        "text": "Rest 2 minutes, squeeze over a little extra lemon juice, and serve hot with mint chutney.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3000,
+     "high_protein": true
     },
     {
      "title": "Oyster Mushroom Manchurian",
@@ -2570,7 +3017,13 @@
        "text": "Add the fried mushroom balls just before serving, tossing gently to coat; garnish with spring onion greens.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": false
     }
    ]
   },
@@ -2600,7 +3053,12 @@
        "text": "Rest covered for 5 minutes, then fluff with a fork and garnish with coriander.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 420,
+     "high_protein": false
     },
     {
      "title": "Aloo Jeera (Dry Potato Sabzi)",
@@ -2625,7 +3083,12 @@
        "text": "Sprinkle with amchur and toss well; garnish with coriander before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 720,
+     "high_protein": false
     },
     {
      "title": "Moong Dal Tadka (Everyday Yellow Dal)",
@@ -2646,7 +3109,12 @@
        "text": "Stir well and garnish with coriander before serving with rice or roti.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 120,
+     "high_protein": true
     },
     {
      "title": "Patta Gobi Sabzi (Simple Cabbage Stir-Fry)",
@@ -2671,7 +3139,12 @@
        "text": "Toss with fresh coconut if using, and serve warm.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 630,
+     "high_protein": false
     },
     {
      "title": "Plain Steamed Basmati Rice",
@@ -2692,7 +3165,12 @@
        "text": "Rest covered for 5 minutes, then fluff gently with a fork before serving.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 300,
+     "high_protein": true
     },
     {
      "title": "Homemade Curd (Dahi)",
@@ -2717,7 +3195,12 @@
        "text": "Chill for at least 1 hour before serving; use a spoonful as the starter for your next batch.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": true
     },
     {
      "title": "Instant Lemon Pickle (Quick Nimbu Achaar)",
@@ -2742,7 +3225,12 @@
        "text": "Transfer to a clean, dry jar and rest at room temperature for at least a day before serving, stirring once daily.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": true
     },
     {
      "title": "Kadhi (Yogurt & Gram Flour Curry)",
@@ -2767,7 +3255,12 @@
        "text": "Season with salt and garnish with coriander; serve hot with steamed rice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": true
     },
     {
      "title": "Palak Dal (Spinach Dal)",
@@ -2792,7 +3285,12 @@
        "text": "Stir well and serve hot with rice or roti.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 420,
+     "high_protein": true
     },
     {
      "title": "Gajar Matar Sabzi (Carrot & Peas Stir-Fry)",
@@ -2817,7 +3315,12 @@
        "text": "Garnish with coriander and serve as a simple side with dal-rice or roti.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 720,
+     "high_protein": true
     },
     {
      "title": "Aloo Paratha (Stuffed Potato Flatbread)",
@@ -2854,7 +3357,13 @@
        "text": "Serve hot with curd, pickle or butter.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1620,
+     "high_protein": true
     },
     {
      "title": "Moong Dal Cheela (Savoury Lentil Pancake)",
@@ -2887,7 +3396,12 @@
        "text": "Repeat with the remaining batter; serve hot with chutney or curd.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 600,
+     "high_protein": true
     },
     {
      "title": "Pyaz Tamatar ki Sabzi (Onion-Tomato Sabzi)",
@@ -2912,7 +3426,12 @@
        "text": "Season with salt and garnish with coriander; serve with roti or dal-rice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": true
     },
     {
      "title": "Dahi Bhindi (Okra in Yogurt Gravy)",
@@ -2941,7 +3460,12 @@
        "text": "Fold the cooked okra back in and warm through for 2 minutes. Garnish with coriander.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Punjabi Chole (Chickpea Curry)",
@@ -2966,7 +3490,12 @@
        "text": "Stir the cooked chickpeas back in with a little of their cooking water; simmer on Sauté (Speed 1–2, ~100–110°C) for 9 minutes until thick. Garnish with coriander.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 540,
+     "high_protein": true
     },
     {
      "title": "Rajma Masala (Kidney Bean Curry)",
@@ -2991,7 +3520,12 @@
        "text": "Stir the cooked rajma back in with a little of its cooking water; simmer on Sauté (Speed 1–2, ~100–110°C) for 10 minutes, mashing a few beans against the side to thicken. Garnish with coriander.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 600,
+     "high_protein": true
     },
     {
      "title": "Palak Paneer",
@@ -3016,7 +3550,12 @@
        "text": "Gently fold in paneer cubes and cream; sauté 2 minutes just to warm through.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 540,
+     "high_protein": true
     },
     {
      "title": "Baingan Bharta (Smoky Roasted Eggplant Mash)",
@@ -3045,7 +3584,13 @@
        "text": "Fold in the mashed roasted eggplant and salt; sauté for 9 minutes until well combined. Garnish with coriander.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2100,
+     "high_protein": true
     },
     {
      "title": "Gujarati Dhokla",
@@ -3070,7 +3615,12 @@
        "text": "Temper with mustard seeds and curry leaves in a little hot oil, and pour over the dhokla before cutting into pieces.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": true
     },
     {
      "title": "Sambar",
@@ -3091,7 +3641,12 @@
        "text": "Temper mustard seeds, curry leaves and dried red chilli in oil, then stir into the sambar.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 300,
+     "high_protein": true
     },
     {
      "title": "Rasam",
@@ -3112,7 +3667,12 @@
        "text": "Garnish with coriander and serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": false
     },
     {
      "title": "Vegetable Upma",
@@ -3137,7 +3697,12 @@
        "text": "Add water and salt; select Boil (Speed 1–2, 100°C) and cook, stirring, until the water is absorbed and the mixture turns fluffy. Finish with lemon juice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 360,
+     "high_protein": false
     },
     {
      "title": "Kadai Paneer",
@@ -3162,7 +3727,12 @@
        "text": "Add capsicum and paneer; sauté gently for 4 minutes, then sprinkle garam masala before serving.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 360,
+     "high_protein": true
     },
     {
      "title": "Pav Bhaji",
@@ -3191,7 +3761,12 @@
        "text": "minutes until thick. Serve with buttered, toasted pav.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 120,
+     "high_protein": false
     },
     {
      "title": "Malai Kofta",
@@ -3220,7 +3795,13 @@
        "text": "Make the gravy in Chef Magic (butter, onion, tomato, cashews, ginger-garlic — sauté, blend smooth, then simmer with cream and garam masala for 15 minutes) and pour hot over the koftas just before serving so they stay crisp longer.",
        "duration_seconds": 900
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Vegetable Biryani",
@@ -3245,7 +3826,13 @@
        "text": "Option B – Chef Magic (one-pot): add ghee to the jar, select Sauté (Speed 2–4, ~130–160°C) and cook onions until golden, then add vegetables, yogurt, biryani masala and ginger-garlic paste, cooking 9 minutes; add soaked rice, water/stock, saffron milk and salt; select Boil (Speed 1–2, 100°C) and cook until the water is absorbed and rice is fluffy, about 16 minutes; rest 5 minutes, then fluff and garnish with fried onions and coriander.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3000,
+     "high_protein": true
     }
    ]
   },
@@ -3271,7 +3858,13 @@
        "text": "Option B – Chef Magic: add oil to the jar, select Sauté (Speed 2–4, ~130–160°C), add squeezed karela, turmeric and chilli powder, and cook, stirring occasionally, for 16 minutes until deep brown and crisp, uncovered so moisture escapes.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2160,
+     "high_protein": false
     },
     {
      "title": "Shukto (Bengali Mixed Vegetable Stew)",
@@ -3296,7 +3889,12 @@
        "text": "Finish with a drizzle of ghee before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 240,
+     "high_protein": false
     },
     {
      "title": "Aloo Posto (Potatoes in Poppy Seed Paste)",
@@ -3317,7 +3915,12 @@
        "text": "Add the poppy seed paste, green chillies, salt and a little water; select Boil (Speed 1–2, 100°C) and cook until potatoes are fully tender and the paste thickens around them.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 360,
+     "high_protein": false
     },
     {
      "title": "Jhinge Aloo Bata Sorshe Diye (Ridge Gourd & Potato in Mustard Paste)",
@@ -3342,7 +3945,12 @@
        "text": "Stir in the mustard paste, green chilli and salt; select Boil (Speed 1–2, 100°C) and cook until vegetables are fully tender and the gravy is thickened.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 540,
+     "high_protein": false
     },
     {
      "title": "Begun Bhaja (Crispy Fried Eggplant Slices)",
@@ -3363,7 +3971,13 @@
        "text": "Option B – Chef Magic: add oil to the jar, select Sauté (Speed 2–4, ~130–160°C), add coated eggplant slices, and cook, turning occasionally, for 11 minutes until golden-brown on both sides.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1740,
+     "high_protein": true
     },
     {
      "title": "Cholar Dal (Bengal Gram Dal with Coconut)",
@@ -3384,7 +3998,12 @@
        "text": "Stir in coconut, raisins and sugar; sauté a further 2 minutes until fragrant.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 240,
+     "high_protein": true
     },
     {
      "title": "Chorchori (Mixed Vegetable Dry Curry)",
@@ -3405,7 +4024,12 @@
        "text": "Continue on Sauté (Speed 2–4, ~130–160°C) for 19 minutes, stirring occasionally, until vegetables are tender and slightly mashed at the edges.",
        "duration_seconds": 1140
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": false
     },
     {
      "title": "Aloo Bhate (Bengali-Style Mashed Potato)",
@@ -3426,7 +4050,12 @@
        "text": "Mix in mustard oil, onion, green chilli, salt and coriander while still warm.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": false
     },
     {
      "title": "Chhanar Dalna (Bengali Paneer & Potato Curry)",
@@ -3451,7 +4080,12 @@
        "text": "Return the paneer to the jar with garam masala; simmer on Sauté (Speed 1–2, ~100–110°C) for 3 minutes. Garnish with coriander.",
        "duration_seconds": 180
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 660,
+     "high_protein": true
     },
     {
      "title": "Lauki Aloo Curry (Bottle Gourd & Potato Curry)",
@@ -3480,7 +4114,12 @@
        "text": "Mash a few pieces lightly against the side of the jar to thicken the gravy slightly. Garnish with coriander.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": false
     },
     {
      "title": "Aloo Arbi Gravy (Potato & Colocasia Curry)",
@@ -3513,7 +4152,12 @@
        "text": "Stir in garam masala and amchur; cook 2 minutes more. Garnish with coriander and serve hot with roti.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": false
     },
     {
      "title": "Sheem er Paturi (Flat Beans Steamed in Mustard)",
@@ -3542,7 +4186,12 @@
        "text": "Rest for 2 minutes, then unwrap and serve hot with steamed rice.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": false
     }
    ]
   },
@@ -3580,7 +4229,12 @@
        "text": "Serve hot with onion rings and mint chutney.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1260,
+     "high_protein": true
     },
     {
      "title": "Achari Soya Chaap (Pickle-Spiced)",
@@ -3605,7 +4259,12 @@
        "text": "Finish with lemon juice and salt to taste; toss well before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": true
     },
     {
      "title": "Malai Soya Chaap (Creamy)",
@@ -3630,7 +4289,12 @@
        "text": "Stir in cream, garam masala and salt; simmer on Sauté (Speed 1–2, ~100–110°C) for 4 minutes until the gravy thickens.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Soya Chaap Tikka Masala",
@@ -3663,7 +4327,13 @@
        "text": "Add the grilled chaap, cream and garam masala; simmer on Sauté (Speed 1–2, ~100–110°C) for 5 minutes and serve hot.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3780,
+     "high_protein": true
     },
     {
      "title": "Soya Chunks (Nutrela) Curry",
@@ -3688,7 +4358,12 @@
        "text": "Add the soaked soya chunks, water and salt; select Boil (Speed 1–2, 100°C) and cook for 9 minutes until the gravy thickens. Garnish with coriander.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2220,
+     "high_protein": true
     },
     {
      "title": "Soya Keema (Minced Soya Curry)",
@@ -3713,7 +4388,12 @@
        "text": "Add the soaked soya granules and peas; sauté for 9 minutes, stirring occasionally, until dry and well combined. Garnish with coriander.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1740,
+     "high_protein": true
     },
     {
      "title": "Amritsari Chole Kulche (Chole Only)",
@@ -3738,7 +4418,12 @@
        "text": "Add the boiled chickpeas with a little cooking liquid; simmer on Sauté (Speed 1–2, ~100–110°C) for 9 minutes until thick. Finish with lemon juice and garnish with onion, ginger and coriander.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Matar Paneer",
@@ -3763,7 +4448,12 @@
        "text": "Gently fold in the paneer cubes and salt; sauté for 2 minutes just to warm through. Garnish with coriander.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": true
     },
     {
      "title": "Vegetable Manchurian (Dry)",
@@ -3796,7 +4486,13 @@
        "text": "Add soy sauce, vinegar, chilli sauce and the cornflour-water mix; cook 2 minutes until it thickens slightly, then toss in the fried balls just before serving so they stay crisp.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1380,
+     "high_protein": false
     },
     {
      "title": "Paneer Do Pyaza",
@@ -3825,7 +4521,12 @@
        "text": "Gently fold in the paneer cubes, garam masala and salt; sauté for 3 minutes just to warm through. Garnish with coriander.",
        "duration_seconds": 180
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1260,
+     "high_protein": true
     },
     {
      "title": "Paneer Pasanda",
@@ -3854,7 +4555,12 @@
        "text": "Gently slide in the paneer slices and cream; sauté 5 minutes just to warm through, spooning gravy over the top instead of stirring hard so the slices stay intact.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": true
     },
     {
      "title": "Paneer Lababdar",
@@ -3883,7 +4589,12 @@
        "text": "Add the paneer cubes, cream and crushed kasuri methi; sauté gently for 4 minutes until the gravy turns rich and glossy.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": true
     },
     {
      "title": "Paneer Jalfrezi",
@@ -3912,7 +4623,12 @@
        "text": "Stir in ketchup, soy sauce if using, and salt; fold in the paneer batons and sauté gently for 4 minutes until just warmed through.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": true
     },
     {
      "title": "Paneer Korma",
@@ -3941,7 +4657,12 @@
        "text": "Add the paneer and remaining warm milk; sauté gently for 4 minutes until the gravy is pale, rich and creamy. Garnish with fried onions and coriander.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Achari Paneer (Pickle-Spiced)",
@@ -3970,7 +4691,12 @@
        "text": "Gently fold in the paneer cubes; sauté for 4 minutes until well coated, then finish with lemon juice.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": true
     },
     {
      "title": "Hariyali Paneer Tikka (Green Herb Marinade)",
@@ -4003,7 +4729,12 @@
        "text": "Serve with lemon wedges and extra mint chutney.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2820,
+     "high_protein": true
     },
     {
      "title": "Amritsari Paneer Tikka",
@@ -4036,7 +4767,13 @@
        "text": "Dust with chaat masala and serve with lemon wedges and mint chutney.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2880,
+     "high_protein": true
     },
     {
      "title": "Paneer Manchurian (Gravy)",
@@ -4073,7 +4810,13 @@
        "text": "Stir in the cornflour slurry and cook 2 minutes until glossy and thickened, then add the fried paneer balls and simmer gently for 2 minutes so they soak up some sauce without going soft. Garnish with spring onion.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1620,
+     "high_protein": true
     },
     {
      "title": "Paneer Bhurji (Dry, Standalone)",
@@ -4102,7 +4845,12 @@
        "text": "Sprinkle with garam masala and garnish with coriander before serving — with toast, in wraps, or alongside rotis.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Paneer Cutlets",
@@ -4135,7 +4883,12 @@
        "text": "Air-fry at 190°C for 16 minutes, flipping halfway, until golden and crisp on both sides.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2100,
+     "high_protein": true
     },
     {
      "title": "Paneer Momos",
@@ -4164,7 +4917,12 @@
        "text": "Serve hot with a spicy chilli-garlic dip or mint chutney.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": true
     },
     {
      "title": "Dahi Paneer (Yogurt Paneer Curry)",
@@ -4193,7 +4951,12 @@
        "text": "Add the paneer cubes and salt; sauté gently for 3 minutes until warmed through. Garnish with coriander.",
        "duration_seconds": 180
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1020,
+     "high_protein": true
     },
     {
      "title": "Paneer Angara (Smoky Charred Paneer Curry)",
@@ -4226,7 +4989,13 @@
        "text": "Add the charred paneer, cream and crushed kasuri methi; sauté gently for 3 minutes. For a traditional smoky finish, place a small piece of heated charcoal in a bowl in the centre of the curry, add a drop of oil, and cover for 1 minute before serving (optional, use tongs and care).",
        "duration_seconds": 180
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1980,
+     "high_protein": true
     }
    ]
   },
@@ -4256,7 +5025,12 @@
        "text": "Ladle into bowls and top generously with farsan, chopped onion and a squeeze of lemon; serve with pav.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": true
     },
     {
      "title": "Sabudana Khichdi",
@@ -4281,7 +5055,12 @@
        "text": "Finish with lemon juice and coriander before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": false
     },
     {
      "title": "Kothimbir Vadi",
@@ -4310,7 +5089,13 @@
        "text": "Spray the pieces with oil and air-fry at 190°C for 8 minutes until golden and crisp.",
        "duration_seconds": 480
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1680,
+     "high_protein": false
     },
     {
      "title": "Dal Baati (Baati Only)",
@@ -4343,7 +5128,12 @@
        "text": "While still hot, dunk each baati briefly in melted ghee before serving with dal.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 3120,
+     "high_protein": true
     },
     {
      "title": "Gatte ki Sabzi",
@@ -4368,7 +5158,12 @@
        "text": "Add the gatte pieces and simmer on Sauté (Speed 1–2, ~100–110°C) for 10 minutes, stirring gently, until the gravy thickens. Sprinkle garam masala and garnish with coriander.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Dum Aloo (Kashmiri Style)",
@@ -4401,7 +5196,13 @@
        "text": "Add the fried potatoes and simmer a further 5 minutes so they soak up the gravy.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1920,
+     "high_protein": true
     },
     {
      "title": "Sarson ka Saag",
@@ -4426,7 +5227,12 @@
        "text": "Stir the mashed greens back in with cornmeal and salt; simmer on Sauté (Speed 1–2, ~100–110°C) for 8 minutes until thick. Top with a spoon of ghee before serving.",
        "duration_seconds": 480
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1680,
+     "high_protein": false
     },
     {
      "title": "Shahi Paneer",
@@ -4451,7 +5257,12 @@
        "text": "Gently fold in the paneer cubes and cream; sauté 3 minutes just to warm through.",
        "duration_seconds": 180
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": true
     },
     {
      "title": "Mirchi ka Salan (Hyderabadi)",
@@ -4476,7 +5287,12 @@
        "text": "Select Boil (Speed 1–2, 100°C) and cook for 10 minutes until the gravy thickens and coats the chillies.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": false
     },
     {
      "title": "Kerala Avial",
@@ -4501,7 +5317,12 @@
        "text": "Finish with coconut oil and curry leaves; season with salt and serve.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1020,
+     "high_protein": true
     },
     {
      "title": "Odia Dalma",
@@ -4526,7 +5347,12 @@
        "text": "Stir well and season with salt before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Khandvi",
@@ -4551,7 +5377,12 @@
        "text": "Temper mustard seeds and curry leaves in hot oil; pour over the rolls and garnish with coconut and coriander.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 720,
+     "high_protein": true
     },
     {
      "title": "Chilli Paneer (Dry)",
@@ -4584,7 +5415,13 @@
        "text": "Toss in the fried paneer just before serving to keep it crisp.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Gobi Manchurian (Dry)",
@@ -4621,7 +5458,13 @@
        "text": "Toss in the fried cauliflower just before serving so it stays crisp; garnish with spring onion.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1500,
+     "high_protein": false
     },
     {
      "title": "Vegetable Manchurian Gravy",
@@ -4658,7 +5501,13 @@
        "text": "Stir in the cornflour slurry and cook 3 minutes until the gravy turns glossy and slightly thick, then add the fried balls and simmer gently for 2 minutes so they soften just slightly in the gravy. Garnish with spring onion.",
        "duration_seconds": 180
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1740,
+     "high_protein": false
     },
     {
      "title": "Chilli Mushroom (Dry)",
@@ -4695,7 +5544,13 @@
        "text": "Toss in the fried mushrooms just before serving to keep them from turning rubbery.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": false
     },
     {
      "title": "Chilli Gobi (Dry)",
@@ -4732,7 +5587,13 @@
        "text": "Toss in the fried florets just before serving; serve immediately while still crisp.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1500,
+     "high_protein": false
     },
     {
      "title": "Vegetable Hakka Noodles",
@@ -4765,7 +5626,12 @@
        "text": "Garnish with spring onion greens and serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": false
     },
     {
      "title": "Vegetable Manchow Soup",
@@ -4794,7 +5660,12 @@
        "text": "Ladle into bowls and top with crispy fried noodles and spring onion greens.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": false
     },
     {
      "title": "Schezwan Fried Rice",
@@ -4819,7 +5690,12 @@
        "text": "Fold in the spring onions for the last 2 minutes and serve hot.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": false
     },
     {
      "title": "American Chopsuey",
@@ -4856,7 +5732,13 @@
        "text": "Ladle the hot sweet-and-tangy gravy over the crispy noodles just before serving so they stay crunchy underneath.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1680,
+     "high_protein": false
     },
     {
      "title": "Honey Chilli Potato",
@@ -4893,7 +5775,13 @@
        "text": "Toss in the crispy potatoes just before serving; sprinkle with sesame seeds and spring onion.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1560,
+     "high_protein": false
     },
     {
      "title": "Dragon Paneer (Dry)",
@@ -4930,7 +5818,13 @@
        "text": "Toss in the fried paneer just before serving; scatter with crushed cashews.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Honey Chilli Cauliflower",
@@ -4967,7 +5861,13 @@
        "text": "Toss in the crispy florets just before serving; sprinkle with sesame seeds and spring onion.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": false
     }
    ]
   },
@@ -5001,7 +5901,12 @@
        "text": "Spoon the tomato mixture over the toasted bread just before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 540,
+     "high_protein": false
     },
     {
      "title": "Mushroom Risotto",
@@ -5026,7 +5931,12 @@
        "text": "Stir in remaining butter, Parmesan, salt and pepper before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": false
     },
     {
      "title": "Pasta Aglio e Olio",
@@ -5051,7 +5961,12 @@
        "text": "Finish with parsley, salt and Parmesan if using.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": false
     },
     {
      "title": "Penne Arrabbiata (Spicy Tomato Pasta)",
@@ -5080,7 +5995,12 @@
        "text": "Finish with basil or parsley and Parmesan if using; serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": false
     },
     {
      "title": "Minestrone Soup",
@@ -5105,7 +6025,12 @@
        "text": "Continue on Boil (Speed 1–2, 100°C) for 8 minutes until pasta is tender; season with salt and pepper before serving.",
        "duration_seconds": 480
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1680,
+     "high_protein": false
     },
     {
      "title": "Ratatouille",
@@ -5130,7 +6055,12 @@
        "text": "Add tomatoes, herbs, salt and pepper; simmer on Sauté (Speed 1–2, ~100–110°C) for 9 minutes until all vegetables are tender. Garnish with basil.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1560,
+     "high_protein": true
     },
     {
      "title": "Crustless Vegetable Quiche",
@@ -5159,7 +6089,12 @@
        "text": "Bake at 170°C for 22 minutes until set in the centre and lightly golden on top.",
        "duration_seconds": 1320
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1560,
+     "high_protein": true
     },
     {
      "title": "Greek Salad",
@@ -5180,7 +6115,10 @@
        "text": "Top with cubed feta and a final drizzle of olive oil before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 0,
+     "high_protein": false
     },
     {
      "title": "Hummus",
@@ -5205,7 +6143,12 @@
        "text": "Spoon into a bowl, drizzle with olive oil, and serve with pita or vegetables.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": true
     },
     {
      "title": "Crispy Falafel",
@@ -5234,7 +6177,12 @@
        "text": "Air-fry at 200°C for 16 minutes, flipping halfway, until deep golden and crisp.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Tzatziki",
@@ -5251,7 +6199,10 @@
        "text": "Chill for at least 30 minutes before serving for the flavours to meld.",
        "duration_seconds": 1800
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 1800,
+     "high_protein": true
     },
     {
      "title": "Patatas Bravas",
@@ -5280,7 +6231,13 @@
        "text": "Add chopped tomatoes, smoked paprika and cayenne; simmer on Sauté (Speed 1–2, ~100–110°C) for 9 minutes until thickened. Spoon over the crispy potatoes.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1920,
+     "high_protein": false
     },
     {
      "title": "Spanish Tortilla (Potato Omelette)",
@@ -5309,7 +6266,13 @@
        "text": "Bake at 170°C for 15 minutes until just set in the centre. Rest 5 minutes before slicing.",
        "duration_seconds": 900
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2040,
+     "high_protein": true
     },
     {
      "title": "Baked Mac and Cheese",
@@ -5338,7 +6301,13 @@
        "text": "Transfer to an oven-safe dish, top with remaining cheddar and breadcrumbs, and bake in the Airfryer at 180°C for 15 minutes until golden and bubbling.",
        "duration_seconds": 900
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1920,
+     "high_protein": false
     },
     {
      "title": "Soft Pretzels",
@@ -5371,7 +6340,13 @@
        "text": "Bake at 190°C for 12 minutes until deep golden-brown.",
        "duration_seconds": 720
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1560,
+     "high_protein": true
     },
     {
      "title": "Paneer Souvlaki Skewers (Greek-Style)",
@@ -5404,7 +6379,12 @@
        "text": "Serve with pita, tzatziki and salad.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": true
     },
     {
      "title": "Veg Burger (Crispy Vegetable Patty Burger)",
@@ -5441,7 +6421,12 @@
        "text": "Assemble: bun base, sauces, lettuce, tomato, onion, the patty, and the bun top. Serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2520,
+     "high_protein": false
     }
    ]
   },
@@ -5479,7 +6464,12 @@
        "text": "Turn off the heat and stir in the sesame oil. Garnish with sesame seeds and serve warm or at room temperature.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1920,
+     "high_protein": false
     },
     {
      "title": "Korean Fried Tofu (Dubu Jorim)",
@@ -5508,7 +6498,12 @@
        "text": "Stir in the sesame oil, sprinkle with spring onion and sesame seeds, and serve warm.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 540,
+     "high_protein": true
     },
     {
      "title": "Kimchi Pancake (Kimchi Jeon)",
@@ -5541,7 +6536,12 @@
        "text": "Cut into wedges and serve hot with the dipping sauce.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 480,
+     "high_protein": false
     },
     {
      "title": "Korean Corn Cheese",
@@ -5570,7 +6570,12 @@
        "text": "Scatter over the remaining spring onion and serve hot, straight from the dish.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": false
     },
     {
      "title": "Air-Fried Korean Cauliflower",
@@ -5603,7 +6608,13 @@
        "text": "Toss the hot cauliflower in the sauce and garnish with sesame seeds. Serve immediately.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": false
     },
     {
      "title": "Kimchi Fried Rice",
@@ -5636,7 +6647,12 @@
        "text": "Serve hot, topped with a fried egg if using, and a sprinkle of sesame seeds.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 420,
+     "high_protein": true
     },
     {
      "title": "Tteokbokki (Spicy Rice Cakes)",
@@ -5669,7 +6685,12 @@
        "text": "Serve hot, topped with a halved boiled egg if using.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Bibimbap Bowl",
@@ -5702,7 +6723,10 @@
        "text": "Mix everything together well just before eating.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 0,
+     "high_protein": true
     },
     {
      "title": "Gochujang Sauce",
@@ -5723,7 +6747,12 @@
        "text": "Transfer to a clean jar and refrigerate for up to 3 weeks.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": false
     },
     {
      "title": "Ssamjang",
@@ -5744,7 +6773,10 @@
        "text": "Transfer to a small serving bowl. Refrigerate any leftovers for up to 2 weeks.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 0,
+     "high_protein": false
     },
     {
      "title": "Korean BBQ Sauce (Bulgogi Marinade)",
@@ -5765,7 +6797,12 @@
        "text": "Use immediately as a marinade (marinate chicken or paneer for at least 1 hour), or bottle and refrigerate for up to 2 weeks.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": true
     }
    ]
   },
@@ -5799,7 +6836,12 @@
        "text": "Peel once cool and use in salads, sandwiches, or as a snack with chaat masala.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Masala Egg Omelette",
@@ -5828,7 +6870,12 @@
        "text": "Slide out onto a plate and serve hot with toast.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Air Fryer Scotch Eggs",
@@ -5861,7 +6908,12 @@
        "text": "Air-fry at 190°C for 14 minutes, turning halfway, until deep golden and cooked through.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1980,
+     "high_protein": true
     },
     {
      "title": "Deviled Eggs",
@@ -5890,7 +6942,10 @@
        "text": "Chill for 15 minutes before serving.",
        "duration_seconds": 900
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 900,
+     "high_protein": true
     },
     {
      "title": "Bread Omelette Sandwich",
@@ -5923,7 +6978,13 @@
        "text": "Slice diagonally and serve hot with ketchup.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 600,
+     "high_protein": true
     },
     {
      "title": "Poached Eggs (Chef Magic Method)",
@@ -5952,7 +7013,12 @@
        "text": "Season with salt and pepper and serve on hot buttered toast.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 180,
+     "high_protein": true
     },
     {
      "title": "Egg Salad (Sandwich Filling)",
@@ -5981,7 +7047,12 @@
        "text": "Use immediately as a sandwich filling, or spoon onto lettuce leaves for a lighter option.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": true
     }
    ]
   },
@@ -6011,7 +7082,12 @@
        "text": "Garnish with coriander and serve with toast or pav.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Anda Curry (North Indian Egg Curry)",
@@ -6036,7 +7112,12 @@
        "text": "Gently add the boiled eggs and garam masala; simmer on Sauté (Speed 1–2, ~100–110°C) for 5 minutes so the eggs soak up the gravy. Garnish with coriander.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Egg Fried Rice",
@@ -6061,7 +7142,12 @@
        "text": "Fold the scrambled egg back in and toss for 2 minutes before serving.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": true
     },
     {
      "title": "Dhaba-Style Egg Curry (Simple Everyday)",
@@ -6094,7 +7180,12 @@
        "text": "Sprinkle garam masala and coriander leaves before serving with rice or rotis.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1050,
+     "high_protein": true
     },
     {
      "title": "Shakshuka (Baked Eggs in Tomato-Pepper Sauce)",
@@ -6131,7 +7222,13 @@
        "text": "Garnish with coriander or parsley and serve straight from the dish with crusty bread.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1740,
+     "high_protein": true
     },
     {
      "title": "Egg Bhurji Kathi Roll",
@@ -6164,7 +7261,13 @@
        "text": "Spread mint chutney on each roti, spoon the egg bhurji down the centre, top with sliced onions, and roll tightly.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": true
     },
     {
      "title": "Egg Drop Soup",
@@ -6193,7 +7296,12 @@
        "text": "Drizzle with sesame oil and garnish with spring onion greens before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 420,
+     "high_protein": true
     },
     {
      "title": "Egg Hakka Noodles",
@@ -6222,7 +7330,12 @@
        "text": "Fold in the scrambled egg and spring onions; toss for 1 minute more and serve hot.",
        "duration_seconds": 60
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 660,
+     "high_protein": true
     },
     {
      "title": "Egg Kurma (South Indian Coconut Egg Curry)",
@@ -6255,7 +7368,12 @@
        "text": "Slit the boiled eggs lightly and slide them into the gravy; simmer for 5 minutes so they soak up the flavour before serving.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1410,
+     "high_protein": true
     }
    ]
   },
@@ -6289,7 +7407,12 @@
        "text": "Rest 10 minutes before carving.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 3660,
+     "high_protein": true
     },
     {
      "title": "Garlic Butter Grilled Fish",
@@ -6318,7 +7441,12 @@
        "text": "Garnish with herbs and serve with extra lemon.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": true
     },
     {
      "title": "Mutton Seekh Kebab",
@@ -6347,7 +7475,12 @@
        "text": "Rest for a few minutes before serving with mint chutney.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": true
     },
     {
      "title": "Soy-Glazed Air Fryer Salmon",
@@ -6376,7 +7509,12 @@
        "text": "Serve with steamed rice and vegetables.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1800,
+     "high_protein": true
     },
     {
      "title": "Lamb Chops with Herb Crust",
@@ -6405,7 +7543,12 @@
        "text": "Rest 5 minutes before serving.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2640,
+     "high_protein": false
     },
     {
      "title": "Air Fryer Steak",
@@ -6434,7 +7577,12 @@
        "text": "Rest 5 minutes with a pat of butter on top before slicing.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": false
     },
     {
      "title": "Kosha Mangsho (Bengali Slow-Cooked Mutton Curry)",
@@ -6459,7 +7607,12 @@
        "text": "Add a little water, select Boil (Speed 1–2, 100°C), and cook covered until the mutton is tender and the gravy has thickened and turned deep brown.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": true
     },
     {
      "title": "Kashmiri Rogan Josh",
@@ -6484,7 +7637,12 @@
        "text": "Add Kashmiri chilli powder, fennel powder, ginger powder and salt with a little water; select Boil (Speed 1–2, 100°C) and cook covered until the lamb is tender and the gravy is thick and deep red.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2520,
+     "high_protein": true
     }
    ]
   },
@@ -6518,7 +7676,12 @@
        "text": "Squeeze over lemon and scatter with parsley before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 720,
+     "high_protein": true
     },
     {
      "title": "Tandoori Prawn Skewers",
@@ -6551,7 +7714,12 @@
        "text": "Serve with mint chutney and lemon wedges.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2580,
+     "high_protein": true
     },
     {
      "title": "Prawn Malai Curry (Creamy Coconut Prawn Curry)",
@@ -6580,7 +7748,12 @@
        "text": "Garnish with coriander and serve with steamed rice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Chilli Garlic Prawns",
@@ -6601,7 +7774,13 @@
        "text": "Option B – Chef Magic only: sauté capsicum, onion, ginger-garlic paste and green chillies in oil for 5 minutes, add the prawns, chilli-garlic sauce and soy sauce, and sauté for 7 minutes, stirring gently, until the prawns are just cooked through.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1020,
+     "high_protein": true
     },
     {
      "title": "Kerala-Style Prawn Curry",
@@ -6630,7 +7809,12 @@
        "text": "Serve hot with steamed rice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": true
     },
     {
      "title": "Crispy Prawn Pakoras",
@@ -6655,7 +7839,13 @@
        "text": "Option B – Chef Magic: add 3 tbsp oil to the jar, select Sauté (Speed 2–4, ~130–160°C), and shallow-fry the prawns, turning gently, for 8 minutes until golden on both sides. Combo Recipes — Chef Magic + Airfryer",
        "duration_seconds": 480
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": true
     }
    ]
   },
@@ -6689,7 +7879,13 @@
        "text": "Grill at 190°C for 13 minutes, turning once, until charred at the edges and cooked through.",
        "duration_seconds": 780
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2820,
+     "high_protein": true
     },
     {
      "title": "Momo to Fried Momo (Steam then Crisp)",
@@ -6718,7 +7914,13 @@
        "text": "Air-fry at 190°C for 7 minutes until the outside turns crisp and lightly golden.",
        "duration_seconds": 420
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": true
     },
     {
      "title": "Chicken 65",
@@ -6743,7 +7945,13 @@
        "text": "Option B – Chef Magic: add oil to the jar, select Sauté (Speed 2–4, ~130–160°C), add curry leaves and green chilli briefly, then add marinated chicken and cook, stirring occasionally, for 14 minutes until crisp outside and cooked through.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3840,
+     "high_protein": true
     },
     {
      "title": "Chicken Cutlets (Crispy Airfryer Croquettes)",
@@ -6780,7 +7988,13 @@
        "text": "Air-fry at 200°C for 16 minutes, flipping halfway, until golden and crisp on both sides.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2100,
+     "high_protein": true
     },
     {
      "title": "Peri Peri Chicken",
@@ -6809,7 +8023,12 @@
        "text": "Grill at 200°C for 18 minutes, turning once, until charred at the edges and cooked through.",
        "duration_seconds": 1080
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 3120,
+     "high_protein": true
     },
     {
      "title": "Reshmi Chicken Kebab (Malai Tikka)",
@@ -6838,7 +8057,13 @@
        "text": "Grill at 190°C for 14 minutes, turning once, until lightly golden with no charring (reshmi tikka should stay pale and creamy).",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2880,
+     "high_protein": true
     },
     {
      "title": "Chicken Momos",
@@ -6867,7 +8092,13 @@
        "text": "Serve hot with spicy chilli-garlic dip or momo chutney.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1260,
+     "high_protein": true
     },
     {
      "title": "Chicken Popcorn (Crispy Airfryer Bites)",
@@ -6900,7 +8131,13 @@
        "text": "Serve hot with tomato ketchup or a spicy mayo dip.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2280,
+     "high_protein": true
     },
     {
      "title": "Classic Chicken Nuggets",
@@ -6933,7 +8170,12 @@
        "text": "Air-fry at 190°C for 12–14 minutes, turning halfway, until golden, crisp and cooked through.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": true
     },
     {
      "title": "Crispy Chicken Bites (Chilli-Garlic)",
@@ -6966,7 +8208,13 @@
        "text": "Add the soy sauce, chilli sauce, vinegar and sugar; simmer for 2 minutes until slightly thickened, then toss the hot chicken through the sauce. Garnish with spring onions and serve immediately.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1380,
+     "high_protein": true
     },
     {
      "title": "Air Fryer Chicken Wings",
@@ -6995,7 +8243,12 @@
        "text": "Toss in hot sauce while hot, if using.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1500,
+     "high_protein": true
     },
     {
      "title": "Stuffed Chicken Cheese Balls",
@@ -7024,7 +8277,12 @@
        "text": "Air-fry at 190°C for 13 minutes, turning once, until golden and cheese is melted inside.",
        "duration_seconds": 780
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1020,
+     "high_protein": true
     },
     {
      "title": "Jalapeño Poppers",
@@ -7053,7 +8311,12 @@
        "text": "Bake at 180°C for 11 minutes until peppers soften and the topping is bubbling.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     }
    ]
   },
@@ -7099,7 +8362,13 @@
        "text": "Add the grilled chicken, cream and kasuri methi; simmer on Sauté (Speed 1–2, ~100–110°C) for 4 minutes and serve hot.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2220,
+     "high_protein": true
     },
     {
      "title": "Chicken Biryani (Dum-Style)",
@@ -7140,7 +8409,13 @@
        "text": "Cover tightly and Airfryer-dum at 160°C for 10 minutes to let the flavours settle before serving.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3900,
+     "high_protein": true
     },
     {
      "title": "Chicken Korma",
@@ -7177,7 +8452,12 @@
        "text": "Stir in cream and garam masala; simmer for 2 minutes and garnish with coriander before serving.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Ghar ka Chicken Curry (Simple Home-Style)",
@@ -7210,7 +8490,12 @@
        "text": "Sprinkle garam masala and coriander leaves before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1530,
+     "high_protein": true
     },
     {
      "title": "Kadai Chicken",
@@ -7243,7 +8528,12 @@
        "text": "Garnish with coriander leaves and serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Chicken Saag (Chicken with Spinach)",
@@ -7276,7 +8566,12 @@
        "text": "Stir in garam masala and cream if using; simmer for 2 minutes before serving.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1620,
+     "high_protein": true
     },
     {
      "title": "Chicken Keema (Minced Chicken Curry)",
@@ -7309,7 +8604,12 @@
        "text": "Sprinkle garam masala and coriander leaves before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1350,
+     "high_protein": true
     },
     {
      "title": "Chicken Do Pyaza",
@@ -7342,7 +8642,12 @@
        "text": "Fold in the reserved onion petals and garam masala; simmer for 2 minutes and garnish with coriander before serving.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1920,
+     "high_protein": true
     },
     {
      "title": "Amritsari Fried Chicken (Punjabi-Style)",
@@ -7375,7 +8680,13 @@
        "text": "Air-fry at 200°C for 18 minutes, shaking the basket halfway, until deeply golden and crisp on the outside.",
        "duration_seconds": 1080
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3120,
+     "high_protein": true
     },
     {
      "title": "Chicken Karahi (Punjabi Wok-Style)",
@@ -7408,7 +8719,12 @@
        "text": "Garnish with the remaining ginger julienne and coriander leaves before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1380,
+     "high_protein": true
     },
     {
      "title": "Punjabi Dhaba-Style Murgh Curry (Bone-In)",
@@ -7445,7 +8761,12 @@
        "text": "Sprinkle garam masala and coriander leaves before serving with tandoori roti.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1890,
+     "high_protein": true
     },
     {
      "title": "Chicken Changezi",
@@ -7482,7 +8803,13 @@
        "text": "Stir in cream, garam masala and chopped dry fruits; simmer for 2 minutes and garnish with coriander before serving.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3900,
+     "high_protein": true
     },
     {
      "title": "Kukkad Rassa (Kolhapuri Chicken Curry)",
@@ -7519,7 +8846,12 @@
        "text": "Garnish with coriander leaves and serve with rice bhakri or steamed rice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2580,
+     "high_protein": true
     },
     {
      "title": "Tandoori Grilled Chicken",
@@ -7552,7 +8884,13 @@
        "text": "Rest for 5 minutes, then serve hot with lemon wedges and sliced onions.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1860,
+     "high_protein": true
     },
     {
      "title": "Butter Chicken (Murgh Makhani)",
@@ -7581,7 +8919,13 @@
        "text": "Return to Sauté (Speed 1–2, ~100–110°C), add sugar, kasuri methi and salt; simmer 4 minutes, then add the grilled chicken and cream, simmering a further 6 minutes.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3840,
+     "high_protein": true
     },
     {
      "title": "Chettinad Chicken",
@@ -7606,7 +8950,12 @@
        "text": "Add the chicken and salt; sauté 6 minutes to sear, then select Boil (Speed 1–2, 100°C) and cook covered for 8 minutes until the chicken is cooked through and the gravy thickens.",
        "duration_seconds": 360
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1020,
+     "high_protein": true
     }
    ]
   },
@@ -7652,7 +9001,13 @@
        "text": "Gently slide in the seared fish and simmer a further 5 minutes, stirring as little as possible, until just cooked through.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2880,
+     "high_protein": true
     },
     {
      "title": "Rui Macher Jhol (Light Bengali Rohu Curry)",
@@ -7693,7 +9048,12 @@
        "text": "Garnish with coriander leaves and serve with steamed rice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2010,
+     "high_protein": true
     },
     {
      "title": "Sorshe Rui (Rohu in Mustard Gravy)",
@@ -7730,7 +9090,12 @@
        "text": "Finish with a drizzle of raw mustard oil and serve with steamed rice.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1230,
+     "high_protein": true
     },
     {
      "title": "Rui Maach Bhaja (Crispy Airfried Rohu Fry)",
@@ -7763,7 +9128,12 @@
        "text": "Serve hot with a squeeze of lemon and sliced onions.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1860,
+     "high_protein": true
     },
     {
      "title": "Catla Macher Kalia (Rich Bengali Catla Curry)",
@@ -7804,7 +9174,12 @@
        "text": "Slide the fried fish back in and simmer for 4 minutes more; sprinkle garam masala and serve with steamed rice or pulao.",
        "duration_seconds": 240
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2100,
+     "high_protein": true
     },
     {
      "title": "Catla Fish Fry (Spiced Airfryer Catla)",
@@ -7837,7 +9212,12 @@
        "text": "Serve hot with onion rings and mint chutney.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2280,
+     "high_protein": true
     },
     {
      "title": "Bhapa Ilish (Steamed Hilsa in Mustard)",
@@ -7858,7 +9238,12 @@
        "text": "Steam in Chef Magic (100°C steam, paddle off) for 22 minutes until the fish is opaque and fully cooked through.",
        "duration_seconds": 1320
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2520,
+     "high_protein": true
     },
     {
      "title": "Kerala-Style Fish Curry",
@@ -7883,7 +9268,12 @@
        "text": "Gently add the fish pieces and simmer a further 8 minutes until just cooked through — avoid stirring hard so the fish stays intact.",
        "duration_seconds": 480
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": true
     },
     {
      "title": "Popcorn Shrimp",
@@ -7912,7 +9302,12 @@
        "text": "Air-fry at 190°C for 7–9 minutes, shaking halfway, until golden and crisp — take care not to overcook, as shrimp turn rubbery quickly.",
        "duration_seconds": 540
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 780,
+     "high_protein": true
     },
     {
      "title": "Popcorn Fish Bites",
@@ -7941,7 +9336,12 @@
        "text": "Air-fry at 190°C for 8–10 minutes, shaking halfway, until golden and crisp and the fish flakes easily.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": true
     },
     {
      "title": "Fish Fingers (Fish Sticks)",
@@ -7974,7 +9374,12 @@
        "text": "Serve hot with lemon wedges and tartar sauce.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": true
     }
    ]
   },
@@ -8016,7 +9421,13 @@
        "text": "Toss in the fried chicken just before serving so it stays crisp; garnish with spring onion.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Chilli Chicken (Dry)",
@@ -8053,7 +9464,13 @@
        "text": "Toss in the fried chicken just before serving; serve immediately while still crisp.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Chicken Hakka Noodles",
@@ -8082,7 +9499,12 @@
        "text": "Garnish with spring onion greens and serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": true
     },
     {
      "title": "Chicken Manchow Soup",
@@ -8111,7 +9533,12 @@
        "text": "Ladle into bowls and top with crispy fried noodles and spring onion greens.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1140,
+     "high_protein": true
     },
     {
      "title": "Honey Chilli Chicken",
@@ -8148,7 +9575,13 @@
        "text": "Toss in the crispy chicken just before serving; sprinkle with sesame seeds and spring onion.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2640,
+     "high_protein": true
     },
     {
      "title": "Dragon Chicken",
@@ -8185,7 +9618,13 @@
        "text": "Toss in the fried chicken just before serving; scatter with crushed cashews.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Chicken Fried Rice",
@@ -8218,7 +9657,12 @@
        "text": "Garnish with spring onion greens and serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": true
     },
     {
      "title": "Chicken Noodle Soup (Everyday)",
@@ -8247,7 +9691,12 @@
        "text": "Season with salt and pepper, and garnish with spring onion greens before serving hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1020,
+     "high_protein": true
     }
    ]
   },
@@ -8281,7 +9730,12 @@
        "text": "Top each piece with marinara sauce and mozzarella; bake a further 5 minutes at 190°C until the cheese melts.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1380,
+     "high_protein": true
     },
     {
      "title": "Chicken Alfredo Pasta",
@@ -8314,7 +9768,13 @@
        "text": "Add the drained pasta to the sauce and toss for 2 minutes until well coated. Top with the sliced chicken, extra Parmesan and parsley; serve hot.",
        "duration_seconds": 120
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2280,
+     "high_protein": true
     },
     {
      "title": "French Onion Soup",
@@ -8343,7 +9803,13 @@
        "text": "Ladle into oven-safe bowls, top with baguette slices and cheese, then air-fry at 200°C for 5 minutes until the cheese melts and bubbles.",
        "duration_seconds": 300
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2760,
+     "high_protein": true
     },
     {
      "title": "Chicken Souvlaki Skewers",
@@ -8372,7 +9838,12 @@
        "text": "Serve with pita, tzatziki and salad.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 2940,
+     "high_protein": true
     },
     {
      "title": "One-Pot Chicken Paella",
@@ -8397,7 +9868,12 @@
        "text": "Select Boil (Speed 1–2, 100°C) and cook for 16 minutes until rice is tender and liquid is absorbed; stir in peas for the last 2 minutes. Serve with lemon wedges.",
        "duration_seconds": 960
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1740,
+     "high_protein": true
     },
     {
      "title": "Crispy Airfryer Fish and Chips",
@@ -8426,7 +9902,12 @@
        "text": "Air-fry both together at 200°C for a further 10 minutes, until fish is golden and flakes easily and chips are crisp. Serve with malt vinegar.",
        "duration_seconds": 600
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1440,
+     "high_protein": true
     },
     {
      "title": "Shepherd’s Pie",
@@ -8455,7 +9936,13 @@
        "text": "Spread the meat filling in an oven-safe dish, top with mashed potato, and bake in the Airfryer at 190°C for 20 minutes until the top is golden.",
        "duration_seconds": 1200
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2280,
+     "high_protein": true
     },
     {
      "title": "Chicken Burger (Crispy Chicken Patty Burger)",
@@ -8492,7 +9979,12 @@
        "text": "Assemble: bun base, sauces, lettuce, tomato, onion, the patty, and the bun top. Serve hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 3240,
+     "high_protein": true
     }
    ]
   },
@@ -8530,7 +10022,13 @@
        "text": "Toss the hot chicken in the sauce until well coated, garnish with sesame seeds, and serve immediately.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1560,
+     "high_protein": true
     },
     {
      "title": "Korean Gochujang Chicken Wings",
@@ -8563,7 +10061,13 @@
        "text": "Toss the hot wings in the sauce, garnish with sesame seeds and spring onion, and serve immediately.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1860,
+     "high_protein": true
     },
     {
      "title": "Korean Chicken Bulgogi",
@@ -8596,7 +10100,13 @@
        "text": "Garnish with spring onions and sesame seeds; serve with steamed rice and lettuce wraps.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Korean Corn Dogs",
@@ -8629,7 +10139,12 @@
        "text": "Air-fry at 190°C for 12–14 minutes, turning halfway, until golden and crisp. Serve hot with ketchup and mustard.",
        "duration_seconds": 840
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer"
+     ],
+     "total_duration_seconds": 1080,
+     "high_protein": true
     },
     {
      "title": "Chicken Shawarma (Airfryer)",
@@ -8662,7 +10177,13 @@
        "text": "Pile into warm pita or flatbread with sliced onion, tomato and garlic sauce.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 3000,
+     "high_protein": true
     }
    ]
   },
@@ -8700,7 +10221,12 @@
        "text": "Unwrap, cut into cubes, and use fresh, or refrigerate for up to 3 days.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1320,
+     "high_protein": true
     },
     {
      "title": "Homemade Ghee (Clarified Butter)",
@@ -8729,7 +10255,12 @@
        "text": "Cool completely before sealing; store at room temperature for up to 3 months.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1380,
+     "high_protein": true
     },
     {
      "title": "Homemade White Butter (Makkhan)",
@@ -8758,7 +10289,12 @@
        "text": "Shape into a block, wrap, and refrigerate. Use fresh within a week, or clarify into ghee for longer storage.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 540,
+     "high_protein": false
     },
     {
      "title": "Hung Curd (Chakka Dahi)",
@@ -8787,7 +10323,10 @@
        "text": "Transfer the thick hung curd to a bowl and use for dips, desserts, or as a substitute for cream.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 0,
+     "high_protein": true
     },
     {
      "title": "Homemade Khoya (Mawa)",
@@ -8816,7 +10355,12 @@
        "text": "Use immediately in sweets, or cool completely and refrigerate for up to a week.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2400,
+     "high_protein": true
     },
     {
      "title": "Homemade Mozzarella (Stretchy Fresh Cheese)",
@@ -8849,7 +10393,12 @@
        "text": "Add the salt, shape into a ball, and place in ice water to firm up. Store refrigerated in its whey for up to a week.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 630,
+     "high_protein": true
     },
     {
      "title": "Homemade Cream Cheese",
@@ -8882,7 +10431,12 @@
        "text": "Transfer to an airtight container and refrigerate for up to a week.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 240,
+     "high_protein": true
     },
     {
      "title": "Classic Eggless Mayonnaise",
@@ -8907,7 +10461,12 @@
        "text": "Taste and adjust salt or lemon juice as needed. Transfer to a clean jar and refrigerate.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 215,
+     "high_protein": true
     },
     {
      "title": "Garlic Mayo (Aioli-Style)",
@@ -8928,7 +10487,10 @@
        "text": "Cover and refrigerate for at least 30 minutes to let the garlic flavour infuse before serving.",
        "duration_seconds": 1800
       }
-     ]
+     ],
+     "appliances": [],
+     "total_duration_seconds": 1800,
+     "high_protein": true
     },
     {
      "title": "Homemade Tomato Ketchup",
@@ -8957,7 +10519,12 @@
        "text": "Cool completely, then bottle in a clean, sterilised jar. Refrigerate for up to a month.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2700,
+     "high_protein": true
     },
     {
      "title": "White Sauce (Béchamel)",
@@ -8986,7 +10553,12 @@
        "text": "Stir in the nutmeg, salt and pepper. Use immediately in bakes, pastas or gratins.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 480,
+     "high_protein": false
     },
     {
      "title": "Pizza & Pasta Sauce (Marinara)",
@@ -9015,7 +10587,12 @@
        "text": "Stir in fresh basil leaves if using, just before serving.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1620,
+     "high_protein": false
     },
     {
      "title": "Peri Peri Sauce",
@@ -9040,7 +10617,12 @@
        "text": "Transfer to a clean bottle and refrigerate for up to 2 weeks; the flavour deepens after a day.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 0,
+     "high_protein": true
     },
     {
      "title": "Schezwan Sauce",
@@ -9069,7 +10651,12 @@
        "text": "Cool and bottle; refrigerate for up to 3 weeks.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 840,
+     "high_protein": false
     },
     {
      "title": "BBQ Sauce",
@@ -9090,7 +10677,12 @@
        "text": "Cool completely before bottling; refrigerate for up to 3 weeks.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 600,
+     "high_protein": true
     },
     {
      "title": "Cheese Sauce (for Mac & Cheese, Nachos)",
@@ -9119,7 +10711,12 @@
        "text": "Turn off the heat and stir in the grated cheese, mustard powder, nutmeg, salt and pepper until melted and smooth.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 420,
+     "high_protein": false
     },
     {
      "title": "Sweet Tamarind Chutney (Meethi Chutney)",
@@ -9144,7 +10741,12 @@
        "text": "Cool completely — the chutney will thicken further as it cools. Bottle and refrigerate for up to a month.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 960,
+     "high_protein": false
     },
     {
      "title": "Chapati / Roti Dough",
@@ -9169,7 +10771,12 @@
        "text": "Rest the dough 15 minutes before rolling and cooking rotis on a tawa.",
        "duration_seconds": 900
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     },
     {
      "title": "Whole Wheat Pizza, Dough to Bake",
@@ -9198,7 +10805,13 @@
        "text": "Divide, roll into bases, top with sauce, cheese and toppings, then bake in the Airfryer at 200°C for 11 minutes until crisp and golden.",
        "duration_seconds": 660
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1500,
+     "high_protein": false
     },
     {
      "title": "Naan Dough",
@@ -9235,7 +10848,13 @@
        "text": "Brush with melted butter and scatter over coriander while hot.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1200,
+     "high_protein": true
     },
     {
      "title": "Basic White Bread Dough",
@@ -9272,7 +10891,13 @@
        "text": "Cool on a rack for at least 20 minutes before slicing.",
        "duration_seconds": 1200
       }
-     ]
+     ],
+     "appliances": [
+      "Airfryer",
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 5700,
+     "high_protein": false
     },
     {
      "title": "Fresh Pasta Dough",
@@ -9301,7 +10926,12 @@
        "text": "Cook in boiling salted water for 2–3 minutes for fresh pasta, until al dente.",
        "duration_seconds": 180
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2340,
+     "high_protein": true
     },
     {
      "title": "Shortcrust Pastry (Pie Crust)",
@@ -9330,7 +10960,12 @@
        "text": "Roll out on a floured surface and use to line a pie or tart tin as required by your recipe.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 1800,
+     "high_protein": false
     },
     {
      "title": "Quick Puff Pastry (Rough Puff)",
@@ -9363,7 +10998,12 @@
        "text": "Wrap and chill for at least 30 minutes before rolling out for use.",
        "duration_seconds": 1800
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 2700,
+     "high_protein": false
     },
     {
      "title": "Pizza Dough",
@@ -9392,7 +11032,12 @@
        "text": "Use immediately, or wrap and refrigerate for up to 2 days — bring to room temperature before shaping.",
        "duration_seconds": null
       }
-     ]
+     ],
+     "appliances": [
+      "Chef Magic"
+     ],
+     "total_duration_seconds": 900,
+     "high_protein": false
     }
    ]
   }

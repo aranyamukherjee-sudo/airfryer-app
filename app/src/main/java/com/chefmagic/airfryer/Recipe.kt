@@ -12,7 +12,10 @@ data class Recipe(
     val file: String,
     val section: String,
     val search: String,
-    val steps: List<Step> = emptyList()
+    val steps: List<Step> = emptyList(),
+    val appliances: List<String> = emptyList(),
+    val totalDurationSeconds: Int = 0,
+    val highProtein: Boolean = false
 )
 
 data class Section(

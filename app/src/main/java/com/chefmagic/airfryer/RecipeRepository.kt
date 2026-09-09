@@ -39,6 +39,14 @@ object RecipeRepository {
                     }
                 }
 
+                val appliances = mutableListOf<String>()
+                val appliancesArray = rObj.optJSONArray("appliances")
+                if (appliancesArray != null) {
+                    for (k in 0 until appliancesArray.length()) {
+                        appliances.add(appliancesArray.getString(k))
+                    }
+                }
+
                 recipes.add(
                     Recipe(
                         title = rObj.getString("title"),
@@ -47,7 +55,10 @@ object RecipeRepository {
                         file = rObj.getString("file"),
                         section = name,
                         search = rObj.optString("search", ""),
-                        steps = steps
+                        steps = steps,
+                        appliances = appliances,
+                        totalDurationSeconds = rObj.optInt("total_duration_seconds", 0),
+                        highProtein = rObj.optBoolean("high_protein", false)
                     )
                 )
             }
