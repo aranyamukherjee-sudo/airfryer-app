@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class RecipeAdapter(
-    private val onClick: (Recipe) -> Unit,
-    private val onLongClick: (Recipe) -> Unit = {}
+    private val onLongClick: (Recipe) -> Unit = {},
+    private val onClick: (Recipe) -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val items = mutableListOf<ListItem>()
