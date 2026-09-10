@@ -71,6 +71,41 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         view.findViewById<ImageButton>(R.id.homeFavoritesIcon).setOnClickListener {
             (activity as? MainActivity)?.selectBottomNavTab(R.id.nav_favorites)
         }
+
+        refreshRecentlyViewed()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (view != null) refreshRecentlyViewed()
+    }
+
+    private fun refreshRecentlyViewed() {
+        val context = requireContext()
+        val view = view ?: return
+
+        val recentFiles = RecentlyViewedManager.getRecentFiles(context)
+        val section = view.findViewById<View>(R.id.recentlyViewedSection)
+
+        if (recentFiles.isEmpty()) {
+            section.visibility = View.GONE
+            return
+        }
+
+        val sections = RecipeRepository.loadSections(context)
+        val allRecipes = sections.flatMap { it.recipes }
+        val recipeByFile = allRecipes.associateBy { it.file }
+        val recentRecipes = recentFiles.mapNotNull { recipeByFile[it] }
+
+        if (recentRecipes.isEmpty()) {
+            section.visibility = View.GONE
+            return
+        }
+
+        section.visibility = View.VISIBLE
+        val recycler: RecyclerView = view.findViewById(R.id.recentlyViewedRecyclerView)
+        recycler.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        recycler.adapter = PopularRecipeAdapter(recentRecipes) { recipe -> openRecipe(recipe) }
     }
 
     private fun openRecipe(recipe: Recipe) {

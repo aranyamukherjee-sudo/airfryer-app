@@ -144,6 +144,43 @@
                     android:textColor="@color/text_secondary"
                     android:gravity="center" />
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/airfryerTipCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#F1EADC"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔥"
+                            android:textSize="14sp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Air Fryer Tip: Larger quantities may need to be cooked in multiple batches. Avoid overcrowding the basket for even cooking."
+                            android:textSize="12.5sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#6B5A2E"
+                            android:lineSpacingExtra="2dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
                 <!-- Ingredients -->
                 <TextView
                     android:layout_width="wrap_content"

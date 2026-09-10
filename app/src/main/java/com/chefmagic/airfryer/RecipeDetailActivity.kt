@@ -55,10 +55,13 @@ class RecipeDetailActivity : AppCompatActivity() {
         val r = recipe ?: return
         currentServings = r.originalServings.coerceIn(1, 20)
 
+        RecentlyViewedManager.recordView(this, recipeFile)
+
         bindHero(r)
         bindChips(r)
         bindServingSelector(r)
         updateNutritionText()
+        updateAirfryerTip()
         bindIngredients(r)
         bindSteps(r)
         bindTip(r)
@@ -130,12 +133,21 @@ class RecipeDetailActivity : AppCompatActivity() {
         updateServingsDisplay()
         refreshIngredientTexts()
         updateNutritionText()
+        updateAirfryerTip()
 
         // Subtle pulse animation on the count, per the brief's "subtle animation" guidance.
         servingsCountText.animate().cancel()
         servingsCountText.scaleX = 1.25f
         servingsCountText.scaleY = 1.25f
         servingsCountText.animate().scaleX(1f).scaleY(1f).setDuration(160).start()
+    }
+
+    private fun updateAirfryerTip() {
+        val r = recipe ?: return
+        val tipCard: CardView = findViewById(R.id.airfryerTipCard)
+        val isAirfryer = r.appliances.contains("Airfryer")
+        val significantlyLarger = currentServings >= r.originalServings * 2 && currentServings > r.originalServings
+        tipCard.visibility = if (isAirfryer && significantlyLarger) View.VISIBLE else View.GONE
     }
 
     private fun updateNutritionText() {
