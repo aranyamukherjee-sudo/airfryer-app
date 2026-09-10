@@ -5,6 +5,15 @@ data class Step(
     val durationSeconds: Int?
 )
 
+data class Ingredient(
+    val raw: String,
+    val qty: Double?,
+    val qty2: Double?,
+    val unit: String?,
+    val name: String,
+    val scalable: Boolean
+)
+
 data class Recipe(
     val title: String,
     val nonveg: Boolean,
@@ -15,7 +24,10 @@ data class Recipe(
     val steps: List<Step> = emptyList(),
     val appliances: List<String> = emptyList(),
     val totalDurationSeconds: Int = 0,
-    val highProtein: Boolean = false
+    val highProtein: Boolean = false,
+    val ingredients: List<Ingredient> = emptyList(),
+    val originalServings: Int = 2,
+    val tip: String? = null
 )
 
 data class Section(

@@ -47,6 +47,24 @@ object RecipeRepository {
                     }
                 }
 
+                val ingredients = mutableListOf<Ingredient>()
+                val ingredientsArray = rObj.optJSONArray("ingredients")
+                if (ingredientsArray != null) {
+                    for (k in 0 until ingredientsArray.length()) {
+                        val iObj = ingredientsArray.getJSONObject(k)
+                        ingredients.add(
+                            Ingredient(
+                                raw = iObj.getString("raw"),
+                                qty = if (iObj.isNull("qty")) null else iObj.optDouble("qty"),
+                                qty2 = if (iObj.isNull("qty2")) null else iObj.optDouble("qty2"),
+                                unit = if (iObj.isNull("unit")) null else iObj.getString("unit"),
+                                name = iObj.getString("name"),
+                                scalable = iObj.optBoolean("scalable", false)
+                            )
+                        )
+                    }
+                }
+
                 recipes.add(
                     Recipe(
                         title = rObj.getString("title"),
@@ -58,7 +76,10 @@ object RecipeRepository {
                         steps = steps,
                         appliances = appliances,
                         totalDurationSeconds = rObj.optInt("total_duration_seconds", 0),
-                        highProtein = rObj.optBoolean("high_protein", false)
+                        highProtein = rObj.optBoolean("high_protein", false),
+                        ingredients = ingredients,
+                        originalServings = rObj.optInt("original_servings", 2),
+                        tip = if (rObj.isNull("tip")) null else rObj.optString("tip", null)
                     )
                 )
             }

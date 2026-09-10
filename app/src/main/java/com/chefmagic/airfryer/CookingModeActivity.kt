@@ -1,14 +1,17 @@
 package com.chefmagic.airfryer
 
 import android.content.Context
+import android.media.Ringtone
+import android.media.RingtoneManager
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.os.Handler
+import android.os.Looper
 import android.os.VibrationEffect
 import android.os.Vibrator
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
-import androidx.core.widget.NestedScrollView
 import com.google.android.material.button.MaterialButton
 
 class CookingModeActivity : AppCompatActivity() {
@@ -16,11 +19,15 @@ class CookingModeActivity : AppCompatActivity() {
     companion object {
         const val EXTRA_TITLE = "extra_title"
         const val EXTRA_FILE = "extra_file"
+        const val EXTRA_SERVINGS = "extra_servings"
+        private const val ALARM_AUTO_STOP_MS = 8000L
     }
 
     private var steps: List<Step> = emptyList()
     private var currentIndex = 0
     private var activeTimer: CountDownTimer? = null
+    private var activeAlarm: Ringtone? = null
+    private val alarmStopHandler = Handler(Looper.getMainLooper())
 
     private lateinit var stepProgressText: android.widget.TextView
     private lateinit var stepText: android.widget.TextView
@@ -36,9 +43,10 @@ class CookingModeActivity : AppCompatActivity() {
 
         val title = intent.getStringExtra(EXTRA_TITLE) ?: getString(R.string.app_name)
         val file = intent.getStringExtra(EXTRA_FILE)
+        val servings = intent.getIntExtra(EXTRA_SERVINGS, -1)
 
         val toolbar: Toolbar = findViewById(R.id.cookingToolbar)
-        toolbar.title = title
+        toolbar.title = if (servings > 0) "$title  ·  Cooking for $servings" else title
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener { finish() }
 
@@ -78,6 +86,7 @@ class CookingModeActivity : AppCompatActivity() {
     private fun goToStep(index: Int) {
         if (index < 0 || index >= steps.size) return
         cancelActiveTimer()
+        stopAlarmSound()
         showStep(index)
     }
 
@@ -107,9 +116,11 @@ class CookingModeActivity : AppCompatActivity() {
 
     private fun startTimer(totalSeconds: Int) {
         cancelActiveTimer()
+        stopAlarmSound()
         timerButton.text = "Cancel"
         timerButton.setOnClickListener {
             cancelActiveTimer()
+            stopAlarmSound()
             resetTimerUi(totalSeconds)
         }
 
@@ -121,7 +132,12 @@ class CookingModeActivity : AppCompatActivity() {
             override fun onFinish() {
                 timerText.text = "Done!"
                 vibrateDevice()
-                resetTimerUi(totalSeconds)
+                playAlarmSound()
+                timerButton.text = "Stop Alarm"
+                timerButton.setOnClickListener {
+                    stopAlarmSound()
+                    resetTimerUi(totalSeconds)
+                }
             }
         }.start()
     }
@@ -129,6 +145,27 @@ class CookingModeActivity : AppCompatActivity() {
     private fun cancelActiveTimer() {
         activeTimer?.cancel()
         activeTimer = null
+    }
+
+    private fun playAlarmSound() {
+        try {
+            val alarmUri = RingtoneManager.getActualDefaultRingtoneUri(this, RingtoneManager.TYPE_ALARM)
+                ?: RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+            val ringtone = RingtoneManager.getRingtone(this, alarmUri)
+            ringtone?.play()
+            activeAlarm = ringtone
+
+            // Failsafe: never let it ring longer than ALARM_AUTO_STOP_MS unattended.
+            alarmStopHandler.postDelayed({ stopAlarmSound() }, ALARM_AUTO_STOP_MS)
+        } catch (e: Exception) {
+            // If no alarm sound is available on the device, the vibration alone still signals completion.
+        }
+    }
+
+    private fun stopAlarmSound() {
+        alarmStopHandler.removeCallbacksAndMessages(null)
+        activeAlarm?.let { if (it.isPlaying) it.stop() }
+        activeAlarm = null
     }
 
     private fun formatTime(totalSeconds: Int): String {
@@ -149,6 +186,7 @@ class CookingModeActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         cancelActiveTimer()
+        stopAlarmSound()
         super.onDestroy()
     }
 }
