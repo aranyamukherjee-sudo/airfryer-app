@@ -58,6 +58,7 @@ class RecipeDetailActivity : AppCompatActivity() {
         bindHero(r)
         bindChips(r)
         bindServingSelector(r)
+        updateNutritionText()
         bindIngredients(r)
         bindSteps(r)
         bindTip(r)
@@ -128,12 +129,25 @@ class RecipeDetailActivity : AppCompatActivity() {
     private fun onServingsChanged() {
         updateServingsDisplay()
         refreshIngredientTexts()
+        updateNutritionText()
 
         // Subtle pulse animation on the count, per the brief's "subtle animation" guidance.
         servingsCountText.animate().cancel()
         servingsCountText.scaleX = 1.25f
         servingsCountText.scaleY = 1.25f
         servingsCountText.animate().scaleX(1f).scaleY(1f).setDuration(160).start()
+    }
+
+    private fun updateNutritionText() {
+        val r = recipe ?: return
+        val nutritionView: TextView = findViewById(R.id.nutritionText)
+        val perServing = r.kcalPerServing
+        if (perServing == null) {
+            nutritionView.text = "Calories unavailable for this recipe"
+            return
+        }
+        val total = perServing * currentServings
+        nutritionView.text = "≈$perServing kcal/serving  ·  ≈$total kcal total"
     }
 
     private fun updateServingsDisplay() {

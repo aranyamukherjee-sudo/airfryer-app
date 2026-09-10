@@ -27,7 +27,9 @@ data class Recipe(
     val highProtein: Boolean = false,
     val ingredients: List<Ingredient> = emptyList(),
     val originalServings: Int = 2,
-    val tip: String? = null
+    val tip: String? = null,
+    val kcalPerServing: Int? = null,
+    val servingsConfident: Boolean = true
 )
 
 data class Section(

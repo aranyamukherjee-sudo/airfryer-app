@@ -45,8 +45,19 @@ class CookingModeActivity : AppCompatActivity() {
         val file = intent.getStringExtra(EXTRA_FILE)
         val servings = intent.getIntExtra(EXTRA_SERVINGS, -1)
 
+        val recipe = RecipeRepository.loadSections(this)
+            .flatMap { it.recipes }
+            .firstOrNull { it.file == file }
+
+        steps = recipe?.steps ?: emptyList()
+
         val toolbar: Toolbar = findViewById(R.id.cookingToolbar)
-        toolbar.title = if (servings > 0) "$title  ·  Cooking for $servings" else title
+        val subtitleParts = mutableListOf<String>()
+        if (servings > 0) subtitleParts.add("Cooking for $servings")
+        if (recipe?.kcalPerServing != null && servings > 0) {
+            subtitleParts.add("≈${recipe.kcalPerServing} kcal/serving · ≈${recipe.kcalPerServing * servings} kcal total")
+        }
+        toolbar.title = if (subtitleParts.isNotEmpty()) "$title  ·  ${subtitleParts.joinToString("  ·  ")}" else title
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener { finish() }
 
@@ -57,12 +68,6 @@ class CookingModeActivity : AppCompatActivity() {
         timerButton = findViewById(R.id.timerButton)
         prevButton = findViewById(R.id.prevButton)
         nextButton = findViewById(R.id.nextButton)
-
-        val recipe = RecipeRepository.loadSections(this)
-            .flatMap { it.recipes }
-            .firstOrNull { it.file == file }
-
-        steps = recipe?.steps ?: emptyList()
 
         if (steps.isEmpty()) {
             stepText.text = "No steps found for this recipe."

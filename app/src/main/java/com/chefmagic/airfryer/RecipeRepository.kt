@@ -79,7 +79,9 @@ object RecipeRepository {
                         highProtein = rObj.optBoolean("high_protein", false),
                         ingredients = ingredients,
                         originalServings = rObj.optInt("original_servings", 2),
-                        tip = if (rObj.isNull("tip")) null else rObj.optString("tip", null)
+                        tip = if (rObj.isNull("tip")) null else rObj.optString("tip", null),
+                        kcalPerServing = if (rObj.isNull("kcal_per_serving")) null else rObj.optInt("kcal_per_serving"),
+                        servingsConfident = rObj.optBoolean("servings_confident", true)
                     )
                 )
             }
