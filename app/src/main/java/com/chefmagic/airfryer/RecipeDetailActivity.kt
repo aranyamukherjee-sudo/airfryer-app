@@ -4,20 +4,18 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
 import com.bumptech.glide.Glide
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
+import com.google.android.material.tabs.TabLayout
 
 class RecipeDetailActivity : AppCompatActivity() {
 
@@ -30,11 +28,11 @@ class RecipeDetailActivity : AppCompatActivity() {
     private var recipeTitle: String = ""
     private var recipe: Recipe? = null
     private var currentServings: Int = 2
-    private var favoriteMenuItem: MenuItem? = null
 
     private lateinit var servingsCountText: TextView
     private lateinit var ingredientsContainer: LinearLayout
     private val ingredientRowViews = mutableListOf<Pair<Ingredient, TextView>>()
+    private lateinit var favoriteButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,11 +40,6 @@ class RecipeDetailActivity : AppCompatActivity() {
 
         recipeTitle = intent.getStringExtra(EXTRA_TITLE) ?: getString(R.string.app_name)
         recipeFile = intent.getStringExtra(EXTRA_FILE) ?: return
-
-        val toolbar: Toolbar = findViewById(R.id.detailToolbar)
-        toolbar.title = recipeTitle
-        setSupportActionBar(toolbar)
-        toolbar.setNavigationOnClickListener { finish() }
 
         recipe = RecipeRepository.loadSections(this)
             .flatMap { it.recipes }
@@ -58,6 +51,7 @@ class RecipeDetailActivity : AppCompatActivity() {
         RecentlyViewedManager.recordView(this, recipeFile)
 
         bindHero(r)
+        bindOverlayButtons()
         bindChips(r)
         bindServingSelector(r)
         updateNutritionText()
@@ -65,6 +59,7 @@ class RecipeDetailActivity : AppCompatActivity() {
         bindIngredients(r)
         bindSteps(r)
         bindTip(r)
+        bindTabs()
 
         findViewById<MaterialButton>(R.id.startCookingButton).setOnClickListener {
             val i = Intent(this, CookingModeActivity::class.java)
@@ -84,6 +79,36 @@ class RecipeDetailActivity : AppCompatActivity() {
         } else {
             heroImage.setImageResource(R.drawable.ic_placeholder)
         }
+    }
+
+    private fun bindOverlayButtons() {
+        findViewById<ImageButton>(R.id.detailBackButton).setOnClickListener { finish() }
+
+        favoriteButton = findViewById(R.id.detailFavoriteButton)
+        updateFavoriteIcon()
+        favoriteButton.setOnClickListener {
+            FavoritesManager.toggleFavorite(this, recipeFile)
+            updateFavoriteIcon()
+        }
+
+        findViewById<ImageButton>(R.id.detailShareButton).setOnClickListener { shareRecipe() }
+    }
+
+    private fun updateFavoriteIcon() {
+        val isFav = FavoritesManager.isFavorite(this, recipeFile)
+        favoriteButton.setImageResource(
+            if (isFav) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline
+        )
+    }
+
+    private fun shareRecipe() {
+        val shareText = "Check out \"$recipeTitle\" on ${getString(R.string.app_name)} 🍽"
+        val intent = Intent(Intent.ACTION_SEND).apply {
+            type = "text/plain"
+            putExtra(Intent.EXTRA_SUBJECT, recipeTitle)
+            putExtra(Intent.EXTRA_TEXT, shareText)
+        }
+        startActivity(Intent.createChooser(intent, "Share recipe"))
     }
 
     private fun bindChips(r: Recipe) {
@@ -135,7 +160,6 @@ class RecipeDetailActivity : AppCompatActivity() {
         updateNutritionText()
         updateAirfryerTip()
 
-        // Subtle pulse animation on the count, per the brief's "subtle animation" guidance.
         servingsCountText.animate().cancel()
         servingsCountText.scaleX = 1.25f
         servingsCountText.scaleY = 1.25f
@@ -218,43 +242,34 @@ class RecipeDetailActivity : AppCompatActivity() {
         if (r.tip != null) {
             findViewById<CardView>(R.id.tipCard).visibility = View.VISIBLE
             findViewById<TextView>(R.id.tipText).text = r.tip
+        } else {
+            findViewById<TextView>(R.id.noTipText).visibility = View.VISIBLE
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_detail, menu)
-        favoriteMenuItem = menu?.findItem(R.id.action_favorite)
-        updateFavoriteIcon()
-        return true
+    /** Real tab switching: only one of Ingredients / Method / Tips is visible at a time. */
+    private fun bindTabs() {
+        val tabLayout: TabLayout = findViewById(R.id.detailTabLayout)
+        val stepsContainer: LinearLayout = findViewById(R.id.stepsContainer)
+
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab) {
+                showTab(tab.position)
+            }
+            override fun onTabUnselected(tab: TabLayout.Tab) {}
+            override fun onTabReselected(tab: TabLayout.Tab) {}
+        })
+
+        showTab(0)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.action_favorite) {
-            FavoritesManager.toggleFavorite(this, recipeFile)
-            updateFavoriteIcon()
-            return true
-        }
-        if (item.itemId == R.id.action_share) {
-            shareRecipe()
-            return true
-        }
-        return super.onOptionsItemSelected(item)
-    }
+    private fun showTab(position: Int) {
+        ingredientsContainer.visibility = if (position == 0) View.VISIBLE else View.GONE
+        findViewById<LinearLayout>(R.id.stepsContainer).visibility = if (position == 1) View.VISIBLE else View.GONE
 
-    private fun shareRecipe() {
-        val shareText = "Check out \"$recipeTitle\" on ${getString(R.string.app_name)} 🍽"
-        val intent = Intent(Intent.ACTION_SEND).apply {
-            type = "text/plain"
-            putExtra(Intent.EXTRA_SUBJECT, recipeTitle)
-            putExtra(Intent.EXTRA_TEXT, shareText)
-        }
-        startActivity(Intent.createChooser(intent, "Share recipe"))
-    }
-
-    private fun updateFavoriteIcon() {
-        val isFav = FavoritesManager.isFavorite(this, recipeFile)
-        favoriteMenuItem?.setIcon(
-            if (isFav) R.drawable.ic_star_filled else R.drawable.ic_star_outline
-        )
+        val showTips = position == 2
+        val hasTip = recipe?.tip != null
+        findViewById<CardView>(R.id.tipCard).visibility = if (showTips && hasTip) View.VISIBLE else View.GONE
+        findViewById<TextView>(R.id.noTipText).visibility = if (showTips && !hasTip) View.VISIBLE else View.GONE
     }
 }

@@ -6,23 +6,6 @@
     android:orientation="vertical"
     android:background="@color/background">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/primary"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-        app:elevation="2dp">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/detailToolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:titleTextColor="@color/white"
-            app:titleTextAppearance="@style/ToolbarTitleModern"
-            app:navigationIcon="@drawable/ic_back" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -35,12 +18,65 @@
             android:orientation="vertical"
             android:paddingBottom="24dp">
 
-            <ImageView
-                android:id="@+id/detailHeroImage"
+            <!-- Full-bleed hero with overlaid controls -->
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:scaleType="centerCrop"
-                android:background="@color/chip_bg" />
+                android:layout_height="280dp">
+
+                <ImageView
+                    android:id="@+id/detailHeroImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@color/chip_bg" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/hero_top_scrim" />
+
+                <ImageButton
+                    android:id="@+id/detailBackButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|start"
+                    android:layout_margin="14dp"
+                    android:background="@drawable/heart_backdrop"
+                    android:padding="9dp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/charcoal"
+                    android:contentDescription="Back" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="14dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/detailFavoriteButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/heart_backdrop"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_heart_outline"
+                        android:contentDescription="Favorite" />
+
+                    <ImageButton
+                        android:id="@+id/detailShareButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/heart_backdrop"
+                        android:padding="9dp"
+                        android:src="@drawable/ic_share"
+                        app:tint="@color/charcoal"
+                        android:contentDescription="Share" />
+
+                </LinearLayout>
+
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -261,23 +297,37 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <!-- Ingredients -->
-                <TextView
-                    android:layout_width="wrap_content"
+                <!-- Real tab switcher: Ingredients / Method / Tips -->
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/detailTabLayout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="26dp"
-                    android:text="INGREDIENTS"
-                    android:textSize="13sp"
-                    android:fontFamily="sans-serif-medium"
-                    android:textStyle="bold"
-                    android:textColor="@color/primary_dark"
-                    android:letterSpacing="0.05" />
+                    android:layout_marginTop="22dp"
+                    android:background="@android:color/transparent"
+                    app:tabMode="fixed"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/primary"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabSelectedTextColor="@color/primary_dark"
+                    app:tabTextColor="@color/text_secondary"
+                    app:tabTextAppearance="@style/TabTextModern">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:text="Ingredients" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:text="Method" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tipsTabItem"
+                        android:text="Tips" />
+
+                </com.google.android.material.tabs.TabLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="14dp"
                     android:background="@color/divider" />
 
                 <LinearLayout
@@ -286,37 +336,17 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical" />
 
-                <!-- Method -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="26dp"
-                    android:text="METHOD"
-                    android:textSize="13sp"
-                    android:fontFamily="sans-serif-medium"
-                    android:textStyle="bold"
-                    android:textColor="@color/primary_dark"
-                    android:letterSpacing="0.05" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@color/divider" />
-
                 <LinearLayout
                     android:id="@+id/stepsContainer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" />
+                    android:orientation="vertical"
+                    android:visibility="gone" />
 
-                <!-- Tip -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tipCard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:cardBackgroundColor="#F6EFDD"
@@ -348,6 +378,17 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/noTipText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No specific tips for this recipe."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13.5sp"
+                    android:gravity="center"
+                    android:padding="24dp"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
