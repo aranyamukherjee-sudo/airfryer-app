@@ -152,14 +152,23 @@ class RecipeDetailActivity : AppCompatActivity() {
 
     private fun updateNutritionText() {
         val r = recipe ?: return
-        val nutritionView: TextView = findViewById(R.id.nutritionText)
+        val nutritionRow: View = findViewById(R.id.nutritionRow)
+        val fallbackText: TextView = findViewById(R.id.nutritionText)
         val perServing = r.kcalPerServing
+
         if (perServing == null) {
-            nutritionView.text = "Calories unavailable for this recipe"
+            nutritionRow.visibility = View.GONE
+            fallbackText.visibility = View.VISIBLE
+            fallbackText.text = "Calories unavailable for this recipe"
             return
         }
+
+        nutritionRow.visibility = View.VISIBLE
+        fallbackText.visibility = View.GONE
+
         val total = perServing * currentServings
-        nutritionView.text = "≈$perServing kcal/serving  ·  ≈$total kcal total"
+        findViewById<TextView>(R.id.kcalPerServingText).text = "≈$perServing kcal\nper serving"
+        findViewById<TextView>(R.id.kcalTotalText).text = "≈$total kcal\ntotal"
     }
 
     private fun updateServingsDisplay() {

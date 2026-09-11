@@ -8,7 +8,7 @@
     android:layout_marginTop="6dp"
     android:layout_marginBottom="6dp"
     app:cardCornerRadius="16dp"
-    app:cardElevation="2dp"
+    app:cardElevation="1dp"
     app:cardBackgroundColor="@color/surface"
     android:foreground="?attr/selectableItemBackground"
     android:clickable="true"
@@ -24,7 +24,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="76dp"
             android:layout_height="76dp"
-            app:cardCornerRadius="12dp"
+            app:cardCornerRadius="14dp"
             app:cardElevation="0dp">
 
             <ImageView
@@ -66,12 +66,14 @@
 
         </LinearLayout>
 
-        <View
-            android:id="@+id/dietBadge"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/dot_shape" />
+        <ImageButton
+            android:id="@+id/favoriteHeartButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_heart_outline"
+            android:contentDescription="Favorite" />
 
     </LinearLayout>
 

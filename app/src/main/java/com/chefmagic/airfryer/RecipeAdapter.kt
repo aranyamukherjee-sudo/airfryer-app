@@ -4,6 +4,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -60,22 +61,18 @@ class RecipeAdapter(
         private val image: ImageView = view.findViewById(R.id.recipeImage)
         private val title: TextView = view.findViewById(R.id.recipeTitle)
         private val section: TextView = view.findViewById(R.id.recipeSection)
-        private val badge: View = view.findViewById(R.id.dietBadge)
+        private val heartButton: ImageButton = view.findViewById(R.id.favoriteHeartButton)
 
         fun bind(recipe: Recipe, onClick: (Recipe) -> Unit, onLongClick: (Recipe) -> Unit) {
             title.text = recipe.title
-            section.text = recipe.section
+            section.text = buildSubtitle(recipe)
 
-            val dotColor = if (recipe.nonveg)
-                itemView.context.getColor(R.color.nonveg_dot)
-            else
-                itemView.context.getColor(R.color.veg_dot)
-            badge.backgroundTintList = android.content.res.ColorStateList.valueOf(dotColor)
+            bindHeart(recipe)
 
             if (recipe.image != null) {
                 image.scaleType = android.widget.ImageView.ScaleType.CENTER_CROP
                 image.setPadding(0, 0, 0, 0)
-                image.setBackgroundColor(android.graphics.Color.parseColor("#EAE0CF"))
+                image.setBackgroundColor(android.graphics.Color.parseColor("#EDE6D6"))
                 val uri = Uri.parse("file:///android_asset/${recipe.image}")
                 Glide.with(itemView.context)
                     .load(uri)
@@ -85,12 +82,38 @@ class RecipeAdapter(
                 val pad = (12 * itemView.resources.displayMetrics.density).toInt()
                 image.scaleType = android.widget.ImageView.ScaleType.CENTER_INSIDE
                 image.setPadding(pad, pad, pad, pad)
-                image.setBackgroundColor(android.graphics.Color.parseColor("#EAE0CF"))
+                image.setBackgroundColor(android.graphics.Color.parseColor("#EDE6D6"))
                 image.setImageResource(R.drawable.ic_placeholder)
             }
 
             itemView.setOnClickListener { onClick(recipe) }
             itemView.setOnLongClickListener { onLongClick(recipe); true }
+        }
+
+        private fun buildSubtitle(recipe: Recipe): String {
+            val parts = mutableListOf<String>()
+            if (recipe.totalDurationSeconds > 0) {
+                parts.add("${recipe.totalDurationSeconds / 60} min")
+            }
+            if (recipe.kcalPerServing != null) {
+                parts.add("≈${recipe.kcalPerServing} kcal")
+            }
+            return if (parts.isNotEmpty()) parts.joinToString("  ·  ") else recipe.section
+        }
+
+        private fun bindHeart(recipe: Recipe) {
+            val context = itemView.context
+            fun refreshIcon() {
+                val isFav = FavoritesManager.isFavorite(context, recipe.file)
+                heartButton.setImageResource(
+                    if (isFav) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline
+                )
+            }
+            refreshIcon()
+            heartButton.setOnClickListener {
+                FavoritesManager.toggleFavorite(context, recipe.file)
+                refreshIcon()
+            }
         }
     }
 }

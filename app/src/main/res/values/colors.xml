@@ -1,18 +1,20 @@
 <resources>
-    <!-- Aaswad premium palette: muted terracotta + deep olive + warm ivory -->
-    <color name="primary">#A85A3A</color>
-    <color name="primary_dark">#6B3A24</color>
+    <!-- Aaswad premium palette v2: deep forest green + warm cream -->
+    <color name="primary">#2F4A3C</color>
+    <color name="primary_dark">#1D3126</color>
     <color name="olive">#5C6B47</color>
     <color name="olive_dark">#3E4A2F</color>
-    <color name="background">#FAF6EF</color>
+    <color name="background">#F8F4E9</color>
     <color name="surface">#FFFFFF</color>
-    <color name="charcoal">#2E2A26</color>
-    <color name="text_primary">#2E2A26</color>
-    <color name="text_secondary">#8B7F6E</color>
-    <color name="divider">#EAE0CF</color>
-    <color name="chip_bg">#F1EADC</color>
+    <color name="charcoal">#2B2620</color>
+    <color name="text_primary">#2B2620</color>
+    <color name="text_secondary">#8A8070</color>
+    <color name="divider">#EDE6D6</color>
+    <color name="chip_bg">#EDF0E6</color>
     <color name="white">#FFFFFF</color>
-    <color name="star">#C9962F</color>
-    <color name="veg_dot">#5C6B47</color>
-    <color name="nonveg_dot">#A85A3A</color>
+    <color name="star">#D4A24B</color>
+    <color name="veg_dot">#2F4A3C</color>
+    <color name="nonveg_dot">#C9573F</color>
+    <color name="heart_active">#D9695C</color>
+    <color name="heart_inactive">#B7AF9E</color>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginEnd="12dp"
     app:cardCornerRadius="16dp"
-    app:cardElevation="2dp"
+    app:cardElevation="1dp"
     app:cardBackgroundColor="@color/surface"
     android:foreground="?attr/selectableItemBackground"
     android:clickable="true"
@@ -16,12 +16,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/popularImage"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:scaleType="centerCrop"
-            android:background="@color/chip_bg" />
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/popularImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/chip_bg" />
+
+            <ImageButton
+                android:id="@+id/popularHeartButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="6dp"
+                android:background="@drawable/heart_backdrop"
+                android:padding="5dp"
+                android:src="@drawable/ic_heart_outline"
+                android:contentDescription="Favorite" />
+
+        </FrameLayout>
 
         <TextView
             android:id="@+id/popularTitle"
