@@ -42,6 +42,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             view.findViewById<View>(R.id.heroCard).setOnClickListener {
                 openRecipe(featured)
             }
+            view.findViewById<View>(R.id.heroViewRecipeButton).setOnClickListener {
+                openRecipe(featured)
+            }
         }
 
         // --- Quick Categories: first 8 sections for a diverse spread ---
@@ -68,8 +71,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             (activity as? MainActivity)?.selectBottomNavTab(R.id.nav_search)
         }
 
-        view.findViewById<ImageButton>(R.id.homeFavoritesIcon).setOnClickListener {
-            (activity as? MainActivity)?.selectBottomNavTab(R.id.nav_favorites)
+        view.findViewById<View>(R.id.airfryerBannerCard).setOnClickListener {
+            HomeToSearchBridge.pendingFilter = "Airfryer"
+            (activity as? MainActivity)?.selectBottomNavTab(R.id.nav_search)
         }
 
         refreshRecentlyViewed()

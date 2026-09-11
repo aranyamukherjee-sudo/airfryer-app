@@ -74,6 +74,10 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     private fun buildFilterChips() {
         val context = requireContext()
         filterChipRow.removeAllViews()
+
+        val pending = HomeToSearchBridge.pendingFilter
+        HomeToSearchBridge.pendingFilter = null
+
         for (option in filterOptions) {
             val chip = Chip(context)
             chip.text = option
@@ -83,6 +87,9 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
                 runSearch(searchView.query?.toString() ?: "")
             }
             filterChipRow.addView(chip)
+            if (option == pending) {
+                chip.isChecked = true
+            }
         }
     }
 
