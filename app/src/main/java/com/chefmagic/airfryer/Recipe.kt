@@ -2,7 +2,8 @@ package com.chefmagic.airfryer
 
 data class Step(
     val text: String,
-    val durationSeconds: Int?
+    val durationSeconds: Int?,
+    val temperatureCelsius: Int?
 )
 
 data class Ingredient(

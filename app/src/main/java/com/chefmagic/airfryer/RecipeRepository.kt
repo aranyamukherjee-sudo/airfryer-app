@@ -35,7 +35,9 @@ object RecipeRepository {
                         val stepObj = stepsArray.getJSONObject(k)
                         val duration = if (stepObj.isNull("duration_seconds")) null
                             else stepObj.optInt("duration_seconds")
-                        steps.add(Step(text = stepObj.getString("text"), durationSeconds = duration))
+                        val temperature = if (stepObj.isNull("temperature_celsius")) null
+                            else stepObj.optInt("temperature_celsius")
+                        steps.add(Step(text = stepObj.getString("text"), durationSeconds = duration, temperatureCelsius = temperature))
                     }
                 }
 

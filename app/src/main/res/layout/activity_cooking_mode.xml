@@ -22,6 +22,15 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <ProgressBar
+        android:id="@+id/stepProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:max="100"
+        android:progressTint="@color/primary"
+        android:progressBackgroundTint="@color/divider" />
+
     <!-- Progress dots -->
     <TextView
         android:id="@+id/stepProgressText"
@@ -58,11 +67,38 @@
                 android:textColor="@color/text_primary"
                 android:gravity="center" />
 
+            <LinearLayout
+                android:id="@+id/temperatureRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌡️"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:id="@+id/temperatureText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_primary" />
+
+            </LinearLayout>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/timerCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 app:cardCornerRadius="18dp"
                 app:cardElevation="1dp"
                 app:cardBackgroundColor="@color/chip_bg"
@@ -91,6 +127,43 @@
                         android:text="Start Timer"
                         app:backgroundTint="@color/primary"
                         android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cookingAirfryerTipCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#F1EADC"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔥"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Air Fryer Tip: Larger quantities may need to be cooked in multiple batches. Avoid overcrowding the basket for even cooking."
+                        android:textSize="12.5sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#6B5A2E"
+                        android:lineSpacingExtra="2dp" />
 
                 </LinearLayout>
 

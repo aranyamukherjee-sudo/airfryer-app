@@ -28,9 +28,14 @@ class CookingModeActivity : AppCompatActivity() {
     private var activeTimer: CountDownTimer? = null
     private var activeAlarm: Ringtone? = null
     private val alarmStopHandler = Handler(Looper.getMainLooper())
+    private var isAirfryerRecipe = false
+    private var showOvercrowdingTip = false
 
     private lateinit var stepProgressText: android.widget.TextView
+    private lateinit var stepProgressBar: android.widget.ProgressBar
     private lateinit var stepText: android.widget.TextView
+    private lateinit var temperatureRow: android.view.View
+    private lateinit var temperatureText: android.widget.TextView
     private lateinit var timerCard: CardView
     private lateinit var timerText: android.widget.TextView
     private lateinit var timerButton: MaterialButton
@@ -51,6 +56,10 @@ class CookingModeActivity : AppCompatActivity() {
 
         steps = recipe?.steps ?: emptyList()
 
+        isAirfryerRecipe = recipe?.appliances?.contains("Airfryer") == true
+        showOvercrowdingTip = isAirfryerRecipe && recipe != null &&
+            servings >= recipe.originalServings * 2 && servings > recipe.originalServings
+
         val toolbar: Toolbar = findViewById(R.id.cookingToolbar)
         val subtitleParts = mutableListOf<String>()
         if (servings > 0) subtitleParts.add("Cooking for $servings")
@@ -62,7 +71,10 @@ class CookingModeActivity : AppCompatActivity() {
         toolbar.setNavigationOnClickListener { finish() }
 
         stepProgressText = findViewById(R.id.stepProgressText)
+        stepProgressBar = findViewById(R.id.stepProgressBar)
         stepText = findViewById(R.id.stepText)
+        temperatureRow = findViewById(R.id.temperatureRow)
+        temperatureText = findViewById(R.id.temperatureText)
         timerCard = findViewById(R.id.timerCard)
         timerText = findViewById(R.id.timerText)
         timerButton = findViewById(R.id.timerButton)
@@ -100,16 +112,33 @@ class CookingModeActivity : AppCompatActivity() {
         val step = steps[index]
 
         stepProgressText.text = "STEP ${index + 1} OF ${steps.size}"
+        stepProgressBar.progress = ((index + 1) * 100) / steps.size
         stepText.text = step.text
 
         prevButton.isEnabled = index > 0
         nextButton.text = if (index == steps.lastIndex) "Finish" else "Next →"
+
+        if (step.temperatureCelsius != null) {
+            temperatureRow.visibility = android.view.View.VISIBLE
+            temperatureText.text = "${step.temperatureCelsius}°C"
+        } else {
+            temperatureRow.visibility = android.view.View.GONE
+        }
 
         if (step.durationSeconds != null && step.durationSeconds > 0) {
             timerCard.visibility = android.view.View.VISIBLE
             resetTimerUi(step.durationSeconds)
         } else {
             timerCard.visibility = android.view.View.GONE
+        }
+
+        val tipCard: CardView = findViewById(R.id.cookingAirfryerTipCard)
+        val stepMentionsAirfryer = step.text.contains("Airfryer", ignoreCase = true) ||
+            step.text.contains("air-fry", ignoreCase = true) || step.text.contains("air fry", ignoreCase = true)
+        tipCard.visibility = if (showOvercrowdingTip && stepMentionsAirfryer) {
+            android.view.View.VISIBLE
+        } else {
+            android.view.View.GONE
         }
     }
 
