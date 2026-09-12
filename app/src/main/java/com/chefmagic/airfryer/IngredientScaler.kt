@@ -52,4 +52,47 @@ object IngredientScaler {
             "$qtyStr$unitPart ${ingredient.name}".trim()
         }
     }
+
+    /** Returns just the quantity+unit portion (for right-aligned display), or "" if not scalable. */
+    fun scaledQuantityOnly(ingredient: Ingredient, selectedServings: Int, originalServings: Int): String {
+        if (!ingredient.scalable || ingredient.qty == null) return ""
+
+        val factor = selectedServings.toDouble() / originalServings.toDouble()
+        val qtyStr = formatQuantity(ingredient.qty * factor)
+        val unitPart = if (ingredient.unit != null) " ${ingredient.unit}" else ""
+
+        return if (ingredient.qty2 != null) {
+            val qty2Str = formatQuantity(ingredient.qty2 * factor)
+            "$qtyStr–$qty2Str$unitPart"
+        } else {
+            "$qtyStr$unitPart"
+        }
+    }
+
+    /** Returns the left-side display name: raw text if non-scalable, else just the ingredient name. */
+    fun displayName(ingredient: Ingredient): String {
+        return if (!ingredient.scalable || ingredient.qty == null) ingredient.raw else ingredient.name
+    }
+
+    private val CATEGORY_COLORS = listOf(
+        listOf("paneer", "curd", "yogurt", "dahi", "milk", "cream", "cheese", "khoya", "malai") to "#F3E4C8",
+        listOf("ghee", "butter", "oil", "vinegar", "sauce", "water", "honey") to "#F6D77A",
+        listOf("chicken", "mutton", "fish", "prawn", "egg", "soya", "tofu", "dal", "lentil", "chana", "rajma", "moong") to "#D9A279",
+        listOf("onion", "tomato", "potato", "capsicum", "carrot", "peas", "cauliflower", "spinach", "mushroom",
+               "cabbage", "beans", "okra", "bhindi", "brinjal", "cucumber", "gourd", "pumpkin", "chilli", "chili") to "#A8C79A",
+        listOf("chilli powder", "turmeric", "garam masala", "cumin", "coriander", "salt", "pepper", "masala",
+               "cardamom", "cinnamon", "clove", "spice") to "#E29B7D",
+        listOf("flour", "maida", "besan", "sooji", "rava", "rice", "atta", "cornflour", "breadcrumbs") to "#E8DCC4",
+        listOf("cashew", "almond", "raisin", "pistachio", "walnut", "dates", "coconut") to "#C9A66B",
+        listOf("sugar", "jaggery", "gud", "gur", "chocolate") to "#E8B4A8"
+    )
+
+    /** Returns a soft category color for the ingredient's swatch, based on simple keyword matching. */
+    fun categoryColor(ingredient: Ingredient): String {
+        val nameLower = ingredient.name.lowercase()
+        for ((keywords, color) in CATEGORY_COLORS) {
+            if (keywords.any { nameLower.contains(it) }) return color
+        }
+        return "#D8D0C0"
+    }
 }
