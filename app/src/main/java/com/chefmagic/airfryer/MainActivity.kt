@@ -7,6 +7,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        const val EXTRA_OPEN_TAB = "extra_open_tab"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -14,7 +18,11 @@ class MainActivity : AppCompatActivity() {
         val bottomNav: BottomNavigationView = findViewById(R.id.bottomNav)
 
         if (savedInstanceState == null) {
-            showFragment(HomeFragment())
+            val requestedTab = intent.getIntExtra(EXTRA_OPEN_TAB, R.id.nav_home)
+            bottomNav.selectedItemId = requestedTab
+            if (requestedTab == R.id.nav_home) {
+                showFragment(HomeFragment())
+            }
         }
 
         bottomNav.setOnItemSelectedListener { item ->
