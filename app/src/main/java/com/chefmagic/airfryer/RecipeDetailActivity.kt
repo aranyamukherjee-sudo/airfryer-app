@@ -52,10 +52,13 @@ class RecipeDetailActivity : AppCompatActivity() {
 
         bindHero(r)
         bindOverlayButtons()
+        bindDescription(r)
         bindChips(r)
+        bindSummaryLine(r)
         bindServingSelector(r)
         updateNutritionText()
         updateAirfryerTip()
+        updateIngredientsForServingsLabel()
         bindIngredients(r)
         bindSteps(r)
         bindTip(r)
@@ -111,9 +114,25 @@ class RecipeDetailActivity : AppCompatActivity() {
         startActivity(Intent.createChooser(intent, "Share recipe"))
     }
 
+    private fun bindDescription(r: Recipe) {
+        val dietWord = if (r.nonveg) "non-vegetarian" else "vegetarian"
+        val applianceWord = r.appliances.firstOrNull()?.let { " made with the $it" } ?: ""
+        findViewById<TextView>(R.id.detailDescription).text =
+            "A $dietWord recipe from ${r.section}$applianceWord."
+    }
+
     private fun bindChips(r: Recipe) {
         val chipGroup: ChipGroup = findViewById(R.id.detailChipsRow)
         chipGroup.removeAllViews()
+
+        if (r.totalDurationSeconds > 0) {
+            val timeChip = Chip(this)
+            timeChip.text = "${r.totalDurationSeconds / 60} min"
+            timeChip.isClickable = false
+            timeChip.isCheckable = false
+            chipGroup.addView(timeChip)
+        }
+
         for (appliance in r.appliances) {
             val chip = Chip(this)
             chip.text = appliance
@@ -126,6 +145,15 @@ class RecipeDetailActivity : AppCompatActivity() {
         dietChip.isClickable = false
         dietChip.isCheckable = false
         chipGroup.addView(dietChip)
+    }
+
+    private fun bindSummaryLine(r: Recipe) {
+        val summaryView: TextView = findViewById(R.id.detailSummaryLine)
+        summaryView.text = if (r.kcalPerServing != null) {
+            "Serves ${r.originalServings}  ·  ≈${r.kcalPerServing} kcal/serving"
+        } else {
+            "Serves ${r.originalServings}"
+        }
     }
 
     private fun bindServingSelector(r: Recipe) {
@@ -159,11 +187,17 @@ class RecipeDetailActivity : AppCompatActivity() {
         refreshIngredientTexts()
         updateNutritionText()
         updateAirfryerTip()
+        updateIngredientsForServingsLabel()
 
         servingsCountText.animate().cancel()
         servingsCountText.scaleX = 1.25f
         servingsCountText.scaleY = 1.25f
         servingsCountText.animate().scaleX(1f).scaleY(1f).setDuration(160).start()
+    }
+
+    private fun updateIngredientsForServingsLabel() {
+        findViewById<TextView>(R.id.ingredientsForServingsLabel).text =
+            "For $currentServings serving" + if (currentServings == 1) "" else "s"
     }
 
     private fun updateAirfryerTip() {
@@ -212,17 +246,25 @@ class RecipeDetailActivity : AppCompatActivity() {
         val inflater = LayoutInflater.from(this)
         for (ingredient in r.ingredients) {
             val row = inflater.inflate(R.layout.item_ingredient_row, ingredientsContainer, false)
-            val textView: TextView = row.findViewById(R.id.ingredientText)
+            val nameView: TextView = row.findViewById(R.id.ingredientText)
+            val qtyView: TextView = row.findViewById(R.id.ingredientQuantity)
+            val swatch: View = row.findViewById(R.id.ingredientSwatch)
+
+            nameView.text = IngredientScaler.displayName(ingredient)
+            swatch.backgroundTintList = android.content.res.ColorStateList.valueOf(
+                android.graphics.Color.parseColor(IngredientScaler.categoryColor(ingredient))
+            )
+
             ingredientsContainer.addView(row)
-            ingredientRowViews.add(ingredient to textView)
+            ingredientRowViews.add(ingredient to qtyView)
         }
         refreshIngredientTexts()
     }
 
     private fun refreshIngredientTexts() {
         val r = recipe ?: return
-        for ((ingredient, textView) in ingredientRowViews) {
-            textView.text = IngredientScaler.scaledText(ingredient, currentServings, r.originalServings)
+        for ((ingredient, qtyView) in ingredientRowViews) {
+            qtyView.text = IngredientScaler.scaledQuantityOnly(ingredient, currentServings, r.originalServings)
         }
     }
 
@@ -264,7 +306,7 @@ class RecipeDetailActivity : AppCompatActivity() {
     }
 
     private fun showTab(position: Int) {
-        ingredientsContainer.visibility = if (position == 0) View.VISIBLE else View.GONE
+        findViewById<LinearLayout>(R.id.ingredientsTabWrapper).visibility = if (position == 0) View.VISIBLE else View.GONE
         findViewById<LinearLayout>(R.id.stepsContainer).visibility = if (position == 1) View.VISIBLE else View.GONE
 
         val showTips = position == 2
