@@ -8,18 +8,12 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.chip.Chip
-import com.google.android.material.chip.ChipGroup
 
 class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
 
     private lateinit var adapter: RecipeAdapter
     private lateinit var recyclerView: RecyclerView
     private lateinit var emptyText: View
-    private lateinit var chipGroup: ChipGroup
-
-    private val ALL_FAVORITES = "All Favorites"
-    private var selectedFilter: String = ALL_FAVORITES
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -27,7 +21,6 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
 
         recyclerView = view.findViewById(R.id.favoritesRecyclerView)
         emptyText = view.findViewById(R.id.favoritesEmptyText)
-        chipGroup = view.findViewById(R.id.collectionsChipRow)
 
         adapter = RecipeAdapter(
             onClick = { recipe ->
@@ -50,56 +43,12 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
     }
 
     private fun refresh() {
-        rebuildChips()
-        rebuildList()
-    }
-
-    private fun rebuildChips() {
-        val context = requireContext()
-        chipGroup.removeAllViews()
-
-        val allChip = Chip(context)
-        allChip.text = ALL_FAVORITES
-        allChip.isCheckable = true
-        allChip.isChecked = selectedFilter == ALL_FAVORITES
-        allChip.setOnClickListener {
-            selectedFilter = ALL_FAVORITES
-            rebuildList()
-        }
-        chipGroup.addView(allChip)
-
-        for (name in CollectionsManager.allCollectionNames(context)) {
-            val chip = Chip(context)
-            chip.text = name
-            chip.isCheckable = true
-            chip.isChecked = selectedFilter == name
-            chip.setOnClickListener {
-                selectedFilter = name
-                rebuildList()
-            }
-            chipGroup.addView(chip)
-        }
-
-        val addChip = Chip(context)
-        addChip.text = "+ New"
-        addChip.isCheckable = false
-        addChip.setOnClickListener { showCreateCollectionDialog() }
-        chipGroup.addView(addChip)
-    }
-
-    private fun rebuildList() {
         val context = requireContext()
         val sections = RecipeRepository.loadSections(context)
         val favFiles = FavoritesManager.favoriteFiles(context)
 
-        val relevantFiles = if (selectedFilter == ALL_FAVORITES) {
-            favFiles
-        } else {
-            CollectionsManager.recipesInCollection(context, selectedFilter)
-        }
-
         val recipes = sections.flatMap { it.recipes }
-            .filter { it.file in relevantFiles }
+            .filter { it.file in favFiles }
             .sortedBy { it.title }
 
         adapter.submitList(recipes.map { ListItem.RecipeRow(it) })
@@ -121,7 +70,7 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
 
         val names = CollectionsManager.allCollectionNames(context)
         if (names.isEmpty()) {
-            showCreateCollectionDialog()
+            showCreateCollectionDialog(recipe)
             return
         }
 
@@ -134,11 +83,11 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
             .setMultiChoiceItems(names.toTypedArray(), checked) { _, which, isChecked ->
                 CollectionsManager.toggleRecipeInCollection(context, names[which], recipe.file)
             }
-            .setPositiveButton("Done") { _, _ -> rebuildList() }
+            .setPositiveButton("Done", null)
             .show()
     }
 
-    private fun showCreateCollectionDialog() {
+    private fun showCreateCollectionDialog(recipe: Recipe) {
         val context = requireContext()
         val input = EditText(context)
         input.hint = "Collection name"
@@ -150,8 +99,7 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
                 val name = input.text.toString().trim()
                 if (name.isNotEmpty()) {
                     CollectionsManager.createCollection(context, name)
-                    selectedFilter = name
-                    refresh()
+                    CollectionsManager.toggleRecipeInCollection(context, name, recipe.file)
                 }
             }
             .setNegativeButton("Cancel", null)

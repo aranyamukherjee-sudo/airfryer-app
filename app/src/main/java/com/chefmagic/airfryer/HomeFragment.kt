@@ -67,6 +67,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             startActivity(Intent(context, PopularRecipesActivity::class.java))
         }
 
+        view.findViewById<TextView>(R.id.seeAllCategories).setOnClickListener {
+            startActivity(Intent(context, AllCategoriesActivity::class.java))
+        }
+
         view.findViewById<ImageButton>(R.id.homeSearchIcon).setOnClickListener {
             (activity as? MainActivity)?.selectBottomNavTab(R.id.nav_search)
         }

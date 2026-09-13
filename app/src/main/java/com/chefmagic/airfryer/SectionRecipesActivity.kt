@@ -11,16 +11,19 @@ class SectionRecipesActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_SECTION_NAME = "extra_section_name"
+        const val EXTRA_COLLECTION_NAME = "extra_collection_name"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_section_recipes)
 
-        val sectionName = intent.getStringExtra(EXTRA_SECTION_NAME) ?: return
+        val sectionName = intent.getStringExtra(EXTRA_SECTION_NAME)
+        val collectionName = intent.getStringExtra(EXTRA_COLLECTION_NAME)
+        val screenTitle = sectionName ?: collectionName ?: return
 
         val toolbar: Toolbar = findViewById(R.id.sectionToolbar)
-        toolbar.title = sectionName
+        toolbar.title = screenTitle
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener { finish() }
 
@@ -35,8 +38,13 @@ class SectionRecipesActivity : AppCompatActivity() {
         }
         recyclerView.adapter = adapter
 
-        val sections = RecipeRepository.loadSections(this)
-        val recipes = sections.firstOrNull { it.name == sectionName }?.recipes ?: emptyList()
+        val allRecipes = RecipeRepository.loadSections(this).flatMap { it.recipes }
+        val recipes = if (sectionName != null) {
+            allRecipes.filter { it.section == sectionName }
+        } else {
+            val fileSet = CollectionsManager.recipesInCollection(this, collectionName!!)
+            allRecipes.filter { it.file in fileSet }
+        }
         adapter.submitList(recipes.map { ListItem.RecipeRow(it) })
     }
 }
