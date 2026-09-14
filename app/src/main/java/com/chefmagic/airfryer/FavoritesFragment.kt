@@ -34,6 +34,10 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
 
+        view.findViewById<View>(R.id.favoritesSearchIcon).setOnClickListener {
+            (activity as? MainActivity)?.selectBottomNavTab(R.id.nav_search)
+        }
+
         refresh()
     }
 
@@ -52,6 +56,10 @@ class FavoritesFragment : Fragment(R.layout.fragment_favorites) {
             .sortedBy { it.title }
 
         adapter.submitList(recipes.map { ListItem.RecipeRow(it) })
+
+        val recipeWord = if (recipes.size == 1) "recipe" else "recipes"
+        requireView().findViewById<android.widget.TextView>(R.id.favoritesCountText).text =
+            "${recipes.size} $recipeWord"
 
         val hasResults = recipes.isNotEmpty()
         recyclerView.visibility = if (hasResults) View.VISIBLE else View.GONE
