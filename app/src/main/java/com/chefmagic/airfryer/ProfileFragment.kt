@@ -19,6 +19,10 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         bindStat(view.findViewById(R.id.statFavorites), totalFavorites.toString(), "Favorites")
         bindStat(view.findViewById(R.id.statRecipes), totalRecipes.toString(), "Recipes")
         bindStat(view.findViewById(R.id.statCategories), totalCategories.toString(), "Categories")
+
+        view.findViewById<View>(R.id.shoppingListEntryCard).setOnClickListener {
+            startActivity(android.content.Intent(context, ShoppingListActivity::class.java))
+        }
     }
 
     override fun onResume() {

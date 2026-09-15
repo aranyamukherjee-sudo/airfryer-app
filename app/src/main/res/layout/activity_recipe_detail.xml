@@ -68,11 +68,22 @@
                         android:id="@+id/detailShareButton"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
                         android:background="@drawable/heart_backdrop"
                         android:padding="9dp"
                         android:src="@drawable/ic_share"
                         app:tint="@color/charcoal"
                         android:contentDescription="Share" />
+
+                    <ImageButton
+                        android:id="@+id/detailShoppingCartButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/heart_backdrop"
+                        android:padding="9dp"
+                        android:src="@drawable/ic_shopping_cart"
+                        app:tint="@color/charcoal"
+                        android:contentDescription="Add to shopping list" />
 
                 </LinearLayout>
 

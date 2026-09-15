@@ -95,7 +95,22 @@ class RecipeDetailActivity : AppCompatActivity() {
         }
 
         findViewById<ImageButton>(R.id.detailShareButton).setOnClickListener { shareRecipe() }
+
+        findViewById<ImageButton>(R.id.detailShoppingCartButton).setOnClickListener { addIngredientsToShoppingList() }
     }
+
+    private fun addIngredientsToShoppingList() {
+        val r = recipe ?: return
+        val items = r.ingredients.map { ingredient ->
+            val quantity = IngredientScaler.scaledQuantityOnly(ingredient, currentServings, r.originalServings)
+            val name = IngredientScaler.displayName(ingredient)
+            val category = IngredientScaler.categoryName(ingredient)
+            Triple(name, quantity, category)
+        }
+        ShoppingListManager.addItems(this, items)
+        android.widget.Toast.makeText(
+            this, "Added ${items.size} ingredients to your shopping list", android.widget.Toast.LENGTH_SHORT
+        ).show()
 
     private fun updateFavoriteIcon() {
         val isFav = FavoritesManager.isFavorite(this, recipeFile)

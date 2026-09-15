@@ -74,25 +74,36 @@ object IngredientScaler {
         return if (!ingredient.scalable || ingredient.qty == null) ingredient.raw else ingredient.name
     }
 
-    private val CATEGORY_COLORS = listOf(
-        listOf("paneer", "curd", "yogurt", "dahi", "milk", "cream", "cheese", "khoya", "malai") to "#F3E4C8",
-        listOf("ghee", "butter", "oil", "vinegar", "sauce", "water", "honey") to "#F6D77A",
-        listOf("chicken", "mutton", "fish", "prawn", "egg", "soya", "tofu", "dal", "lentil", "chana", "rajma", "moong") to "#D9A279",
-        listOf("onion", "tomato", "potato", "capsicum", "carrot", "peas", "cauliflower", "spinach", "mushroom",
-               "cabbage", "beans", "okra", "bhindi", "brinjal", "cucumber", "gourd", "pumpkin", "chilli", "chili") to "#A8C79A",
-        listOf("chilli powder", "turmeric", "garam masala", "cumin", "coriander", "salt", "pepper", "masala",
-               "cardamom", "cinnamon", "clove", "spice") to "#E29B7D",
-        listOf("flour", "maida", "besan", "sooji", "rava", "rice", "atta", "cornflour", "breadcrumbs") to "#E8DCC4",
-        listOf("cashew", "almond", "raisin", "pistachio", "walnut", "dates", "coconut") to "#C9A66B",
-        listOf("sugar", "jaggery", "gud", "gur", "chocolate") to "#E8B4A8"
+    private data class CategoryGroup(val keywords: List<String>, val color: String, val displayName: String)
+
+    private val CATEGORY_GROUPS = listOf(
+        CategoryGroup(listOf("paneer", "curd", "yogurt", "dahi", "milk", "cream", "cheese", "khoya", "malai"), "#F3E4C8", "Dairy"),
+        CategoryGroup(listOf("ghee", "butter", "oil", "vinegar", "sauce", "water", "honey"), "#F6D77A", "Pantry"),
+        CategoryGroup(listOf("chicken", "mutton", "fish", "prawn", "egg", "soya", "tofu", "dal", "lentil", "chana", "rajma", "moong"), "#D9A279", "Protein"),
+        CategoryGroup(listOf("onion", "tomato", "potato", "capsicum", "carrot", "peas", "cauliflower", "spinach", "mushroom",
+               "cabbage", "beans", "okra", "bhindi", "brinjal", "cucumber", "gourd", "pumpkin", "chilli", "chili"), "#A8C79A", "Vegetables"),
+        CategoryGroup(listOf("chilli powder", "turmeric", "garam masala", "cumin", "coriander", "salt", "pepper", "masala",
+               "cardamom", "cinnamon", "clove", "spice"), "#E29B7D", "Spices"),
+        CategoryGroup(listOf("flour", "maida", "besan", "sooji", "rava", "rice", "atta", "cornflour", "breadcrumbs"), "#E8DCC4", "Pantry"),
+        CategoryGroup(listOf("cashew", "almond", "raisin", "pistachio", "walnut", "dates", "coconut"), "#C9A66B", "Pantry"),
+        CategoryGroup(listOf("sugar", "jaggery", "gud", "gur", "chocolate"), "#E8B4A8", "Pantry")
     )
 
     /** Returns a soft category color for the ingredient's swatch, based on simple keyword matching. */
     fun categoryColor(ingredient: Ingredient): String {
         val nameLower = ingredient.name.lowercase()
-        for ((keywords, color) in CATEGORY_COLORS) {
-            if (keywords.any { nameLower.contains(it) }) return color
+        for (group in CATEGORY_GROUPS) {
+            if (group.keywords.any { nameLower.contains(it) }) return group.color
         }
         return "#D8D0C0"
+    }
+
+    /** Returns a shopping-list category name for the ingredient, based on the same keyword groups. */
+    fun categoryName(ingredient: Ingredient): String {
+        val nameLower = ingredient.name.lowercase()
+        for (group in CATEGORY_GROUPS) {
+            if (group.keywords.any { nameLower.contains(it) }) return group.displayName
+        }
+        return "Other"
     }
 }
