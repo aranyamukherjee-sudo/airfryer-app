@@ -111,6 +111,7 @@ class RecipeDetailActivity : AppCompatActivity() {
         android.widget.Toast.makeText(
             this, "Added ${items.size} ingredients to your shopping list", android.widget.Toast.LENGTH_SHORT
         ).show()
+    }
 
     private fun updateFavoriteIcon() {
         val isFav = FavoritesManager.isFavorite(this, recipeFile)
