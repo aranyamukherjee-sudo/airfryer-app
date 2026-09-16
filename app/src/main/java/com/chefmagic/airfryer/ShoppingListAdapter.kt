@@ -43,11 +43,11 @@ class ShoppingListAdapter(
 
         private fun applyCheckedStyle(checked: Boolean) {
             if (checked) {
-                nameText.paintFlags = nameText.paintFlags or Paint.STRIKE_THRU_FLAG
+                nameText.paintFlags = nameText.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
                 nameText.alpha = 0.5f
                 quantityText.alpha = 0.5f
             } else {
-                nameText.paintFlags = nameText.paintFlags and Paint.STRIKE_THRU_FLAG.inv()
+                nameText.paintFlags = nameText.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
                 nameText.alpha = 1f
                 quantityText.alpha = 1f
             }
