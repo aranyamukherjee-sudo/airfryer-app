@@ -24,6 +24,8 @@ class ShoppingListAdapter(
 
     override fun getItemCount(): Int = items.size
 
+    fun getItem(position: Int): ShoppingListItem = items[position]
+
     class VH(view: android.view.View) : RecyclerView.ViewHolder(view) {
         private val checkbox: CheckBox = view.findViewById(R.id.shoppingItemCheckbox)
         private val nameText: TextView = view.findViewById(R.id.shoppingItemName)

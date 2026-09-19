@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.CheckBox
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -32,6 +33,7 @@ class RecipeDetailActivity : AppCompatActivity() {
     private lateinit var servingsCountText: TextView
     private lateinit var ingredientsContainer: LinearLayout
     private val ingredientRowViews = mutableListOf<Pair<Ingredient, TextView>>()
+    private val selectedIngredientIndices = mutableSetOf<Int>()
     private lateinit var favoriteButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -101,7 +103,16 @@ class RecipeDetailActivity : AppCompatActivity() {
 
     private fun addIngredientsToShoppingList() {
         val r = recipe ?: return
-        val items = r.ingredients.map { ingredient ->
+
+        if (selectedIngredientIndices.isEmpty()) {
+            android.widget.Toast.makeText(
+                this, "Select at least one ingredient first", android.widget.Toast.LENGTH_SHORT
+            ).show()
+            return
+        }
+
+        val items = selectedIngredientIndices.sorted().map { index ->
+            val ingredient = r.ingredients[index]
             val quantity = IngredientScaler.scaledQuantityOnly(ingredient, currentServings, r.originalServings)
             val name = IngredientScaler.displayName(ingredient)
             val category = IngredientScaler.categoryName(ingredient)
@@ -258,10 +269,12 @@ class RecipeDetailActivity : AppCompatActivity() {
         ingredientsContainer = findViewById(R.id.ingredientsContainer)
         ingredientsContainer.removeAllViews()
         ingredientRowViews.clear()
+        selectedIngredientIndices.clear()
 
         val inflater = LayoutInflater.from(this)
-        for (ingredient in r.ingredients) {
+        for ((index, ingredient) in r.ingredients.withIndex()) {
             val row = inflater.inflate(R.layout.item_ingredient_row, ingredientsContainer, false)
+            val checkbox: CheckBox = row.findViewById(R.id.ingredientCheckbox)
             val nameView: TextView = row.findViewById(R.id.ingredientText)
             val qtyView: TextView = row.findViewById(R.id.ingredientQuantity)
             val swatch: View = row.findViewById(R.id.ingredientSwatch)
@@ -270,6 +283,11 @@ class RecipeDetailActivity : AppCompatActivity() {
             swatch.backgroundTintList = android.content.res.ColorStateList.valueOf(
                 android.graphics.Color.parseColor(IngredientScaler.categoryColor(ingredient))
             )
+
+            checkbox.isChecked = false
+            checkbox.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) selectedIngredientIndices.add(index) else selectedIngredientIndices.remove(index)
+            }
 
             ingredientsContainer.addView(row)
             ingredientRowViews.add(ingredient to qtyView)

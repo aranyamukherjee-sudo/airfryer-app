@@ -6,6 +6,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.chip.Chip
@@ -29,8 +30,27 @@ class ShoppingListActivity : AppCompatActivity() {
         emptyText = findViewById(R.id.shoppingEmptyText)
         chipGroup = findViewById(R.id.shoppingCategoryChipRow)
         recyclerView.layoutManager = LinearLayoutManager(this)
+        attachSwipeToDelete()
 
         refresh()
+    }
+
+    private fun attachSwipeToDelete() {
+        val callback = object : ItemTouchHelper.SimpleCallback(
+            0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
+        ) {
+            override fun onMove(
+                rv: RecyclerView, vh: RecyclerView.ViewHolder, target: RecyclerView.ViewHolder
+            ): Boolean = false
+
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                val adapter = recyclerView.adapter as? ShoppingListAdapter ?: return
+                val item = adapter.getItem(viewHolder.bindingAdapterPosition)
+                ShoppingListManager.removeItem(this@ShoppingListActivity, item.id)
+                refresh()
+            }
+        }
+        ItemTouchHelper(callback).attachToRecyclerView(recyclerView)
     }
 
     override fun onResume() {
