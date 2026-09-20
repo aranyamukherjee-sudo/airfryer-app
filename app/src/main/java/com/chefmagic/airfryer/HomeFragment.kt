@@ -26,7 +26,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val recipesWithImages = allRecipes.filter { it.image != null }
 
         // --- Hero / Featured recipe: stable pick for the day ---
+        val heroCard = view.findViewById<View>(R.id.heroCard)
+
         if (recipesWithImages.isNotEmpty()) {
+            heroCard.visibility = View.VISIBLE
+
             val dayOfYear = Calendar.getInstance().get(Calendar.DAY_OF_YEAR)
             val featured = recipesWithImages[dayOfYear % recipesWithImages.size]
 
@@ -39,26 +43,38 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 Glide.with(context).load(uri).centerCrop().into(heroImage)
             }
 
-            view.findViewById<View>(R.id.heroCard).setOnClickListener {
+            heroCard.setOnClickListener {
                 openRecipe(featured)
             }
+
             view.findViewById<View>(R.id.heroViewRecipeButton).setOnClickListener {
                 openRecipe(featured)
             }
+        } else {
+            heroCard.visibility = View.GONE
         }
 
         // --- Quick Categories: first 8 sections for a diverse spread ---
         val quickCategories = sections.take(8)
-        val quickRecycler: RecyclerView = view.findViewById(R.id.quickCategoriesRecyclerView)
-        quickRecycler.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        val quickRecycler: RecyclerView =
+            view.findViewById(R.id.quickCategoriesRecyclerView)
+
+        quickRecycler.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+
         quickRecycler.adapter = QuickCategoryAdapter(quickCategories) { section ->
             openSection(section.name)
         }
 
         // --- Popular Recipes: first recipe from each of the first 15 sections, for variety ---
         val popular = sections.take(15).mapNotNull { it.recipes.firstOrNull() }
-        val popularRecycler: RecyclerView = view.findViewById(R.id.popularRecyclerView)
-        popularRecycler.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+
+        val popularRecycler: RecyclerView =
+            view.findViewById(R.id.popularRecyclerView)
+
+        popularRecycler.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+
         popularRecycler.adapter = PopularRecipeAdapter(popular) { recipe ->
             openRecipe(recipe)
         }
@@ -111,9 +127,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
 
         section.visibility = View.VISIBLE
-        val recycler: RecyclerView = view.findViewById(R.id.recentlyViewedRecyclerView)
-        recycler.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-        recycler.adapter = PopularRecipeAdapter(recentRecipes) { recipe -> openRecipe(recipe) }
+        val recycler: RecyclerView =
+            view.findViewById(R.id.recentlyViewedRecyclerView)
+
+        recycler.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+
+        recycler.adapter =
+            PopularRecipeAdapter(recentRecipes) { recipe -> openRecipe(recipe) }
     }
 
     private fun openRecipe(recipe: Recipe) {
