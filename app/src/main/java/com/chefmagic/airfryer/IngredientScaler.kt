@@ -80,30 +80,53 @@ object IngredientScaler {
         CategoryGroup(listOf("paneer", "curd", "yogurt", "dahi", "milk", "cream", "cheese", "khoya", "malai"), "#F3E4C8", "Dairy"),
         CategoryGroup(listOf("ghee", "butter", "oil", "vinegar", "sauce", "water", "honey"), "#F6D77A", "Pantry"),
         CategoryGroup(listOf("chicken", "mutton", "fish", "prawn", "egg", "soya", "tofu", "dal", "lentil", "chana", "rajma", "moong"), "#D9A279", "Protein"),
-        CategoryGroup(listOf("onion", "tomato", "potato", "capsicum", "carrot", "peas", "cauliflower", "spinach", "mushroom",
+        CategoryGroup(listOf("onion", "tomato", "potato", "capsicum", "bell pepper", "carrot", "peas", "cauliflower", "spinach", "mushroom",
                "cabbage", "beans", "okra", "bhindi", "brinjal", "cucumber", "gourd", "pumpkin", "chilli", "chili"), "#A8C79A", "Vegetables"),
-        CategoryGroup(listOf("chilli powder", "turmeric", "garam masala", "cumin", "coriander", "salt", "pepper", "masala",
-               "cardamom", "cinnamon", "clove", "spice"), "#E29B7D", "Spices"),
+        CategoryGroup(listOf("chilli powder", "chili powder", "turmeric", "garam masala", "cumin", "coriander", "salt", "pepper", "masala",
+               "cardamom", "cinnamon", "dalchini", "clove", "spice"), "#E29B7D", "Spices"),
         CategoryGroup(listOf("flour", "maida", "besan", "sooji", "rava", "rice", "atta", "cornflour", "breadcrumbs"), "#E8DCC4", "Pantry"),
         CategoryGroup(listOf("cashew", "almond", "raisin", "pistachio", "walnut", "dates", "coconut"), "#C9A66B", "Pantry"),
         CategoryGroup(listOf("sugar", "jaggery", "gud", "gur", "chocolate"), "#E8B4A8", "Pantry")
     )
 
-    /** Returns a soft category color for the ingredient's swatch, based on simple keyword matching. */
-    fun categoryColor(ingredient: Ingredient): String {
-        val nameLower = ingredient.name.lowercase()
-        for (group in CATEGORY_GROUPS) {
-            if (group.keywords.any { nameLower.contains(it) }) return group.color
+    /** True if `keyword` occurs in `text` starting at a word boundary (string start or a
+     *  non-letter before it). This stops short keywords like "oil" from matching inside an
+     *  unrelated word such as "boiled" or "foil", while still allowing suffixed matches like
+     *  "potato" inside "potatoes". */
+    private fun keywordMatches(text: String, keyword: String): Boolean {
+        var startIndex = text.indexOf(keyword)
+        while (startIndex != -1) {
+            val precedingChar = if (startIndex == 0) null else text[startIndex - 1]
+            if (precedingChar == null || !precedingChar.isLetter()) return true
+            startIndex = text.indexOf(keyword, startIndex + 1)
         }
-        return "#D8D0C0"
+        return false
+    }
+
+    /** Finds the best category group for an ingredient name: the group owning the longest
+     *  matching keyword wins, so a more specific keyword (e.g. "chilli powder") beats a
+     *  shorter, more general one (e.g. "chilli") regardless of group order. */
+    private fun matchGroup(nameLower: String): CategoryGroup? {
+        var bestGroup: CategoryGroup? = null
+        var bestLength = -1
+        for (group in CATEGORY_GROUPS) {
+            for (keyword in group.keywords) {
+                if (keyword.length > bestLength && keywordMatches(nameLower, keyword)) {
+                    bestGroup = group
+                    bestLength = keyword.length
+                }
+            }
+        }
+        return bestGroup
+    }
+
+    /** Returns a soft category color for the ingredient's swatch, based on keyword matching. */
+    fun categoryColor(ingredient: Ingredient): String {
+        return matchGroup(ingredient.name.lowercase())?.color ?: "#D8D0C0"
     }
 
     /** Returns a shopping-list category name for the ingredient, based on the same keyword groups. */
     fun categoryName(ingredient: Ingredient): String {
-        val nameLower = ingredient.name.lowercase()
-        for (group in CATEGORY_GROUPS) {
-            if (group.keywords.any { nameLower.contains(it) }) return group.displayName
-        }
-        return "Other"
+        return matchGroup(ingredient.name.lowercase())?.displayName ?: "Other"
     }
 }
