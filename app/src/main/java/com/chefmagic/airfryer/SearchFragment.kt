@@ -38,12 +38,17 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         recentSection = view.findViewById(R.id.recentSearchesSection)
         recentChipRow = view.findViewById(R.id.recentSearchesChipRow)
 
-        adapter = RecipeAdapter(onClick = { recipe ->
-            val i = Intent(context, RecipeDetailActivity::class.java)
-            i.putExtra(RecipeDetailActivity.EXTRA_TITLE, recipe.title)
-            i.putExtra(RecipeDetailActivity.EXTRA_FILE, recipe.file)
-            startActivity(i)
-        })
+        adapter = RecipeAdapter(
+            onClick = { recipe ->
+                val i = Intent(context, RecipeDetailActivity::class.java)
+                i.putExtra(RecipeDetailActivity.EXTRA_TITLE, recipe.title)
+                i.putExtra(RecipeDetailActivity.EXTRA_FILE, recipe.file)
+                startActivity(i)
+            },
+            onLongClick = { recipe ->
+                CollectionDialogHelper.showAddToCollectionDialog(context, recipe)
+            }
+        )
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
         recyclerView.visibility = View.GONE
