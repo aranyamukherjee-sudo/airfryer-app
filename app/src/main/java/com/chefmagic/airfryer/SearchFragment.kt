@@ -148,7 +148,9 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         fun matchesText(recipe: Recipe): Boolean {
             if (!hasQuery) return true
             return searchTerms.any { term ->
-                recipe.title.lowercase().contains(term) || recipe.search.contains(term)
+                recipe.title.lowercase().contains(term) ||
+                    recipe.search.contains(term) ||
+                    recipe.section.lowercase().contains(term)
             }
         }
 
