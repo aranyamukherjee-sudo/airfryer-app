@@ -154,7 +154,7 @@
                 android:lineSpacingExtra="4dp"
                 android:textSize="14sp"
                 android:textColor="@color/text_primary"
-                android:text="AASWAD (meaning \'taste\') is your recipe companion for the Airfryer &amp; Wonderchef Chef Magic — built around vegetarian Indian home cooking, from everyday dals to weekend baking. All recipes and photos are stored on your device and work fully offline." />
+                android:text="Aaswad (meaning \'taste\') is your recipe companion for the Airfryer &amp; Wonderchef Chef Magic — built around vegetarian Indian home cooking, from everyday dals to weekend baking. All recipes and photos are stored on your device and work fully offline." />
 
         </androidx.cardview.widget.CardView>
 
