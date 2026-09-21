@@ -75,9 +75,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         popularRecycler.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
-        popularRecycler.adapter = PopularRecipeAdapter(popular) { recipe ->
-            openRecipe(recipe)
-        }
+        popularRecycler.adapter = PopularRecipeAdapter(
+            popular,
+            onClick = { recipe ->
+                openRecipe(recipe)
+            },
+            onLongClick = { recipe ->
+                CollectionDialogHelper.showAddToCollectionDialog(requireContext(), recipe)
+            }
+        )
 
         view.findViewById<TextView>(R.id.seeAllPopular).setOnClickListener {
             startActivity(Intent(context, PopularRecipesActivity::class.java))
@@ -134,7 +140,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
         recycler.adapter =
-            PopularRecipeAdapter(recentRecipes) { recipe -> openRecipe(recipe) }
+            PopularRecipeAdapter(
+                recentRecipes,
+                onClick = { recipe ->
+                    openRecipe(recipe)
+                },
+                onLongClick = { recipe ->
+                    CollectionDialogHelper.showAddToCollectionDialog(requireContext(), recipe)
+                }
+            )
     }
 
     private fun openRecipe(recipe: Recipe) {
