@@ -74,6 +74,156 @@ object IngredientScaler {
         return if (!ingredient.scalable || ingredient.qty == null) ingredient.raw else ingredient.name
     }
 
+    /**
+     * Returns a practical shopping-list name without changing the recipe ingredient display.
+     *
+     * Uses the structured ingredient name and removes common preparation/serving
+     * instructions while preserving meaningful descriptors such as "red chilli powder",
+     * "chicken breast", "low-fat paneer", etc.
+     */
+    fun shoppingListName(ingredient: Ingredient): String {
+        var name = ingredient.name.trim()
+
+        // Remove serving/use instructions from the end.
+        name = name.replace(
+            Regex(
+                """,?\s*(?:to taste|to garnish|for garnish|for serving|to serve|for frying|for cooking|for tempering|to finish|for greasing|for coating|for the stuffing|for a smoky finish|as needed|divided|optional)(?:\s*[,;].*)?(?:\s*\([^)]*\))?\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove parenthesized "optional" markers while preserving meaningful
+        // descriptors such as "(sev)", "(haldi)", or "(plain flour)".
+        name = name.replace(
+            Regex("""\s*\(\s*optional\s*\)""", RegexOption.IGNORE_CASE),
+            ""
+        ).trim()
+
+        // Remove leading size descriptors.
+        name = name.replace(
+            Regex(
+                """^(?:a\s+few|few|a\s+small|small|a\s+medium|medium|a\s+large|large|extra-large|extra large)\s+""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove preparation words wherever they occur, but keep the
+        // ingredient that follows them.
+        // Examples:
+        // "chopped onion" -> "onion"
+        // "lemon & chopped coriander" -> "lemon & coriander"
+        // "Farsan (sev), chopped onion, lemon & pav" -> "Farsan (sev), onion, lemon & pav"
+        name = name.replace(
+            Regex(
+                """\b(?:finely|roughly|very finely|thinly|thickly|lightly)\s+(?=(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled)\b)""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        )
+
+        name = name.replace(
+            Regex(
+                """\b(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled)\s+(?=[A-Za-z])""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        )
+
+        // Remove preparation words that remain at the end.
+        // Examples: "onion, chopped" -> "onion".
+        name = name.replace(
+            Regex(
+                """,?\s*(?:finely|roughly|very finely|thinly|thickly|lightly)?\s*(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled)\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove complete trailing preparation chains.
+        // Examples:
+        // "potatoes, boiled & mashed" -> "potatoes"
+        // "arbi, boiled, peeled and halved" -> "arbi"
+        // "chicken, minced or finely chopped" -> "chicken"
+        // "baby potatoes, peeled and pricked" -> "baby potatoes"
+        // "bell peppers, tops cut & seeded" -> "bell peppers"
+        name = name.replace(
+            Regex(
+                """,?\s*(?:(?:finely|roughly|very finely|thinly|thickly|lightly)\s+)?(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|tops\s+cut)(?:\s*(?:,|and|or|&)\s*(?:(?:finely|roughly|very finely|thinly|thickly|lightly)\s+)?(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|tops\s+cut))*\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove trailing adjustment/purpose notes.
+        // Examples:
+        // "red chilli flakes (adjust to taste)" -> "red chilli flakes"
+        // "ginger (adrak), julienned (plus extra to garnish)" -> preparation cleanup can finish the name
+        name = name.replace(
+            Regex(
+                """\s*\(\s*(?:adjust\s+to\s+taste|plus\s+extra\s+to\s+garnish|plus\s+extra\s+for\s+garnish)[^)]*\)""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove parenthesized usage/purpose instructions.
+        // Keep meaningful ingredient translations/descriptors.
+        name = name.replace(
+            Regex(
+                """\s*\(\s*(?:for|to)\s+(?:frying|cooking|tempering|serving|garnish|coating|greasing|dredging|dusting|skewering|the crust|the stuffing|the batter|the slurry|the filling|a smoky finish|extra crispness|colour|color)[^)]*\)""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove trailing "cut into..." preparation instructions.
+        name = name.replace(
+            Regex(
+                """,?\s*(?:cut into|cut in|sliced into|peeled and cut into)\s+[^,;&]+(?=\s*(?:,|&|$))""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove common "for X" clauses that remain after cleanup.
+        name = name.replace(
+            Regex(
+                """,?\s+(?:for|plus extra)\s+(?:both methods|the crust|coating|greasing|skewering|a smoky finish|serving|garnish|the stuffing|cooking|frying|tempering|the batter|the slurry|the filling|to serve).*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Clean punctuation and repeated whitespace without altering
+        // meaningful descriptors, alternatives, or compound ingredients.
+        name = name
+            .replace(Regex("""\s{2,}"""), " ")
+            .replace(Regex("""\s*,\s*,"""), ",")
+            .replace(Regex("""\s*&\s*"""), " & ")
+            .trim(' ', ',', '-', ':')
+
+        return name.replaceFirstChar { it.uppercase() }
+    }
+
+    /**
+     * Returns true for ingredients that are normally not useful as
+     * standalone shopping-list items.
+     *
+     * Word-boundary matching avoids excluding real ingredients such as
+     * coconut water or water chestnuts.
+     */
+    fun isShoppingListExcluded(ingredient: Ingredient): Boolean {
+        val name = shoppingListName(ingredient).lowercase().trim()
+
+        return name == "water" ||
+            name == "ice" ||
+            name == "ice cubes" ||
+            name == "ice-cold water" ||
+            name.matches(Regex("""water\s+(?:as needed|for|to|for the)\b.*"""))
+    }
+
     private data class CategoryGroup(val keywords: List<String>, val color: String, val displayName: String)
 
     private val CATEGORY_GROUPS = listOf(
