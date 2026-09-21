@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingBottom="14dp">
+    android:paddingBottom="18dp">
 
     <TextView
         android:id="@+id/stepNumberText"
@@ -26,6 +26,8 @@
         android:textSize="15sp"
         android:fontFamily="serif"
         android:textColor="@color/text_primary"
-        android:lineSpacingExtra="3dp" />
+        android:lineSpacingExtra="4dp"
+        android:includeFontPadding="true"
+        android:paddingBottom="6dp" />
 
 </LinearLayout>
