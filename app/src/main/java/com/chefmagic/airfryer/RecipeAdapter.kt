@@ -87,7 +87,7 @@ class RecipeAdapter(
             }
 
             itemView.setOnClickListener { onClick(recipe) }
-            itemView.setOnLongClickListener { onLongClick(recipe); true }
+            itemView.setOnLongClickListener { android.widget.Toast.makeText(itemView.context, "LONG PRESS DETECTED", android.widget.Toast.LENGTH_SHORT).show(); onLongClick(recipe); true }
         }
 
         private fun buildSubtitle(recipe: Recipe): String {
