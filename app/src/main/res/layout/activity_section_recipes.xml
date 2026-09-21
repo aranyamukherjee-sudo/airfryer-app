@@ -31,4 +31,16 @@
         android:paddingTop="8dp"
         android:paddingBottom="16dp" />
 
+    <TextView
+        android:id="@+id/sectionEmptyText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="No recipes here yet"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
 </LinearLayout>
