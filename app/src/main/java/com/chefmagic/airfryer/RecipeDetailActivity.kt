@@ -111,13 +111,30 @@ class RecipeDetailActivity : AppCompatActivity() {
             return
         }
 
-        val items = selectedIngredientIndices.sorted().map { index ->
+        val items = selectedIngredientIndices.sorted().mapNotNull { index ->
             val ingredient = r.ingredients[index]
-            val quantity = IngredientScaler.scaledQuantityOnly(ingredient, currentServings, r.originalServings)
-            val name = IngredientScaler.displayName(ingredient)
-            val category = IngredientScaler.categoryName(ingredient)
-            Triple(name, quantity, category)
+
+            if (IngredientScaler.isShoppingListExcluded(ingredient)) {
+                null
+            } else {
+                val quantity = IngredientScaler.scaledQuantityOnly(
+                    ingredient,
+                    currentServings,
+                    r.originalServings
+                )
+                val name = IngredientScaler.shoppingListName(ingredient)
+                val category = IngredientScaler.categoryName(ingredient)
+                Triple(name, quantity, category)
+            }
         }
+
+        if (items.isEmpty()) {
+            android.widget.Toast.makeText(
+                this, "No shopping items selected", android.widget.Toast.LENGTH_SHORT
+            ).show()
+            return
+        }
+
         ShoppingListManager.addItems(this, items)
         android.widget.Toast.makeText(
             this, "Added ${items.size} ingredients to your shopping list", android.widget.Toast.LENGTH_SHORT
