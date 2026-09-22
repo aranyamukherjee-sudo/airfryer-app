@@ -178,6 +178,45 @@ object IngredientScaler {
             ""
         ).trim()
 
+        // Remove a preparation word left behind before a dangling connector.
+        // Example: "potatoes, boiled &" -> "potatoes".
+        name = name.replace(
+            Regex(
+                """,?\s*(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|tops\s+cut)\s*(?:&|and|or)\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove dangling connectors left after preparation cleanup.
+        // Examples: "potatoes, boiled &" -> "potatoes",
+        //           "eggs, boiled and" -> "eggs".
+        name = name.replace(
+            Regex(
+                """,?\s*(?:&|and|or)\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove preparation words that became exposed after connector cleanup.
+        name = name.replace(
+            Regex(
+                """,?\s*(?:finely|roughly|very finely|thinly|thickly|lightly)?\s*(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|tops\s+cut)\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove a second dangling connector if cleanup exposed one.
+        name = name.replace(
+            Regex(
+                """,?\s*(?:&|and|or)\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
         // Remove trailing "cut into..." preparation instructions.
         name = name.replace(
             Regex(
