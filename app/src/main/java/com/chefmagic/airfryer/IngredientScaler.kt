@@ -84,92 +84,34 @@ object IngredientScaler {
     fun shoppingListName(ingredient: Ingredient): String {
         var name = ingredient.name.trim()
 
-        // Remove serving/use instructions from the end.
+        /*
+         * Shopping-list normalization only.
+         *
+         * The recipe ingredient text is never changed. This function removes
+         * preparation/serving instructions while preserving meaningful
+         * ingredient descriptors and useful parenthetical information.
+         */
+
+        // Remove trailing serving/use instructions.
         name = name.replace(
             Regex(
-                """,?\s*(?:to taste|to garnish|for garnish|for serving|to serve|for frying|for cooking|for tempering|to finish|for greasing|for coating|for the stuffing|for a smoky finish|as needed|divided|optional)(?:\s*[,;].*)?(?:\s*\([^)]*\))?\s*$""",
+                """,?\s*(?:to taste|to garnish|for garnish|for serving|to serve|for frying|for cooking|for tempering|to finish|for greasing|for coating|for the stuffing|for a smoky finish|as needed|divided|optional)(?:\s*[,;].*)?\s*$""",
                 RegexOption.IGNORE_CASE
             ),
             ""
         ).trim()
 
-        // Remove parenthesized "optional" markers while preserving meaningful
-        // descriptors such as "(sev)", "(haldi)", or "(plain flour)".
-        name = name.replace(
-            Regex("""\s*\(\s*optional\s*\)""", RegexOption.IGNORE_CASE),
-            ""
-        ).trim()
-
-        // Remove leading size descriptors.
+        // Remove trailing adjustment/purpose notes in parentheses.
         name = name.replace(
             Regex(
-                """^(?:a\s+few|few|a\s+small|small|a\s+medium|medium|a\s+large|large|extra-large|extra large)\s+""",
+                """\s*\(\s*(?:adjust\s+to\s+taste|plus\s+extra\s+(?:to|for)\s+garnish)[^)]*\)""",
                 RegexOption.IGNORE_CASE
             ),
             ""
         ).trim()
 
-        // Remove preparation words wherever they occur, but keep the
-        // ingredient that follows them.
-        // Examples:
-        // "chopped onion" -> "onion"
-        // "lemon & chopped coriander" -> "lemon & coriander"
-        // "Farsan (sev), chopped onion, lemon & pav" -> "Farsan (sev), onion, lemon & pav"
-        name = name.replace(
-            Regex(
-                """\b(?:finely|roughly|very finely|thinly|thickly|lightly)\s+(?=(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled)\b)""",
-                RegexOption.IGNORE_CASE
-            ),
-            ""
-        )
-
-        name = name.replace(
-            Regex(
-                """\b(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled)\s+(?=[A-Za-z])""",
-                RegexOption.IGNORE_CASE
-            ),
-            ""
-        )
-
-        // Remove preparation words that remain at the end.
-        // Examples: "onion, chopped" -> "onion".
-        name = name.replace(
-            Regex(
-                """,?\s*(?:finely|roughly|very finely|thinly|thickly|lightly)?\s*(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled)\s*$""",
-                RegexOption.IGNORE_CASE
-            ),
-            ""
-        ).trim()
-
-        // Remove complete trailing preparation chains.
-        // Examples:
-        // "potatoes, boiled & mashed" -> "potatoes"
-        // "arbi, boiled, peeled and halved" -> "arbi"
-        // "chicken, minced or finely chopped" -> "chicken"
-        // "baby potatoes, peeled and pricked" -> "baby potatoes"
-        // "bell peppers, tops cut & seeded" -> "bell peppers"
-        name = name.replace(
-            Regex(
-                """,?\s*(?:(?:finely|roughly|very finely|thinly|thickly|lightly)\s+)?(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|tops\s+cut)(?:\s*(?:,|and|or|&)\s*(?:(?:finely|roughly|very finely|thinly|thickly|lightly)\s+)?(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|tops\s+cut))*\s*$""",
-                RegexOption.IGNORE_CASE
-            ),
-            ""
-        ).trim()
-
-        // Remove trailing adjustment/purpose notes.
-        // Examples:
-        // "red chilli flakes (adjust to taste)" -> "red chilli flakes"
-        // "ginger (adrak), julienned (plus extra to garnish)" -> preparation cleanup can finish the name
-        name = name.replace(
-            Regex(
-                """\s*\(\s*(?:adjust\s+to\s+taste|plus\s+extra\s+to\s+garnish|plus\s+extra\s+for\s+garnish)[^)]*\)""",
-                RegexOption.IGNORE_CASE
-            ),
-            ""
-        ).trim()
-
-        // Remove parenthesized usage/purpose instructions.
-        // Keep meaningful ingredient translations/descriptors.
+        // Remove parenthesized usage/purpose notes, but keep ingredient
+        // descriptors/translations such as "(sev)", "(haldi)", "(dhania)".
         name = name.replace(
             Regex(
                 """\s*\(\s*(?:for|to)\s+(?:frying|cooking|tempering|serving|garnish|coating|greasing|dredging|dusting|skewering|the crust|the stuffing|the batter|the slurry|the filling|a smoky finish|extra crispness|colour|color)[^)]*\)""",
@@ -178,70 +120,255 @@ object IngredientScaler {
             ""
         ).trim()
 
-        // Remove a preparation word left behind before a dangling connector.
-        // Example: "potatoes, boiled &" -> "potatoes".
+        // Remove standalone optional markers.
+        name = name.replace(
+            Regex("""\s*\(\s*optional\s*\)""", RegexOption.IGNORE_CASE),
+            ""
+        ).trim()
+
+        // Remove leading size/quantity-style descriptors that aren't part
+        // of the ingredient identity.
         name = name.replace(
             Regex(
-                """,?\s*(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|tops\s+cut)\s*(?:&|and|or)\s*$""",
+                """^(?:a\s+few|few|a\s+small|small|a\s+medium|medium|a\s+large|large|extra-large|extra\s+large)\s+""",
                 RegexOption.IGNORE_CASE
             ),
             ""
         ).trim()
 
-        // Remove dangling connectors left after preparation cleanup.
-        // Examples: "potatoes, boiled &" -> "potatoes",
-        //           "eggs, boiled and" -> "eggs".
+        // Remove quantity/preparation fragments such as:
+        // "garlic, 1 minced + 1 whole for rubbing" -> "garlic"
         name = name.replace(
             Regex(
-                """,?\s*(?:&|and|or)\s*$""",
+                """\s*,?\s*\d+\s+(?:minced|chopped|diced|sliced|cubed|grated|crushed|peeled|whole)(?:\s*\+\s*\d+\s+(?:minced|chopped|diced|sliced|cubed|grated|crushed|peeled|whole))*\s*(?:for\s+[^,)]*)?""",
                 RegexOption.IGNORE_CASE
             ),
             ""
         ).trim()
 
-        // Remove preparation words that became exposed after connector cleanup.
+        // Remove em-dash quantity/preparation fragments:
+        // "onions — 1 sliced, 1 chopped" -> "onions"
+        name = name.replace(
+            Regex("""\s+—\s+\d+.*$"""),
+            ""
+        ).trim()
+
+        // Preparation vocabulary used by the normalization rules.
+        val prep =
+            """(?:(?:finely|roughly|very\s+finely|thinly|thickly|lightly)\s+)?""" +
+            """(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|""" +
+            """crushed|pureed|shredded|julienned|boiled|peeled|pasted|halved|quartered|""" +
+            """trimmed|deveined|seeded|cored|pricked|par-boiled|parboiled|cooked|""" +
+            """tops\s+cut)"""
+
+        val prepChain = "(?:roasted|$prep)"
+
+        // Remove preparation words before an ingredient:
+        // "chopped onion" -> "onion"
+        // "minced/shredded cooked chicken" -> "chicken"
         name = name.replace(
             Regex(
-                """,?\s*(?:finely|roughly|very finely|thinly|thickly|lightly)?\s*(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|tops\s+cut)\s*$""",
+                """^(?:(?:$prep)(?:\s*/\s*(?:$prep))*)\s+""",
                 RegexOption.IGNORE_CASE
             ),
             ""
         ).trim()
 
-        // Remove a second dangling connector if cleanup exposed one.
+        // Remove complete preparation chains after a comma.
+        // Examples:
+        // "boneless chicken, finely shredded or minced" -> "boneless chicken"
+        // "garlic (lehsun), finely grated or crushed" -> "garlic (lehsun)"
+        // "eggs, boiled and peeled" -> "eggs"
+        //
+        // Treat connected preparation words as one preparation chain.
         name = name.replace(
             Regex(
-                """,?\s*(?:&|and|or)\s*$""",
+                """,?\s*$prepChain(?:\s+(?:and|or)\s+$prepChain)+\s*(?=\(|$)""",
                 RegexOption.IGNORE_CASE
             ),
             ""
         ).trim()
 
-        // Remove trailing "cut into..." preparation instructions.
+        // Handle preparation words after a comma/connector when they precede
+        // another ingredient:
+        // "lemon & chopped coriander" -> "lemon & coriander"
+        // "Farsan (sev), chopped onion, lemon & pav" -> "Farsan (sev), onion, lemon & pav"
         name = name.replace(
             Regex(
-                """,?\s*(?:cut into|cut in|sliced into|peeled and cut into)\s+[^,;&]+(?=\s*(?:,|&|$))""",
+                """(?<=[,&])\s*(?:$prep)\s+(?!(?:and|or)\s+$prep\b)(?=[A-Za-z])""",
+                RegexOption.IGNORE_CASE
+            ),
+            " "
+        ).trim()
+
+        // Remove preparation words after "and" when they describe
+        // the following ingredient.
+        // "butter and chopped coriander" -> "butter and coriander"
+        // "sesame seeds and sliced spring onion" -> "sesame seeds and spring onion"
+        name = name.replace(
+            Regex(
+                """(\band\s+)(?:$prep)\s+(?=[A-Za-z])""",
+                RegexOption.IGNORE_CASE
+            ),
+            "$1"
+        ).trim()
+
+        // Remove trailing preparation chains:
+        // "potatoes, boiled & mashed" -> "potatoes"
+        // "arbi, boiled, peeled and halved" -> "arbi"
+        // "bell peppers, tops cut & seeded" -> "bell peppers"
+        name = name.replace(
+            Regex(
+                """,?\s*$prep(?:\s*(?:,|&|and|or)\s*$prep)*\s*$""",
                 RegexOption.IGNORE_CASE
             ),
             ""
         ).trim()
 
-        // Remove common "for X" clauses that remain after cleanup.
+        // Remove "cut into..." preparation instructions.
         name = name.replace(
             Regex(
-                """,?\s+(?:for|plus extra)\s+(?:both methods|the crust|coating|greasing|skewering|a smoky finish|serving|garnish|the stuffing|cooking|frying|tempering|the batter|the slurry|the filling|to serve).*$""",
+                """,?\s*(?:peeled\s+and\s+)?(?:cut\s+into|cut\s+in|sliced\s+into)\s+[^,;&()]+(?=\s*(?:,|&|$|\())""",
                 RegexOption.IGNORE_CASE
             ),
             ""
         ).trim()
 
-        // Clean punctuation and repeated whitespace without altering
-        // meaningful descriptors, alternatives, or compound ingredients.
+        // Remove preparation chains immediately before a retained parenthetical.
+        // This preserves useful information such as:
+        // "prawns, peeled and deveined (tails on)" -> "prawns (tails on)"
+        // "apples, thinly sliced (core removed)" -> "apples (core removed)"
+        name = name.replace(
+            Regex(
+                """,?\s*$prep(?:\s+(?:and|or)\s+$prep)*\s+(?=\()""",
+                RegexOption.IGNORE_CASE
+            ),
+            " "
+        ).trim()
+
+        // Remove trailing handling notes that are clearly preparation-only.
+        name = name.replace(
+            Regex(
+                """,?\s*(?:greens\s+and\s+whites\s+separated|whites\s+and\s+greens\s+separated|core\s+removed|tops\s+removed)\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove a trailing cooking state/duration.
+        name = name.replace(
+            Regex(
+                """,?\s*(?:par-boiled|parboiled|boiled|cooked)(?:\s+(?:for\s+)?\d+\s*(?:min|mins|minutes|sec|secs|seconds))?\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove dangling preparation connectors.
+        name = name.replace(
+            Regex(""",?\s*(?:&|and|or)\s*$""", RegexOption.IGNORE_CASE),
+            ""
+        ).trim()
+
+        // Remove optional/purpose parentheticals that may have become exposed
+        // after preparation cleanup.
+        name = name.replace(
+            Regex(
+                """\s*\(\s*(?:optional|for\s+(?:skewering|serving|garnish|cooking|frying|tempering|coating|greasing)|to\s+(?:garnish|serve))[^)]*\)""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Final cleanup for preparation/quantity fragments that can remain
+        // after the main normalization rules.
+
+        // Remove leading preparation/state words.
+        // Example: "minced/shredded cooked chicken" -> "chicken"
+        name = name.replace(
+            Regex(
+                """^(?:(?:finely|roughly|very\s+finely|thinly|thickly|lightly)\s+)?(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|par-boiled|parboiled|cooked)(?:\s*/\s*(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|cooked))*\s+""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove em-dash quantity/preparation suffixes.
+        // Example: "onions — 1 sliced, 1 chopped" -> "onions"
+        name = name.replace(
+            Regex("""\s+—.*$"""),
+            ""
+        ).trim()
+
+        // Remove trailing preparation + handling notes.
+        // Example: "spring onions, chopped, greens and whites separated"
+        // -> "spring onions"
+        name = name.replace(
+            Regex(
+                """,?\s*(?:finely|roughly|very\s+finely|thinly|thickly|lightly)?\s*(?:chopped|cubed|diced|minced|sliced|slit|grated|beaten|mashed|crushed|pureed|shredded|julienned|boiled|peeled|halved|quartered|trimmed|deveined|seeded|cored|pricked|cooked)(?:\s*,\s*(?:greens\s+and\s+whites|whites\s+and\s+greens)\s+separated)?\s*$""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove preparation modifiers left before a retained parenthetical.
+        // Example: "apples, thinly sliced (core removed)"
+        // -> "apples (core removed)"
+        name = name.replace(
+            Regex(
+                """,?\s*(?:finely|roughly|very\s+finely|thinly|thickly|lightly)\s+(?:sliced|chopped|cubed|diced|minced|grated|shredded|julienned|crushed|mashed|boiled|peeled|cooked)\s*(?=\()""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove any remaining standalone preparation modifier before a
+        // retained parenthetical.
+        // Example: "apples, thinly (core removed)" -> "apples (core removed)"
+        name = name.replace(
+            Regex(
+                """,?\s*(?:finely|roughly|very\s+finely|thinly|thickly|lightly)\s*(?=\()""",
+                RegexOption.IGNORE_CASE
+            ),
+            ""
+        ).trim()
+
+        // Remove commas immediately before retained parentheticals.
+        // Example: "prawns, (tails on)" -> "prawns (tails on)"
+        name = name.replace(
+            Regex(""",\s*(?=\()"""),
+            " "
+        ).trim()
+
+        // Remove an orphan opening parenthesis left by an optional/purpose note.
+        name = name.replace(
+            Regex("""\s*\($"""),
+            ""
+        ).trim()
+
+        // Final parenthetical punctuation cleanup.
+        // Example: "prawns, (tails on)" -> "prawns (tails on)"
+        name = name.replace(
+            Regex(""",\s*(?=\()"""),
+            " "
+        ).trim()
+
+        // Normalize spacing/punctuation without changing meaningful
+        // ingredient descriptors or parenthetical content.
         name = name
             .replace(Regex("""\s{2,}"""), " ")
             .replace(Regex("""\s*,\s*,"""), ",")
             .replace(Regex("""\s*&\s*"""), " & ")
+            .replace(Regex("""\s*\(\s*"""), " (")
+            .replace(Regex("""\s*\)"""), ")")
+            .replace(Regex("""\(\s*\)"""), "")
             .trim(' ', ',', '-', ':')
+
+        // Remove a connector accidentally left immediately before a parenthetical.
+        name = name.replace(
+            Regex("""\s+(?:&|and|or)\s*(?=\()""", RegexOption.IGNORE_CASE),
+            " "
+        ).trim()
 
         return name.replaceFirstChar { it.uppercase() }
     }
