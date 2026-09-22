@@ -56,8 +56,8 @@ object ShoppingListManager {
     fun addItems(context: Context, newItems: List<Triple<String, String, String>>) {
         // Triple = (name, quantity, category)
         val current = getAll(context).toMutableList()
-        for ((name, quantity, category) in newItems) {
-            current.add(ShoppingListItem(UUID.randomUUID().toString(), name, quantity, category, false))
+        for ((name, _quantity, category) in newItems) {
+            current.add(ShoppingListItem(UUID.randomUUID().toString(), name, "", category, false))
         }
         saveAll(context, current)
     }
@@ -65,6 +65,13 @@ object ShoppingListManager {
     fun toggleChecked(context: Context, id: String) {
         val current = getAll(context).map {
             if (it.id == id) it.copy(checked = !it.checked) else it
+        }
+        saveAll(context, current)
+    }
+
+    fun updateQuantity(context: Context, id: String, quantity: String) {
+        val current = getAll(context).map {
+            if (it.id == id) it.copy(quantity = quantity.trim()) else it
         }
         saveAll(context, current)
     }

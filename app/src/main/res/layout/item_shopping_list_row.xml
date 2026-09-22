@@ -25,13 +25,18 @@
         android:fontFamily="serif"
         android:textColor="@color/text_primary" />
 
-    <TextView
+    <EditText
         android:id="@+id/shoppingItemQuantity"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:hint="Add quantity"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:inputType="text"
         android:textSize="14sp"
         android:fontFamily="sans-serif-medium"
-        android:textColor="@color/text_secondary" />
+        android:textColor="@color/text_secondary"
+        android:backgroundTint="@color/primary" />
 
 </LinearLayout>

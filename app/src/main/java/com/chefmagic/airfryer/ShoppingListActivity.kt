@@ -68,10 +68,16 @@ class ShoppingListActivity : AppCompatActivity() {
         // Unchecked items first, then checked ones at the bottom
         val sorted = filtered.sortedBy { it.checked }
 
-        recyclerView.adapter = ShoppingListAdapter(sorted) { item ->
-            ShoppingListManager.toggleChecked(this, item.id)
-            refresh()
-        }
+        recyclerView.adapter = ShoppingListAdapter(
+            sorted,
+            onToggle = { item ->
+                ShoppingListManager.toggleChecked(this, item.id)
+                refresh()
+            },
+            onQuantityChanged = { item, quantity ->
+                ShoppingListManager.updateQuantity(this, item.id, quantity)
+            }
+        )
 
         findViewById<TextView>(R.id.shoppingCountText).text =
             "${allItems.size} item" + if (allItems.size == 1) "" else "s"
