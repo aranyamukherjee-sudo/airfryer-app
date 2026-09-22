@@ -117,14 +117,9 @@ class RecipeDetailActivity : AppCompatActivity() {
             if (IngredientScaler.isShoppingListExcluded(ingredient)) {
                 null
             } else {
-                val quantity = IngredientScaler.scaledQuantityOnly(
-                    ingredient,
-                    currentServings,
-                    r.originalServings
-                )
                 val name = IngredientScaler.shoppingListName(ingredient)
                 val category = IngredientScaler.categoryName(ingredient)
-                Triple(name, quantity, category)
+                Triple(name, "", category)
             }
         }
 
