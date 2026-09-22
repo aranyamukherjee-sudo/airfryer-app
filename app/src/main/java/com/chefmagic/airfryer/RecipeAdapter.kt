@@ -72,7 +72,7 @@ class RecipeAdapter(
             if (recipe.image != null) {
                 image.scaleType = android.widget.ImageView.ScaleType.CENTER_CROP
                 image.setPadding(0, 0, 0, 0)
-                image.setBackgroundColor(android.graphics.Color.parseColor("#EDE6D6"))
+                image.setBackgroundResource(R.color.divider)
                 val uri = Uri.parse("file:///android_asset/${recipe.image}")
                 Glide.with(itemView.context)
                     .load(uri)
@@ -82,7 +82,7 @@ class RecipeAdapter(
                 val pad = (12 * itemView.resources.displayMetrics.density).toInt()
                 image.scaleType = android.widget.ImageView.ScaleType.CENTER_INSIDE
                 image.setPadding(pad, pad, pad, pad)
-                image.setBackgroundColor(android.graphics.Color.parseColor("#EDE6D6"))
+                image.setBackgroundResource(R.color.divider)
                 image.setImageResource(R.drawable.ic_placeholder)
             }
 
