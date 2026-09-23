@@ -22,6 +22,17 @@
         android:background="@drawable/dot_shape" />
 
     <TextView
+        android:id="@+id/ingredientQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:minWidth="60dp"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_secondary"
+        android:gravity="start" />
+
+    <TextView
         android:id="@+id/ingredientText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -30,15 +41,5 @@
         android:fontFamily="serif"
         android:textColor="@color/text_primary"
         android:lineSpacingExtra="2dp" />
-
-    <TextView
-        android:id="@+id/ingredientQuantity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:textSize="14sp"
-        android:fontFamily="sans-serif-medium"
-        android:textColor="@color/text_secondary"
-        android:gravity="end" />
 
 </LinearLayout>

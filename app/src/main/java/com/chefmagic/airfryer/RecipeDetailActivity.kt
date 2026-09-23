@@ -292,6 +292,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             val swatch: View = row.findViewById(R.id.ingredientSwatch)
 
             nameView.text = IngredientScaler.displayName(ingredient)
+                .replaceFirstChar { if (it.isLowerCase()) it.titlecase() else it.toString() }
             swatch.backgroundTintList = android.content.res.ColorStateList.valueOf(
                 android.graphics.Color.parseColor(IngredientScaler.categoryColor(ingredient))
             )
